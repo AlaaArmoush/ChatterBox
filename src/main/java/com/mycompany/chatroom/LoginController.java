@@ -52,7 +52,6 @@ public class LoginController {
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(" ");
                 if (parts.length == 2) {
-                    ////////////////username                password
                     credentials.put(parts[0].toLowerCase(), parts[1].toLowerCase());
                 }
             }
