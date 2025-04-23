@@ -1,0 +1,49 @@
+.split-pane:horizontal > .split-pane-divider,
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-opacity: 0;
+    -fx-max-width: 0; 
+    -fx-max-height: 0; 
+}
+
+/* Button hover effects */
+#logout {
+    -fx-background-color: #e496a0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+#logout:hover {
+    -fx-background-color: #be535d;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#bid {
+    -fx-background-color: #A0522D;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-border-color: transparent; /* invisible border, reserves space */
+}
+
+#bid:hover {
+    -fx-background-color: #f4f1ea;
+    -fx-text-fill: #A0522D;
+    -fx-border-color: #A0522D;
+}
+.titled-pane > .title {
+    -fx-background-color:   #1F2C34;
+
+}
+.titled-pane{
+    -fx-border-color: #374248;
+
+}
