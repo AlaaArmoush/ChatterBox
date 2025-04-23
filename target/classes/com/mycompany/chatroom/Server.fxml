@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -18,30 +20,63 @@
       </VBox>
    </top>
    <center>
-      <VBox spacing="15" style="-fx-padding: 20;">
-         <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10; -fx-background-color: #1F2C34;">
-            <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Server IP:" textFill="#8596A0" />
-            <TextField fx:id="serverIpTextField" editable="false" promptText="Server IP" style="-fx-background-color: #2A3942; -fx-text-fill: #FFFFFF;" stylesheets="@style.css" />
-         </HBox>
-
-         <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10; -fx-background-color: #1F2C34;">
-            <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Port:" textFill="#8596A0" />
-            <TextField fx:id="portField" prefHeight="27.0" prefWidth="430.0" promptText="Enter port number" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" text="8888" HBox.hgrow="ALWAYS" />
-            <Button fx:id="startButton" onAction="#handleStartButton" style="-fx-background-color: #00A884; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Start Listening">
-               <padding>
-                  <Insets bottom="6" left="10" right="10" top="6" />
-               </padding>
-            </Button>
-         </HBox>
-
-         <TitledPane fx:id="connectedUsersPane" animated="true" expanded="true" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" stylesheets="@style.css" text="Connected Users" textFill="#8596A0" VBox.vgrow="ALWAYS">
+      <TabPane fx:id="tabPane" style="-fx-tab-min-width: 60; -fx-tab-max-width: 120; -fx-tab-height: 28; -fx-base: #2A3942; -fx-control-inner-background: #121B22;" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+         <Tab closable="false" text="Server">
             <content>
-               <VBox prefHeight="413.0" prefWidth="721.0" style="-fx-background-color: #1F2C34; -fx-border-color: #374248;">
-                  <ListView fx:id="connectedUsersListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22; -fx-text-fill: #FFFFFF;" VBox.vgrow="ALWAYS" />
+               <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #121B22;">
+                  <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10; -fx-background-color: #1F2C34;">
+                     <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Server IP:" textFill="#8596A0" />
+                     <TextField fx:id="serverIpTextField" editable="false" promptText="Server IP" style="-fx-background-color: #2A3942; -fx-text-fill: #FFFFFF;" stylesheets="@style.css" />
+                  </HBox>
+
+                  <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10; -fx-background-color: #1F2C34;">
+                     <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Port:" textFill="#8596A0" />
+                     <TextField fx:id="portField" prefHeight="27.0" prefWidth="430.0" promptText="Enter port number" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" text="8888" HBox.hgrow="ALWAYS" />
+                     <Button fx:id="startButton" onAction="#handleStartButton" style="-fx-background-color: #00A884; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Start Listening">
+                        <padding>
+                           <Insets bottom="6" left="10" right="10" top="6" />
+                        </padding>
+                     </Button>
+                  </HBox>
+
+                  <TitledPane fx:id="connectedUsersPane" animated="true" expanded="true" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" stylesheets="@style.css" text="Connected Users" textFill="#8596A0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox prefHeight="413.0" prefWidth="721.0" style="-fx-background-color: #1F2C34; -fx-border-color: #374248;">
+                           <ListView fx:id="connectedUsersListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22; -fx-text-fill: #FFFFFF;" VBox.vgrow="ALWAYS" />
+                        </VBox>
+                     </content>
+                  </TitledPane>
                </VBox>
             </content>
-         </TitledPane>
-      </VBox>
+         </Tab>
+         <Tab closable="false" text="Add Users">
+            <content>
+               <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #121B22;">
+                  <TitledPane collapsible="false" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" stylesheets="@style.css" text="Add New User" textFill="#8596A0">
+                     <content>
+                        <VBox spacing="15" style="-fx-background-color: #1F2C34; -fx-padding: 15;">
+                           <HBox alignment="CENTER_LEFT" spacing="10">
+                              <Label minWidth="80" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Username:" textFill="#8596A0" />
+                              <TextField fx:id="usernameField" promptText="Enter username" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" HBox.hgrow="ALWAYS" />
+                           </HBox>
+                           <HBox alignment="CENTER_LEFT" spacing="10">
+                              <Label minWidth="80" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Password:" textFill="#8596A0" />
+                              <TextField fx:id="passwordField" promptText="Enter password" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" HBox.hgrow="ALWAYS" />
+                           </HBox>
+                           <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding: 10 0 0 0;">
+                              <Button fx:id="addUserButton" style="-fx-background-color: #00A884; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Add User">
+                                 <padding>
+                                    <Insets bottom="6" left="10" right="10" top="6" />
+                                 </padding>
+                              </Button>
+                           </HBox>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </VBox>
+            </content>
+         </Tab>
+      </TabPane>
    </center>
    <bottom>
       <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #1F2C34; -fx-padding: 8 12; -fx-border-color: #374248; -fx-border-width: 1 0 0 0;">

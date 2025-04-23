@@ -1,8 +1,6 @@
 package com.mycompany.chatroom;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.nio.file.Files;
@@ -109,6 +107,7 @@ public class ChatController implements Initializable {
     private String username;
     public void setUsername(String username) {
         this.username = username;
+        loadLastLoginInfo();
     }
 
 
@@ -120,14 +119,13 @@ public class ChatController implements Initializable {
         } catch (UnknownHostException e) {
             sourceIpField.setText("127.0.0.1");
         }
-
+        startTimer();
         statusComboBox.setItems(FXCollections.observableArrayList("Active", "Busy", "Away"));
         statusComboBox.getSelectionModel().select("Active");
         saveLocationField.setText(System.getProperty("user.home"));
         updateSessionTime();
         messageListView.setItems(messages);
         archiveListView.setItems(archivedMessages);
-      //  userListView.setItems(FXCollections.observableArrayList("User1", "User2"));
         setupButtonActions();
         archiveCleanupService = Executors.newSingleThreadScheduledExecutor();
         directMessaging();
@@ -491,6 +489,7 @@ public class ChatController implements Initializable {
 
     public void handleLogout(ActionEvent event) {
         try {
+            saveLogoutTime();
             FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("Login.fxml"));
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
@@ -510,8 +509,13 @@ public class ChatController implements Initializable {
         if (archiveCleanupService != null) {
             archiveCleanupService.shutdown();
         }
+        if (timer != null) {
+            timer.shutdown();
+        }
+        saveLogoutTime();
     }
-    ///////////////////////////////////////////////////////////////////////////////////**//
+
+    ///////////////////////////////////////////////////////////////////////////////////* tcp related*//
     @FXML
     private TextField serverPortField;
     @FXML
@@ -620,6 +624,95 @@ public class ChatController implements Initializable {
         }
     }
 
+    /// ///// last log out, elapsed time etc...
 
+    private ScheduledExecutorService timer;
 
+    private void startTimer(){
+        long startTime = System.currentTimeMillis();
+
+        timer = Executors.newSingleThreadScheduledExecutor();
+        timer.scheduleAtFixedRate(() -> {
+            Platform.runLater(() -> {
+                long currentTime = System.currentTimeMillis();
+                long elapsedTime = currentTime - startTime;
+
+                long seconds = (elapsedTime / 1000) % 60;
+                long minutes = (elapsedTime / (1000 * 60)) % 60;
+                long hours = (elapsedTime / (1000 * 60 * 60)) % 24;
+
+                String timeString = String.format("Session: %02d:%02d:%02d", hours, minutes, seconds);
+                sessionTimeLabel.setText(timeString);
+            });
+        }, 0, 1, TimeUnit.SECONDS);
+
+    }
+
+    private void saveLogoutTime() {
+        try {
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String exitAt = now.format(formatter);
+
+            Map<String, String> loginInfo = new HashMap<>();
+            File file = new File("last_login.txt");
+            if (file.exists()) {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    String[] parts = line.split("\\|");
+                    if (parts.length == 2) {
+                        loginInfo.put(parts[0], parts[1]);
+                    }
+                }
+                reader.close();
+            }
+            loginInfo.put(username, exitAt);
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+            for (Map.Entry<String, String> entry : loginInfo.entrySet()) {
+                writer.write(entry.getKey() + "|" + entry.getValue() + "\n");
+            }
+            writer.close();
+
+        } catch (IOException e) {
+            System.err.println("Error saving logout time: " + e.getMessage());
+        }
+    }
+
+    private void loadLastLoginInfo() {
+        try {
+            System.out.println("Current username: " + username); // Debug output
+
+            File file = new File("last_login.txt");
+            System.out.println("File exists: " + file.exists()); // Debug output
+            System.out.println("File path: " + file.getAbsolutePath()); // Debug output
+
+            if (!file.exists()) {
+                lastLoginLabel.setText("First login");
+                return;
+            }
+
+            Map<String, String> loginInfo = new HashMap<>();
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println("Read line: " + line); // Debug output
+                String[] parts = line.split("\\|");
+                if (parts.length == 2) {
+                    loginInfo.put(parts[0], parts[1]);
+                }
+            }
+            reader.close();
+
+            if (loginInfo.containsKey(username)) {
+                lastLoginLabel.setText("Last Login: " + loginInfo.get(username));
+            } else {
+                lastLoginLabel.setText("First Login");
+            }
+
+        } catch (IOException e) {
+            System.err.println("Error loading last login info: " + e.getMessage());
+            lastLoginLabel.setText("Error loading login information");
+        }
+    }
 }
