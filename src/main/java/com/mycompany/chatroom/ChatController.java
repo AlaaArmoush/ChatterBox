@@ -129,6 +129,7 @@ public class ChatController implements Initializable {
         setupButtonActions();
         archiveCleanupService = Executors.newSingleThreadScheduledExecutor();
         directMessaging();
+        setupFileTransferUI();
     }
 
     private void setupButtonActions() {
@@ -203,7 +204,14 @@ public class ChatController implements Initializable {
 
             chatClient = new UDPPeer(port, message -> {
                 Platform.runLater(() -> {
-                    displayMessage(message);
+                         displayMessage(message);
+                });
+            });
+
+            chatClient.setSaveLocation(saveLocationField.getText());
+            chatClient.setTransferStatusUpdater(progress -> {
+                Platform.runLater(() -> {
+                    updateFileTransferProgress(progress);
                 });
             });
             chatClient.start();
@@ -214,7 +222,6 @@ public class ChatController implements Initializable {
             showAlert("Invalid port number");
         }
     }
-
 
     private void sendMessage() {
         if (chatClient == null) {
@@ -235,15 +242,16 @@ public class ChatController implements Initializable {
         }
     }
 
+
+
     private void displayMessage(UDPPeer.Message message) {
-        if (message.getSender().equals("SYSTEM")) {
+        if ("SYSTEM".equals(message.getSender())) {
+            System.out.println(">> SYSTEM command received: " + message.getContent());
             if (message.getContent().startsWith("DELETE:")) {
-                String messageIdToDelete = message.getContent().substring(7);
-                deleteMessageById(messageIdToDelete);
+                deleteMessageById(message.getContent().substring(7));
                 return;
             } else if (message.getContent().startsWith("RECOVER:")) {
-                String messageIdToRecover = message.getContent().substring(8);
-                recoverMessageById(messageIdToRecover);
+                recoverMessageById(message.getContent().substring(8));
                 return;
             }
         }
@@ -300,8 +308,11 @@ public class ChatController implements Initializable {
             try {
                 String destIp = destIpField.getText();
                 int destPort = Integer.parseInt(destPortField.getText());
-                chatClient.sendCommand("DELETE_MESSAGE|" + removedMessage.getMessageId(), destIp, destPort);
-                messages.remove(selectedIndex);
+                chatClient.sendCommand(
+                        "DELETE_MESSAGE|" + removedMessage.getMessageId(),
+                        destIpField.getText(),
+                        Integer.parseInt(destPortField.getText())
+                );                messages.remove(selectedIndex);
                 messageHistory.remove(selectedIndex);
                 archiveMessage(removedMessage);
             } catch (NumberFormatException e) {
@@ -530,23 +541,23 @@ public class ChatController implements Initializable {
 
 
 
-  public void handleTCPConnectButton() throws IOException {
-      try {
-          String serverIp = serverIpField.getText();
-          int serverPort = Integer.parseInt(serverPortField.getText());
+    public void handleTCPConnectButton() throws IOException {
+        try {
+            String serverIp = serverIpField.getText();
+            int serverPort = Integer.parseInt(serverPortField.getText());
 
-          startUDPClient();
-          chatClient.setIp(sourceIpField.getText());
-          chatClient.connectToTCPServer(serverIp, serverPort, username,
-                  Integer.parseInt(sourcePortField.getText()));
+            startUDPClient();
+            chatClient.setIp(sourceIpField.getText());
+            chatClient.connectToTCPServer(serverIp, serverPort, username,
+                    Integer.parseInt(sourcePortField.getText()));
 
-          chatClient.startTcpListener();
-          startUserListRefreshTimer();
-          showAlert("Successfully connected to TCP server");
-      } catch (NumberFormatException e) {
-          showAlert("Invalid port number");
-      }
-  }
+            chatClient.startTcpListener();
+            startUserListRefreshTimer();
+            showAlert("Successfully connected to TCP server");
+        } catch (NumberFormatException e) {
+            showAlert("Invalid port number");
+        }
+    }
 
 
     private void startUserListRefreshTimer() {
@@ -554,7 +565,6 @@ public class ChatController implements Initializable {
             userListTimer.cancel();
         }
 
-        // Create a new timer
         userListTimer = new Timer(true);
         userListTimer.schedule(new TimerTask() {
             @Override
@@ -575,9 +585,9 @@ public class ChatController implements Initializable {
     private String formatForUserList(String connectionString) {
         String[] parts = connectionString.split("\\|");
         if (parts.length >= 4) {
-            String ip = parts[1];    // IP
-            String udpPort = parts[2]; // port
-            String username = parts[3]; // Username
+            String ip = parts[1];
+            String udpPort = parts[2];
+            String username = parts[3];
 
             return username + "|" + ip + "|" + udpPort + "|";
         }
@@ -679,13 +689,11 @@ public class ChatController implements Initializable {
         }
     }
 
+
+
     private void loadLastLoginInfo() {
         try {
-            System.out.println("Current username: " + username); // Debug output
-
             File file = new File("last_login.txt");
-            System.out.println("File exists: " + file.exists()); // Debug output
-            System.out.println("File path: " + file.getAbsolutePath()); // Debug output
 
             if (!file.exists()) {
                 lastLoginLabel.setText("First login");
@@ -696,7 +704,7 @@ public class ChatController implements Initializable {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println("Read line: " + line); // Debug output
+                System.out.println("Read line: " + line);
                 String[] parts = line.split("\\|");
                 if (parts.length == 2) {
                     loginInfo.put(parts[0], parts[1]);
@@ -715,4 +723,102 @@ public class ChatController implements Initializable {
             lastLoginLabel.setText("Error loading login information");
         }
     }
+
+
+    ////////// file sharing
+    private void setupFileTransferUI() {
+        sendFileButton.setOnAction(new javafx.event.EventHandler<javafx.event.ActionEvent>() {
+            public void handle(javafx.event.ActionEvent e) {
+                sendFile();
+            }
+        });
+
+        if (chatClient != null) {
+            chatClient.setTransferStatusUpdater(progress -> {
+                Platform.runLater(() -> {
+                    updateFileTransferProgress(progress);
+                });
+            });
+        }
+    }
+
+    private void sendFile() {
+        if (chatClient == null) {
+            showAlert("Please set your port and connect first");
+            return;
+        }
+
+        String filePath = filePathField.getText();
+        if (filePath.isEmpty()) {
+            showAlert("Please select a file first");
+            return;
+        }
+
+        try {
+            String destIp = destIpField.getText();
+            int destPort = Integer.parseInt(destPortField.getText());
+
+            if (destIp.isEmpty() || destPort <= 0) {
+                showAlert("Please specify a valid destination IP and port");
+                return;
+            }
+
+            fileTransferProgress.setProgress(0);
+            fileSizeLabel.setText("Preparing to send...");
+
+            chatClient.setSaveLocation(saveLocationField.getText());
+
+            boolean success = chatClient.sendFile(filePath, destIp, destPort);
+            if (!success) {
+                showAlert("Failed to start file transfer. Please check the file path.");
+            } else {
+                showAlert("Starting file transfer...");
+            }
+        } catch (NumberFormatException e) {
+            showAlert("Invalid destination port");
+        }
+    }
+
+    private void updateFileTransferProgress(UDPPeer.FileTransferProgress progress) {
+        fileTransferProgress.setProgress(progress.progress / 100.0);
+
+        if (progress.isIncoming) {
+            fileSizeLabel.setText("Receiving: " + formatFileSize(progress.bytesTransferred) +
+                    " / " + formatFileSize(progress.totalBytes));
+        } else {
+            fileSizeLabel.setText("Sending: " + formatFileSize(progress.bytesTransferred) +
+                    " / " + formatFileSize(progress.totalBytes));
+        }
+
+        int packets = (int) (progress.bytesTransferred / 1024) + 1;
+        int totalPackets = (int) (progress.totalBytes / 1024) + 1;
+        packetsLabel.setText("Packets: " + packets + " / " + totalPackets);
+
+        if (progress.isComplete) {
+            if (progress.isIncoming) {
+                fileSizeLabel.setText("Received: " + formatFileSize(progress.totalBytes));
+            } else {
+                fileSizeLabel.setText("Sent: " + formatFileSize(progress.totalBytes));
+            }
+
+            new java.util.Timer().schedule(
+                    new java.util.TimerTask() {
+                        @Override
+                        public void run() {
+                            Platform.runLater(() -> {
+                                fileTransferProgress.setProgress(0);
+                                fileSizeLabel.setText("");
+                                packetsLabel.setText("Packets: 0 / 0");
+                            });
+                        }
+                    },
+                    3000
+            );
+
+            delayLabel.setText("Delay: " + progress.e2eDelay + " ms");
+            jitterLabel.setText("Jitter: " + progress.jitter + " ms");
+
+        }
+    }
+
 }
