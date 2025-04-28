@@ -20,8 +20,9 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane minHeight="400" minWidth="600" prefHeight="800.0" style="-fx-background-color: #121B22;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.chatroom.ChatController">
+<BorderPane minHeight="400" minWidth="600" prefHeight="800.0" style="-fx-background-color: #121B22;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.chatroom.ChatController">
 
     <top>
         <VBox spacing="5">
@@ -35,6 +36,9 @@
                         <padding>
                             <Insets bottom="4" left="8" right="8" top="4" />
                         </padding>
+                        <font>
+                            <Font name="Gill Sans MT Bold" size="13.0" />
+                        </font>
                     </Button>
                 </HBox>
             </HBox>
@@ -42,7 +46,7 @@
             <TabPane fx:id="tabPane" style="-fx-tab-min-width: 60; -fx-tab-max-width: 120; -fx-tab-height: 28; -fx-base: #2A3942; -fx-control-inner-background: #121B22;" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
                 <Tab style="-fx-text-fill: #FFFFFF;" text="Chat">
                     <VBox prefHeight="678.0" prefWidth="648.0" spacing="10" style="-fx-padding: 12; -fx-background-color: #121B22;" VBox.vgrow="ALWAYS">
-                        <GridPane hgap="10" style="-fx-padding: 10; -fx-background-color: #1F2C34; -fx-background-radius: 0;" vgap="6">
+                        <GridPane hgap="10" style="-fx-padding: 10; -fx-background-color: #1F2C34; -fx-background-radius: 10px;" vgap="6">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" percentWidth="25" />
                                 <ColumnConstraints hgrow="SOMETIMES" percentWidth="25" />
@@ -52,17 +56,17 @@
 
                             <Label style="-fx-font-weight: bold; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Source" textFill="#8596A0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
                             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="IP:" textFill="#8596A0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                            <TextField fx:id="sourceIpField" promptText="Your IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <TextField fx:id="sourceIpField" promptText="Your IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
                             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Port:" textFill="#8596A0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-                            <TextField fx:id="sourcePortField" promptText="Your port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            <TextField fx:id="sourcePortField" promptText="Your port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
                             <Label style="-fx-font-weight: bold; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Destination" textFill="#8596A0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="0" />
                             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="IP:" textFill="#8596A0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                            <TextField fx:id="destIpField" promptText="Dest IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                            <TextField fx:id="destIpField" promptText="Dest IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
 
                             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Port:" textFill="#8596A0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                            <TextField fx:id="destPortField" promptText="Dest port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                            <TextField fx:id="destPortField" promptText="Dest port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
 
                             <rowConstraints>
                                 <RowConstraints />
@@ -71,31 +75,48 @@
                             </rowConstraints>
                         </GridPane>
 
-                        <SplitPane dividerPositions="0.75" maxHeight="220.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+                        <SplitPane dividerPositions="0.75, 0.5" maxHeight="220.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" stylesheets="@style.css" VBox.vgrow="ALWAYS">
                             <items>
-                                <ListView fx:id="messageListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-padding: 3; -fx-text-fill: #FFFFFF; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22;" stylesheets="@style.css" VBox.vgrow="ALWAYS" />
-                                <VBox spacing="5" style="-fx-padding: 6; -fx-background-color: #1F2C34; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248;">
+                                <ListView fx:id="messageListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 10px; -fx-border-color: #374248; -fx-padding: 3; -fx-text-fill: #FFFFFF; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22;" stylesheets="@style.css" VBox.vgrow="ALWAYS" />
+                                <Label>
+                                    <padding>
+                                        <Insets left="3.0" right="3.0" />
+                                    </padding>
+                                </Label>
+                                <VBox maxHeight="211.0" maxWidth="153.0" spacing="5.0" style="-fx-padding: 6; -fx-background-color: #1F2C34; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #374248;">
                                     <Label style="-fx-font-weight: bold; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Online Users" textFill="#8596A0" />
                                     <ListView fx:id="userListView" editable="true" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22; -fx-text-fill: #FFFFFF;" VBox.vgrow="ALWAYS" />
                                 </VBox>
                             </items>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
                         </SplitPane>
 
-                        <HBox maxHeight="75.0" spacing="8">
-                            <TextArea fx:id="messageInput" maxHeight="150" minHeight="40" promptText="Type message..." style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" HBox.hgrow="ALWAYS" />
+                        <HBox maxHeight="75.0" spacing="8" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                            <TextArea fx:id="messageInput" maxHeight="150" minHeight="40" promptText="Type message..." style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" HBox.hgrow="ALWAYS">
+                                <font>
+                                    <Font name="Gill Sans MT" size="12.0" />
+                                </font></TextArea>
                             <VBox spacing="5">
-                                <Button id="bid" fx:id="sendButton" minWidth="70" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Send" textFill="#FFFFFF">
+                                <Button id="bid" fx:id="sendButton" maxHeight="27.0" maxWidth="70.0" minHeight="27.0" minWidth="70" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Send" textFill="#FFFFFF">
                                     <padding>
                                         <Insets bottom="6" left="8" right="8" top="6" />
                                     </padding>
+                                    <font>
+                                        <Font name="Gill Sans MT Bold" size="13.0" />
+                                    </font>
                                 </Button>
-                                <Button id="bid" fx:id="sendAllButton" minWidth="70" onAction="#sendMessageToServer" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Send All" textFill="#FFFFFF">
+                                <Button id="bid" fx:id="sendAllButton" maxHeight="27.0" maxWidth="70.0" minHeight="27.0" minWidth="70" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Send All" textFill="#FFFFFF">
                                     <padding>
                                         <Insets bottom="6.0" left="8.0" right="8.0" top="6.0" />
                                     </padding>
-                           <VBox.margin>
-                              <Insets top="8.0" />
-                           </VBox.margin>
+                                    <VBox.margin>
+                                        <Insets top="8.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Gill Sans MT Bold" size="13.0" />
+                                    </font>
                                 </Button>
                             </VBox>
                         </HBox>
@@ -105,85 +126,106 @@
                                 <padding>
                                     <Insets bottom="6" left="8" right="8" top="6" />
                                 </padding>
+                                <font>
+                                    <Font name="Gill Sans MT Bold" size="13.0" />
+                                </font>
                             </Button>
                             <Button id="bid" fx:id="deleteAllButton" minWidth="70" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Delete All" textFill="#FFFFFF">
                                 <padding>
                                     <Insets bottom="6" left="8" right="8" top="6" />
                                 </padding>
+                                <font>
+                                    <Font name="Gill Sans MT Bold" size="13.0" />
+                                </font>
                             </Button>
                             <Button id="bid" fx:id="exportChatButton" minWidth="60" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Export" textFill="#FFFFFF">
                                 <padding>
                                     <Insets bottom="6" left="8" right="8" top="6" />
                                 </padding>
+                                <font>
+                                    <Font name="Gill Sans MT Bold" size="13.0" />
+                                </font>
                             </Button>
                             <Button id="bid" fx:id="sendFileButton" minWidth="70" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Send File" textFill="#FFFFFF">
                                 <padding>
                                     <Insets bottom="6" left="8" right="8" top="6" />
                                 </padding>
+                                <font>
+                                    <Font name="Gill Sans MT Bold" size="13.0" />
+                                </font>
                             </Button>
                         </HBox>
 
-<TitledPane expanded="false" minHeight="45" prefHeight="165.0" prefWidth="624.0" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" text="File Transfer" textFill="#8596A0">
-    <content>
-        <VBox spacing="8" style="-fx-background-color: #1F2C34; -fx-padding: 10; -fx-background-radius: 0; -fx-border-radius: 0;">
- <HBox alignment="CENTER_LEFT" spacing="8">
+                        <TitledPane fx:id="filePane" minHeight="45" prefHeight="165.0" prefWidth="624.0" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" text="File Transfer" textFill="#8596A0">
+                            <content>
+                                <VBox spacing="8" style="-fx-background-color: #1F2C34; -fx-padding: 10; -fx-background-radius: 0; -fx-border-radius: 0;">
+                                    <HBox alignment="CENTER_LEFT" spacing="8">
                                         <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="File:" textFill="#8596A0" />
-                                        <TextField fx:id="filePathField" editable="false" promptText="No file selected" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" HBox.hgrow="ALWAYS" />
+                                        <TextField fx:id="filePathField" editable="false" promptText="No file selected" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" HBox.hgrow="ALWAYS" />
                                         <Button id="bid" fx:id="browseButton" minWidth="60" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Browse" textFill="#FFFFFF">
                                             <padding>
                                                 <Insets bottom="4" left="8" right="8" top="4" />
                                             </padding>
+                                            <font>
+                                                <Font name="Gill Sans MT Bold" size="13.0" />
+                                            </font>
                                         </Button>
                                     </HBox>
 
                                     <HBox alignment="CENTER_LEFT" spacing="8">
                                         <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Save to:" textFill="#8596A0" />
-                                        <TextField fx:id="saveLocationField" editable="false" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF;" text="C:\" HBox.hgrow="ALWAYS" />
+                                        <TextField fx:id="saveLocationField" editable="false" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF;" text="C:\" HBox.hgrow="ALWAYS" />
                                         <Button id="bid" fx:id="changeSaveLocationButton" minWidth="60" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Change" textFill="#FFFFFF">
                                             <padding>
                                                 <Insets bottom="4" left="8" right="8" top="4" />
                                             </padding>
+                                            <font>
+                                                <Font name="Gill Sans MT Bold" size="13.0" />
+                                            </font>
                                         </Button>
                                     </HBox>
 
-                                    <ProgressBar fx:id="fileTransferProgress" maxWidth="Infinity" progress="0.75" style="-fx-accent: #00A884; -fx-background-radius: 0;" HBox.hgrow="ALWAYS" />
+                                    <ProgressBar fx:id="fileTransferProgress" maxWidth="Infinity" progress="0.0" style="-fx-accent: #00A884; -fx-background-radius: 0;" HBox.hgrow="ALWAYS" />
                                     <FlowPane hgap="12" vgap="4">
-                                        <Label fx:id="fileSizeLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Size: 1.5 MB" textFill="#8596A0" />
-                                        <Label fx:id="packetsLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Packets: 150/200" textFill="#8596A0" />
-                                        <Label fx:id="delayLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Delay: 45ms" textFill="#8596A0" />
-                                        <Label fx:id="jitterLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Jitter: 5ms" textFill="#8596A0" />
+                                        <Label fx:id="fileSizeLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Size: " textFill="#8596A0" />
+                                        <Label fx:id="packetsLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Packets:" textFill="#8596A0" />
+                                        <Label fx:id="delayLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Delay: " textFill="#8596A0" />
+                                        <Label fx:id="jitterLabel" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Jitter:" textFill="#8596A0" />
                                     </FlowPane>
                                 </VBox>
                             </content>
                         </TitledPane>
-                  <HBox alignment="CENTER" prefHeight="27.0" prefWidth="423.0">
-                     <children>
-                        <Label alignment="TOP_CENTER" text="TCP Server IP:">
-                           <HBox.margin>
-                              <Insets right="20.0" />
-                           </HBox.margin>
-                        </Label>
-                        <TextField fx:id="serverIpField" prefHeight="27.0" prefWidth="115.0" promptText="Server IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;">
-                           <HBox.margin>
-                              <Insets right="90.0" />
-                           </HBox.margin>
-                        </TextField>
-                        <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="92.0" text="TCP Server Port:">
-                           <HBox.margin>
-                              <Insets right="20.0" />
-                           </HBox.margin>
-                        </Label>
-                        <TextField fx:id="serverPortField" prefHeight="27.0" prefWidth="115.0" promptText="Server Port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" />
-                        <Button id="bid" fx:id="TCPConnectButton" maxHeight="27.0" minHeight="27.0" minWidth="70" onAction="#handleTCPConnectButton" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Connect" textFill="#FFFFFF">
-                           <padding>
-                              <Insets bottom="6" left="8" right="8" top="6" />
-                           </padding>
-                           <HBox.margin>
-                              <Insets left="24.0" />
-                           </HBox.margin>
-                        </Button>
-                     </children>
-                  </HBox>
+                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="423.0">
+                            <children>
+                                <Label alignment="TOP_CENTER" text="TCP Server IP:">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="serverIpField" prefHeight="27.0" prefWidth="115.0" promptText="Server IP" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;">
+                                    <HBox.margin>
+                                        <Insets right="90.0" />
+                                    </HBox.margin>
+                                </TextField>
+                                <Label alignment="TOP_CENTER" prefHeight="18.0" prefWidth="92.0" text="TCP Server Port:">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="serverPortField" prefHeight="27.0" prefWidth="115.0" promptText="Server Port" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #FFFFFF;" />
+                                <Button id="bid" fx:id="TCPConnectButton" maxHeight="27.0" minHeight="27.0" minWidth="70" onAction="#handleTCPConnectButton" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #00A884;" stylesheets="@style.css" text="Connect" textFill="#FFFFFF">
+                                    <padding>
+                                        <Insets bottom="6" left="8" right="8" top="6" />
+                                    </padding>
+                                    <HBox.margin>
+                                        <Insets left="24.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Gill Sans MT Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
                     </VBox>
                 </Tab>
 
@@ -191,20 +233,26 @@
                     <VBox spacing="10" style="-fx-padding: 12; -fx-background-color: #121B22;" VBox.vgrow="ALWAYS">
                         <Label style="-fx-font-size: 14; -fx-font-weight: bold; -fx-font-family: 'Lato', sans-serif;" text="Archived Messages" textFill="#8596A0" />
                         <ListView fx:id="archiveListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22; -fx-text-fill: #FFFFFF;" VBox.vgrow="ALWAYS" />
-                  <HBox spacing="8">
-                     <children>
-                        <Button id="bid" fx:id="recoverSelectedButton" minWidth="60" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Recover" textFill="#FFFFFF">
-                           <padding>
-                              <Insets bottom="6" left="8" right="8" top="6" />
-                           </padding>
-                        </Button>
-                        <Button id="bid" fx:id="recoverAllButton" minWidth="70" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Recover All" textFill="#FFFFFF">
-                           <padding>
-                              <Insets bottom="6" left="8" right="8" top="6" />
-                           </padding>
-                        </Button>
-                     </children>
-                  </HBox>
+                        <HBox spacing="8">
+                            <children>
+                                <Button id="bid" fx:id="recoverSelectedButton" minWidth="60" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Recover" textFill="#FFFFFF">
+                                    <padding>
+                                        <Insets bottom="6" left="8" right="8" top="6" />
+                                    </padding>
+                                    <font>
+                                        <Font name="Gill Sans MT Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button id="bid" fx:id="recoverAllButton" minWidth="70" style="-fx-background-color: #2A3942;" stylesheets="@style.css" text="Recover All" textFill="#FFFFFF">
+                                    <padding>
+                                        <Insets bottom="6" left="8" right="8" top="6" />
+                                    </padding>
+                                    <font>
+                                        <Font name="Gill Sans MT Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
                     </VBox>
                 </Tab>
             </TabPane>

@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.InetAddress;
 import java.net.URL;
 import java.net.UnknownHostException;
@@ -175,4 +176,62 @@ public class TcpServerController implements Initializable {
             }
         }
     }
+
+    // Add a new user
+    @FXML
+    private Button addUserButton;
+    @FXML
+    private TextField usernameField;
+    @FXML
+    private TextField passwordField;
+
+    @FXML
+    public void addNewUser() {
+        String username = usernameField.getText().trim().toLowerCase();
+        String password = passwordField.getText().trim();
+
+        if (username.isEmpty() || password.isEmpty()) {
+            showAlert("Username and password cannot be empty");
+            return;
+        }
+
+        try {
+            String filePath = "src/main/resources/com/mycompany/chatroom/mock_login.txt";
+
+            java.util.List<String> lines = new ArrayList<>();
+
+            java.io.File file = new java.io.File(filePath);
+            if (file.exists()) {
+                lines = java.nio.file.Files.readAllLines(java.nio.file.Paths.get(filePath));
+            } else {
+                file.getParentFile().mkdirs();
+            }
+
+            for (String line : lines) {
+                String existingUsername = line.split(" ")[0];
+                if (existingUsername.equalsIgnoreCase(username)) {
+                    showAlert("Username already exists");
+                    return;
+                }
+            }
+
+
+            try (java.io.FileWriter writer = new java.io.FileWriter(file, true)) {
+                if (!lines.isEmpty() && !lines.get(lines.size() - 1).isEmpty()) {
+                    writer.write("\n");
+                }
+                writer.write(username + " " + password);
+            }
+
+            showAlert("User " + username + " added successfully");
+
+            usernameField.clear();
+            passwordField.clear();
+
+        } catch (java.io.IOException e) {
+            showAlert("Error adding user: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
 }
