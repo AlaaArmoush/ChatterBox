@@ -892,7 +892,7 @@ public class ChatController implements Initializable {
 
     private void resetInactivityTimer(Event event) {
         inactivityTimer.playFromStart();
-        setStatusActive();
+       // setStatusActive();
     }
 
     private void setStatusAway() {
