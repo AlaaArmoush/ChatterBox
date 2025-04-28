@@ -215,7 +215,9 @@ public class ChatController implements Initializable {
                 });
             });
             chatClient.start();
-
+            chatClient.setTransferStatusUpdater(progress ->
+                    Platform.runLater(() -> updateFileTransferProgress(progress))
+            );
             System.out.println("Started UDP client on port " + port);
 
         } catch (NumberFormatException ex) {
@@ -402,11 +404,16 @@ public class ChatController implements Initializable {
     }
 
     private void changeSaveLocation() {
-        DirectoryChooser directoryChooser = new DirectoryChooser();
-        directoryChooser.setTitle("Select Save Location");
-        File directory = directoryChooser.showDialog(null);
-        if (directory != null) {
-            saveLocationField.setText(directory.getAbsolutePath());
+        DirectoryChooser chooser = new DirectoryChooser();
+        chooser.setTitle("Select Save Location");
+        File dir = chooser.showDialog(null);
+        if (dir != null) {
+            String path = dir.getAbsolutePath();
+            saveLocationField.setText(path);
+            if (chatClient != null) {
+                chatClient.setSaveLocation(path);
+                showAlert("Save location updated to:\n" + path);
+            }
         }
     }
 
@@ -779,7 +786,7 @@ public class ChatController implements Initializable {
         }
     }
 
-    private void updateFileTransferProgress(UDPPeer.FileTransferProgress progress) {
+    private void updateFileTransferProgress(FileTransferManager.FileTransferProgress progress) {
         fileTransferProgress.setProgress(progress.progress / 100.0);
 
         if (progress.isIncoming) {
