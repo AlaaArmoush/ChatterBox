@@ -22,7 +22,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane minHeight="400" minWidth="600" prefHeight="800.0" style="-fx-background-color: #121B22;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.chatroom.ChatController">
+<BorderPane fx:id="chatRoot" minHeight="400" minWidth="600" prefHeight="800.0" style="-fx-background-color: #121B22;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.chatroom.ChatController">
 
     <top>
         <VBox spacing="5">
@@ -31,7 +31,7 @@
                 <Region HBox.hgrow="ALWAYS" />
                 <HBox alignment="CENTER_RIGHT" spacing="8">
                     <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Status:" textFill="#FFFFFF" />
-                    <ComboBox fx:id="statusComboBox" minWidth="80" prefWidth="100" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF;" />
+                    <ComboBox fx:id="statusComboBox" minWidth="80" onAction="#handleStatusComboBox" prefWidth="100" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF;" />
                     <Button id="logout" fx:id="logoutButton" style="-fx-background-color: #00A884; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" stylesheets="@style.css" text="Logout">
                         <padding>
                             <Insets bottom="4" left="8" right="8" top="4" />
