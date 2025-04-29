@@ -40,6 +40,7 @@ import javafx.util.Duration;
 
 
 public class ChatController implements Initializable {
+    private static final Logger logger = Logger.getInstance();
 
     @FXML
     private ComboBox<String> statusComboBox;
@@ -126,6 +127,8 @@ public class ChatController implements Initializable {
         } catch (UnknownHostException e) {
             sourceIpField.setText("127.0.0.1");
         }
+        logger.info("ChatController initializing for user=" + username);
+
         startTimer();
         statusComboBox.getSelectionModel().select("Active");
         statusComboBox.getItems().addAll("Active","Away","Busy");
@@ -234,6 +237,8 @@ public class ChatController implements Initializable {
             chatClient.setTransferStatusUpdater(progress ->
                     Platform.runLater(() -> updateFileTransferProgress(progress))
             );
+
+            logger.info("UDP client started on port " + port);
             System.out.println("Started UDP client on port " + port);
 
         } catch (NumberFormatException ex) {
@@ -253,6 +258,7 @@ public class ChatController implements Initializable {
         try {
             String destIp = destIpField.getText();
             int destPort = Integer.parseInt(destPortField.getText());
+            logger.info("User sending message: " + message);
             chatClient.sendMessage(message, destIp, destPort);
             messageInput.clear();
         } catch (NumberFormatException e) {
@@ -326,6 +332,7 @@ public class ChatController implements Initializable {
             try {
                 String destIp = destIpField.getText();
                 int destPort = Integer.parseInt(destPortField.getText());
+                logger.info("Deleting selected message with id=" + removedMessage.getMessageId());
                 chatClient.sendCommand(
                         "DELETE_MESSAGE|" + removedMessage.getMessageId(),
                         destIpField.getText(),
@@ -345,6 +352,7 @@ public class ChatController implements Initializable {
             int destPort = Integer.parseInt(destPortField.getText());
 
             for (UDPPeer.Message message : messageHistory) {
+                logger.info("Deleting all messages, count=" + messageHistory.size());
                 chatClient.sendCommand("DELETE_MESSAGE|" + message.getMessageId(), destIp, destPort);
                 archiveMessage(message);
             }
@@ -392,6 +400,7 @@ public class ChatController implements Initializable {
             );
             File file = fileChooser.showSaveDialog(null);
             if (file != null) {
+                logger.info("Exporting chat history to " + file.getAbsolutePath());
                 FileWriter writer = new FileWriter(file);
                 for (UDPPeer.Message message : messageHistory) {
                     writer.write(message.toString() + "\n");
@@ -411,6 +420,7 @@ public class ChatController implements Initializable {
         if (file != null) {
             filePathField.setText(file.getAbsolutePath());
             try {
+                logger.info("File selected for send: " + file.getAbsolutePath());
                 long size = Files.size(Paths.get(file.getAbsolutePath()));
                 fileSizeLabel.setText("Size: " + formatFileSize(size));
             } catch (IOException e) {
@@ -569,6 +579,8 @@ public class ChatController implements Initializable {
             String serverIp = serverIpField.getText();
             int serverPort = Integer.parseInt(serverPortField.getText());
 
+
+
             startUDPClient();
             chatClient.setIp(sourceIpField.getText());
             chatClient.connectToTCPServer(serverIp, serverPort, username,
@@ -639,18 +651,15 @@ public class ChatController implements Initializable {
         if (destData.length >= 3)
         {
             String username = destData[0];
-            String destIp = destData[1];
-            String destPort = destData[2];
+            String destIp = destData[2];
+            String destPort = destData[3];
 
             destIpField.setText(destIp);
             destPortField.setText(destPort);
             messageInput.setPromptText("Message to " + username + ".....");
 
         }
-
         messageInput.setPromptText("Type Message...");
-
-
 
     }
 
@@ -659,6 +668,7 @@ public class ChatController implements Initializable {
         String messageText = messageInput.getText();
         if (messageText != null && !messageText.isEmpty()) {
             chatClient.sendMessageToServer(messageText);
+            System.out.println("Sending message to server: " + messageText);
             messageInput.clear();
         }
     }
@@ -796,7 +806,7 @@ public class ChatController implements Initializable {
             fileSizeLabel.setText("Preparing to send...");
 
             chatClient.setSaveLocation(saveLocationField.getText());
-
+            logger.info("Sending file: " + filePath + " to " + destIp + ":" + destPort);
             boolean success = chatClient.sendFile(filePath, destIp, destPort);
             if (!success) {
                 showAlert("Failed to start file transfer. Please check the file path.");
@@ -827,6 +837,7 @@ public class ChatController implements Initializable {
             if (progress.isIncoming) {
                 fileSizeLabel.setText("Received: " + formatFileSize(progress.totalBytes));
             } else {
+                logger.info("File transfer progress update: " + progress.filename + " " + progress.progress + "%");
                 fileSizeLabel.setText("Sent: " + formatFileSize(progress.totalBytes));
             }
 
@@ -885,18 +896,23 @@ public class ChatController implements Initializable {
     private void setupInactivityCheck() {
         inactivityTimer = new PauseTransition(Duration.seconds(INACTIVITY_TIMEOUT));
         inactivityTimer.setOnFinished(event -> setStatusAway());
+        if (!"Away".equals(statusComboBox.getValue())) {
+            chatRoot.addEventFilter(MouseEvent.ANY, this::resetInactivityTimer);
+            chatRoot.addEventFilter(KeyEvent.ANY, this::resetInactivityTimer);
+        }
 
-        chatRoot.addEventFilter(MouseEvent.ANY, this::resetInactivityTimer);
-        chatRoot.addEventFilter(KeyEvent.ANY, this::resetInactivityTimer);
     }
 
     private void resetInactivityTimer(Event event) {
         inactivityTimer.playFromStart();
-       // setStatusActive();
+        if (!"Busy".equals(statusComboBox.getValue())) {
+            setStatusActive();
+        }
     }
 
+
     private void setStatusAway() {
-        if (chatClient != null) {
+        if (chatClient != null  ){
             chatClient.sendStatusUpdate("Away");
             statusComboBox.setValue("Away");
         }
@@ -909,12 +925,5 @@ public class ChatController implements Initializable {
 
         }
     }
-
-
-
-
-
-
-
 
 }

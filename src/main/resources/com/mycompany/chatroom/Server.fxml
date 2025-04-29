@@ -39,7 +39,7 @@
                      </Button>
                   </HBox>
 
-                  <TitledPane fx:id="connectedUsersPane" animated="true" expanded="true" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" stylesheets="@style.css" text="Connected Users" textFill="#8596A0" VBox.vgrow="ALWAYS">
+                  <TitledPane fx:id="connectedUsersPane" animated="true" expanded="true" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 10px; -fx-background-color: #1F2C34; -fx-border-radius: 10px; -fx-border-color: #374248;" stylesheets="@style.css" text="Connected Users" textFill="#8596A0" VBox.vgrow="ALWAYS">
                      <content>
                         <VBox prefHeight="413.0" prefWidth="721.0" style="-fx-background-color: #1F2C34; -fx-border-color: #374248;">
                            <ListView fx:id="connectedUsersListView" style="-fx-background-color: #121B22; -fx-background-radius: 0; -fx-border-radius: 0; -fx-border-color: #374248; -fx-control-inner-background: #121B22; -fx-control-inner-background-alt: #121B22; -fx-text-fill: #FFFFFF;" VBox.vgrow="ALWAYS" />
@@ -52,7 +52,7 @@
          <Tab closable="false" text="Add Users">
             <content>
                <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #121B22;">
-                  <TitledPane collapsible="false" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-background-color: #1F2C34; -fx-border-radius: 0; -fx-border-color: #374248;" stylesheets="@style.css" text="Add New User" textFill="#8596A0">
+                  <TitledPane collapsible="false" style="-fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-text-fill: #FFFFFF; -fx-background-radius: 10; -fx-background-color: #1F2C34; -fx-border-radius: 10; -fx-border-color: #374248;" stylesheets="@style.css" text="Add New User" textFill="#8596A0">
                      <content>
                         <VBox spacing="15" style="-fx-background-color: #1F2C34; -fx-padding: 15;">
                            <HBox alignment="CENTER_LEFT" spacing="10">
