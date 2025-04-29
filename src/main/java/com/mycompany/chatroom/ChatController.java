@@ -11,12 +11,18 @@ import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import javafx.animation.PauseTransition;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -30,6 +36,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 public class ChatController implements Initializable {
@@ -120,15 +127,22 @@ public class ChatController implements Initializable {
             sourceIpField.setText("127.0.0.1");
         }
         startTimer();
-        statusComboBox.setItems(FXCollections.observableArrayList("Active", "Busy", "Away"));
         statusComboBox.getSelectionModel().select("Active");
+        statusComboBox.getItems().addAll("Active","Away","Busy");
+        statusComboBox.setOnAction(e -> handleStatusComboBox());
         saveLocationField.setText(System.getProperty("user.home"));
         updateSessionTime();
         messageListView.setItems(messages);
         archiveListView.setItems(archivedMessages);
+
+        ChatBubbleFactory.applyChatBubbleStyle(messageListView);
+        ChatBubbleFactory.applyChatBubbleStyle(archiveListView);
+
         setupButtonActions();
         archiveCleanupService = Executors.newSingleThreadScheduledExecutor();
         directMessaging();
+        setupInactivityCheck();
+
         setupFileTransferUI();
     }
 
@@ -215,6 +229,8 @@ public class ChatController implements Initializable {
                 });
             });
             chatClient.start();
+            chatClient.setAsActive();
+
             chatClient.setTransferStatusUpdater(progress ->
                     Platform.runLater(() -> updateFileTransferProgress(progress))
             );
@@ -580,7 +596,10 @@ public class ChatController implements Initializable {
                     List<String> users = chatClient.getConnectedUsers();
                     userListView.getItems().clear();
                     for (String user : users) {
-                        userListView.getItems().add(formatForUserList(user));
+                        String formattedUser = formatForUserList(user);
+                        if (formattedUser != null) {
+                            userListView.getItems().add(formattedUser);
+                        }
                     }
                 });
             }
@@ -591,16 +610,19 @@ public class ChatController implements Initializable {
 
     private String formatForUserList(String connectionString) {
         String[] parts = connectionString.split("\\|");
-        if (parts.length >= 4) {
+
+        if (parts.length >= 6) {
             String ip = parts[1];
             String udpPort = parts[2];
             String username = parts[3];
+            String status = statusComboBox.getValue();
 
-            return username + "|" + ip + "|" + udpPort + "|";
+
+            return username + "|" + status + "|" + ip + "|"+udpPort;
+
         }
         return connectionString;
     }
-
     public void directMessaging()
     {
         userListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
@@ -827,5 +849,72 @@ public class ChatController implements Initializable {
 
         }
     }
+
+
+    @FXML
+    private void handleStatusComboBox() {
+        String status = statusComboBox.getValue();
+        if (chatClient != null) {
+            if (status.equals("Active")) {
+                chatClient.setAsActive();
+                if (chatClient.getTcpSocket() != null && chatClient.getTcpSocket().isConnected()) {
+                    chatClient.sendStatusUpdate("Active");
+                }
+            } else if (status.equals("Away")) {
+                chatClient.setAsAway();
+                if (chatClient.getTcpSocket() != null && chatClient.getTcpSocket().isConnected()) {
+                    chatClient.sendStatusUpdate("Away");
+                }
+            } else if (status.equals("Busy")) {
+                chatClient.setAsBusy();
+                if (chatClient.getTcpSocket() != null && chatClient.getTcpSocket().isConnected()) {
+                    chatClient.sendStatusUpdate("Busy");
+                }
+
+            }
+        }
+    }
+    //******************AFK
+    private PauseTransition inactivityTimer;
+    private static final int INACTIVITY_TIMEOUT = 10;
+
+    @FXML
+    private BorderPane chatRoot;
+
+
+    private void setupInactivityCheck() {
+        inactivityTimer = new PauseTransition(Duration.seconds(INACTIVITY_TIMEOUT));
+        inactivityTimer.setOnFinished(event -> setStatusAway());
+
+        chatRoot.addEventFilter(MouseEvent.ANY, this::resetInactivityTimer);
+        chatRoot.addEventFilter(KeyEvent.ANY, this::resetInactivityTimer);
+    }
+
+    private void resetInactivityTimer(Event event) {
+        inactivityTimer.playFromStart();
+       // setStatusActive();
+    }
+
+    private void setStatusAway() {
+        if (chatClient != null) {
+            chatClient.sendStatusUpdate("Away");
+            statusComboBox.setValue("Away");
+        }
+    }
+
+    private void setStatusActive() {
+        if (chatClient != null) {
+            chatClient.sendStatusUpdate("Active");
+            statusComboBox.setValue("Active");
+
+        }
+    }
+
+
+
+
+
+
+
 
 }

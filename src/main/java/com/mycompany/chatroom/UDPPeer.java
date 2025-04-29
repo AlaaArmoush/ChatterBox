@@ -304,6 +304,8 @@ public class UDPPeer {
     public void setIp(String ip) {
         this.myIp = ip;
     }
+    private int ClientPort;
+
 
     public void connectToTCPServer(String serverIp, int serverPort, String username, int clientPort) {
         LocalTime connectTime = LocalTime.now();
@@ -318,15 +320,14 @@ public class UDPPeer {
             if (username != null && !username.trim().isEmpty()) {
                 myUsername = username;
             }
-
-            String connectMessage = "CONNECT" + "|" + myIp + "|" + clientPort + "|" + myUsername + "| At:" + connectTime.format(formatter);
+            ClientPort=clientPort;
+            String connectMessage = "CONNECT" + "|" + myIp + "|" + clientPort + "|" + myUsername +"|" + userStatus + "|At:" + connectTime.format(formatter);
             ClientStatus = connectMessage;
             fromClient.println(connectMessage);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
     public String getConnectionInfo() {
         return "CONNECT|" + myIp + ":" + tcpSocket.getLocalPort() + "|" + myUsername;
     }
@@ -403,6 +404,27 @@ public class UDPPeer {
 
     public boolean sendFile(String filePath, String destinationIP, int destinationPort) {
         return fileTransferManager.sendFile(filePath, destinationIP, destinationPort);
+    }
+    //*****************************************STATUS******************
+    private String userStatus;
+
+
+    public void setAsActive()
+    {userStatus="Active";}
+    public void setAsBusy()
+    {userStatus="Busy";}
+    public void setAsAway()
+    {userStatus="Away";}
+
+    public String getUserStatus() {
+        return userStatus;
+    }
+
+    public void sendStatusUpdate(String status) {
+        if (fromClient != null) {
+            this.userStatus = status;
+            fromClient.println("STATUS_UPDATE|" + "|" + myIp + "|" + ClientPort + "|" + myUsername +"|" + userStatus );
+        }
     }
 
 }
