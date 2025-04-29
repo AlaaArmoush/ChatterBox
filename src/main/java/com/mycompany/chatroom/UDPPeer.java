@@ -21,6 +21,7 @@ import java.util.function.Consumer;
 
 
 public class UDPPeer {
+    private static final Logger logger = Logger.getInstance();
 
     private int sourcePort;
     private DatagramSocket socket;
@@ -40,6 +41,7 @@ public class UDPPeer {
 
     public void start() {
         try {
+            logger.info("Starting UDPPeer on port " + sourcePort);
             socket = new DatagramSocket(sourcePort);
             running = true;
 
@@ -59,6 +61,7 @@ public class UDPPeer {
     }
 
     public void stop() {
+        logger.info("Stopping UDPPeer");
         running = false;
         if (socket != null && !socket.isClosed()) {
             socket.close();
@@ -103,18 +106,31 @@ public class UDPPeer {
                         );
                         messageReceiver.accept(msg);
                         continue;
+                    } else if (parts.length == 2) {
+                        Message msg = new Message(
+                                parts[1],
+                                parts[0],
+                                timestamp,
+                                false
+                        );
+                        messageReceiver.accept(msg);
+                        continue;
                     }
                 }
 
                 int sep = receivedData.indexOf(' ');
-                String sender, content, messageId;
+                String sender;
+                String content;
+                String messageId;
                 if (sep > 0) {
                     sender    = receivedData.substring(0, sep);
                     content   = receivedData.substring(sep + 1);
                     messageId = sender + "-" + timestamp.replace(" ", "").replace(":", "");
                 } else {
-                    sender    = "Guest";
-                    content   = receivedData;
+                    int splitIndex = receivedData.indexOf("|");
+                    sender    = receivedData.substring(1, splitIndex);
+                    sender    = sender.substring(0, 1).toUpperCase() + sender.substring(1);
+                    content   = receivedData.substring(splitIndex);
                     messageId = senderAddress + "-" + timestamp.replace(" ", "").replace(":", "");
                 }
 
@@ -135,6 +151,8 @@ public class UDPPeer {
 
 
     private void handleCommand(String command, String sender, String senderIP, int senderPort, byte[] rawData) {
+        logger.info("Handling command: " + command + " from " + sender);
+
         if (command.startsWith("DELETE_MESSAGE|")) {
             String[] parts = command.split("\\|");
             if (parts.length >= 2) {
@@ -194,6 +212,7 @@ public class UDPPeer {
             byte[] data = transmissionFormat.getBytes();
             InetAddress address = InetAddress.getByName(destinationIP);
             DatagramPacket packet = new DatagramPacket(data, data.length, address, destinationPort);
+            logger.info("Sending message to " + destinationIP + ":" + destinationPort + " – content=" + content);
             socket.send(packet);
 
             Message message = new Message(content, "Me", timestamp, true, messageId);
@@ -225,6 +244,7 @@ public class UDPPeer {
                     InetAddress.getByName(destIp),
                     destPort
             );
+            logger.info("Sending command: " + command + " to " + destIp + ":" + destPort);
             socket.send(packet);
         } catch (IOException e) {
             e.printStackTrace();
@@ -373,8 +393,7 @@ public class UDPPeer {
                             String timestamp = parts[3];
                             String content   = parts[4];
 
-                            // REMOVE this part!
-                            // if (sender.equals(myUsername)) continue;
+                             if (sender.equals(myUsername)) continue;
 
                             Message chatMsg = new Message(content, sender, timestamp, false, messageId);
                             messageReceiver.accept(chatMsg);
@@ -405,6 +424,7 @@ public class UDPPeer {
     public boolean sendFile(String filePath, String destinationIP, int destinationPort) {
         return fileTransferManager.sendFile(filePath, destinationIP, destinationPort);
     }
+
     //*****************************************STATUS******************
     private String userStatus;
 

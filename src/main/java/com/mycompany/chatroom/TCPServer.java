@@ -66,15 +66,7 @@ public class TCPServer
         });
     }
 
-    public boolean isRunning() {
-        return running;
-    }
-
     private List<String> clientsInfo = new ArrayList<>();
-
-    private ArrayList<UDPPeer> allConnectedClients = new ArrayList<>();
-
-
 
 
     public List<String> getClientsInfo() {
@@ -90,7 +82,7 @@ public class TCPServer
 
                 String receivedMessage;
                 while ((receivedMessage = clientReader.readLine()) != null) {
-                    System.out.println("Client: " + receivedMessage);
+                   // System.out.println("Client: " + receivedMessage);
 
                     if (receivedMessage.startsWith("CONNECT")) {
                         clientSocketMap.put(clientSocket, receivedMessage);
@@ -128,7 +120,12 @@ public class TCPServer
         for (String clientInfo : clientsInfo) {
             if (clientInfo.startsWith("CONNECT")) {
                 String[] clientParts = clientInfo.split("\\|");
-                if (clientParts.length >= 4) {
+                /*
+                for(int i = 0; i < clientParts.length; i++){
+                    System.out.println("Index " + i + ": " + clientParts[i]);
+                }*/
+
+                if (clientParts.length >= 6) {
                     String clientIp = clientParts[1];
                     try {
                         int udpPort = Integer.parseInt(clientParts[2]);
@@ -157,7 +154,6 @@ public class TCPServer
             }
         }
     }
-
     private void handleClientDisconnect(Socket socket) {
         String clientInfo = clientSocketMap.get(socket);
         if (clientInfo != null) {
@@ -197,7 +193,4 @@ public class TCPServer
             }
         }
     }
-
-
-
 }

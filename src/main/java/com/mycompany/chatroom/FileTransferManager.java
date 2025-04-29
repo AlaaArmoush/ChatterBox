@@ -18,6 +18,7 @@ public class FileTransferManager {
     private Consumer<FileTransferProgress> transferStatusUpdater;
     private Consumer<UDPPeer.Message> messageReceiver;
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final Logger logger = Logger.getInstance();
 
     public FileTransferManager(DatagramSocket socket, Consumer<UDPPeer.Message> messageReceiver) {
         this.socket = socket;
@@ -37,6 +38,7 @@ public class FileTransferManager {
         public long e2eDelay;
         public long jitter;
     }
+
     public static class FileTransferInfo {
         File file;
         FileOutputStream outputStream;
@@ -103,6 +105,7 @@ public class FileTransferManager {
             }
 
             String transferId = UUID.randomUUID().toString();
+            logger.info("Initiating file transfer: " + file.getName() + " (" + file.length() + " bytes) to " + destinationIP + ":" + destinationPort);
             System.out.println("Starting file transfer: " + file.getName() + " to " + destinationIP + ":" + destinationPort);
 
             String initMessage = "CMD:FILE_INIT|" + transferId + "|" + file.getName() + "|" + file.length();
@@ -149,6 +152,7 @@ public class FileTransferManager {
                         transferInfo.senderPort
                 );
                 socket.send(packet);
+                logger.info("Sent chunk #" + chunkNum + " size=" + bytesRead + " for transfer " + transferInfo.transferId);
                 System.out.println("Sent chunk " + chunkNum + " of size " + bytesRead);
 
                 updateProgress(transferInfo, false);
@@ -162,7 +166,9 @@ public class FileTransferManager {
                     InetAddress.getByName(transferInfo.senderIp),
                     transferInfo.senderPort
             );
+
             socket.send(packet);
+            logger.info("Completed file transfer: " + transferInfo.filename + " transferId=" + transferInfo.transferId);
             System.out.println("Sent file end message for: " + transferInfo.filename);
 
             transferInfo.inputStream.close();
@@ -242,6 +248,7 @@ public class FileTransferManager {
             String filename = parts[2];
             long fileSize = Long.parseLong(parts[3]);
 
+            logger.info("Received FILE_INIT for " + filename + " (" + fileSize + " bytes) from " + senderIP + ":" + senderPort);
             System.out.println("Received file initiation: " + filename + " (" + formatFileSize(fileSize) + ")");
 
             FileTransferInfo transferInfo = new FileTransferInfo(transferId, filename, fileSize, senderIP, senderPort);
@@ -299,6 +306,7 @@ public class FileTransferManager {
                     return;
                 pipePositions[i] = currentPos;
             }
+
             String transferId = headerStr.substring(pipePositions[0] + 1, pipePositions[1]);
             int chunkNum = Integer.parseInt(headerStr.substring(pipePositions[1] + 1, pipePositions[2]));
             int chunkSize = Integer.parseInt(headerStr.substring(pipePositions[2] + 1, pipePositions[3]));
@@ -314,6 +322,7 @@ public class FileTransferManager {
                 transferInfo.receivedFlags[chunkNum] = true;
                 transferInfo.currentChunk++;
 
+                logger.info("Received chunk #" + chunkNum + " size=" + chunkSize + " for file " + transferInfo.filename);
                 System.out.println("Received chunk " + chunkNum + " of size " + chunkSize + " for file: " + transferInfo.filename);
 
                 updateProgress(transferInfo, true);
@@ -363,6 +372,7 @@ public class FileTransferManager {
                             senderPort
                     );
                     socket.send(packet);
+                    logger.info("Received FILE_END for " + transferInfo.filename + ", assembling file");
                     System.out.println("Sent complete ACK for file: " + transferInfo.filename);
 
                     String content = "File received: " + transferInfo.filename + " saved to " + outputFile.getAbsolutePath();
@@ -382,6 +392,7 @@ public class FileTransferManager {
     }
 
     private void handleFileAck(String command) {
+
         String[] parts = command.split("\\|");
         if (parts.length >= 2) {
             String transferId = parts[1];
@@ -391,7 +402,7 @@ public class FileTransferManager {
             if (transferInfo != null) {
                 System.out.println("Received file ACK for: " + transferInfo.filename +
                         (isComplete ? " (COMPLETE)" : ""));
-
+                logger.info("Received FILE_ACK for transferId=" + transferId + (isComplete? " COMPLETE":""));
                 if (isComplete) {
                     String content = "File sent successfully: " + transferInfo.filename;
                     UDPPeer.Message fileMessage = new UDPPeer.Message(content, "SYSTEM",

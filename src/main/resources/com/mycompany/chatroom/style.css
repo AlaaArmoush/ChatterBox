@@ -4,8 +4,8 @@
     -fx-padding: 0;
     -fx-border-width: 0;
     -fx-opacity: 0;
-    -fx-max-width: 0; 
-    -fx-max-height: 0; 
+    -fx-max-width: 0;
+    -fx-max-height: 0;
 }
 
 /* Button hover effects */
@@ -89,4 +89,72 @@
 .list-view .scroll-bar .decrement-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
+}
+
+
+.titled-pane > .title {
+    -fx-background-color: #00A884;
+    -fx-background-radius: 10 10 0 0; /* Rounded top corners only */
+    -fx-padding: 8;
+}
+
+.titled-pane > . {
+    -fx-background-color: #00A884;
+    -fx-background-radius: 10 10 0 0; /* Rounded top corners only */
+    -fx-padding: 8;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #1F2C34;
+    -fx-border-color: #374248;
+    /* top-left, top-right, bottom-right, bottom-left */
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-border-radius:     0 0 10px 10px;
+}
+
+.combo-box {
+    -fx-background-color: #2A3942;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #2A3942;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #00A884;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #2A3942;
+    -fx-border-color: transparent;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-padding: 0;
+    -fx-background-insets: 100;
+    -fx-background-color: transparent;
+}
+
+
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
 }
