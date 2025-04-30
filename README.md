@@ -61,7 +61,6 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 
 - **Java 17+ & JavaFX** – Core language and UI framework.
 - **Maven** – Project build, dependency management, and lifecycle.
-- **JUnit 5** – Unit testing for controllers and network models.
 - **FXML & CSS** – Declarative UI and theming.
 
 ## Getting Started
@@ -101,21 +100,7 @@ $ mvn exec:java -Dexec.mainClass="com.mycompany.chatroom.App"
    - For Group: Start or join TCP server in **Server** mode.  
 3. **Chat**: Send messages, files, change status, delete/recover messages.  
 4. **Export**: Save conversation history via **Export Chat** button.
-
-## Contributing
-
-Contributions are welcome! Please fork the repo and submit a pull request:
-
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
+ 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for details.
-
----
-
-*Enjoy chatting with ChatterBox!*
+Distributed under the MIT License. 
