@@ -443,7 +443,7 @@ public class UDPPeer {
     public void sendStatusUpdate(String status) {
         if (fromClient != null) {
             this.userStatus = status;
-            fromClient.println("STATUS_UPDATE|" + "|" + myIp + "|" + ClientPort + "|" + myUsername +"|" + userStatus );
+            fromClient.println("STATUS_UPDATE|" + "|" + myIp + "|" + ClientPort + "|" + myUsername + "|" + status);
         }
     }
 

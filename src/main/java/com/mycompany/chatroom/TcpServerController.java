@@ -85,30 +85,24 @@ public class TcpServerController implements Initializable {
         }, 0, 2000); // Check every 2 seconds
     }
 
+
     private void refreshClientsList() {
         if (tcpServer == null) return;
 
-        // Create a new list of all active connections
         List<String> activeConnections = new ArrayList<>();
         List<String> clientsInfo = tcpServer.getClientsInfo();
 
+        connectedUsersListView.getItems().clear();
 
         if (clientsInfo != null) {
             for (String info : clientsInfo) {
-                // Process disconnect events
                 if (info.startsWith("DISCONNECT|")) {
-                    String clientInfoToRemove = info.substring("DISCONNECT|".length());
-                    connectedUsersListView.getItems().remove(clientInfoToRemove);
                     continue;
                 }
 
-                // Add connect events if they're not already in the list
-                if (info.startsWith("CONNECT") && !connectedUsersListView.getItems().contains(info)) {
-                    connectedUsersListView.getItems().add(info);
-                }
-
-                // Keep track of active connections
+                // Add connect events
                 if (info.startsWith("CONNECT")) {
+                    connectedUsersListView.getItems().add(info);
                     activeConnections.add(info);
                 }
             }

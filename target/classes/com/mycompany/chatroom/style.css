@@ -90,6 +90,47 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+.list-view {
+    -fx-background-color: #121B22;
+    -fx-background-insets: 0;
+    -fx-padding: 5;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 10;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar styling */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: #121B22;
+    -fx-border-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #2A3942;
+    -fx-background-radius: 5em;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Hide increment and decrement buttons */
+.list-view .scroll-bar .increment-button,
+.list-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
 
 
 .titled-pane > .title {
