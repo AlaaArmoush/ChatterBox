@@ -16,10 +16,6 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 
 ## Features
 
-- **🛡️ User Authentication & Guest Mode**  
-  - Secure, case-insensitive login via `LoginController`.
-  - Seamless guest access without credentials.
-
 - **💬 Direct & Group Messaging**  
   - UDP-based direct chat with configurable IP/port.
   - TCP discovery server for group conversations and user presence.  
@@ -50,7 +46,7 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 
 - **Models**:  
   - `UDPPeer`: Encapsulates UDP socket logic for messaging.
-  - `TCPServer` & `TCPClient`: Discovery and group messaging transport.
+  - `TCPServer`: Discovery and group messaging transport.
   - `FileTransferManager`: Implements chunked file send/receive with reliability metrics.
 
 - **Views**:  
