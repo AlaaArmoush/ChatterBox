@@ -39,6 +39,22 @@ public class LoginController {
     @FXML
     public void initialize() {
         loadCredentials();
+        usernameField.setOnAction(e -> {
+            if (usernameField.getText().isBlank())
+                usernameField.requestFocus();
+            else
+                passwordField.requestFocus();
+        });
+
+        passwordField.setOnAction(e -> {
+            if (passwordField.getText().isBlank()) {
+                passwordField.requestFocus();
+            } else if (!usernameField.getText().isBlank()) {
+                handleLogin(e);
+            } else {
+                usernameField.requestFocus();
+            }
+        });
 
         loginButton.setOnAction(this::handleLogin);
         guestButton.setOnAction(this::handleGuestLogin);

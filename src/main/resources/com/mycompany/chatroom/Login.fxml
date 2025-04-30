@@ -23,15 +23,15 @@
          
          <VBox spacing="8">
             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Username" textFill="#8596A0" />
-            <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" />
+            <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" />
          </VBox>
          
          <VBox spacing="8">
             <Label style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif;" text="Password" textFill="#8596A0" />
-            <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-background-radius: 0; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" />
+            <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-font-size: 12; -fx-font-family: 'Lato', sans-serif; -fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-prompt-text-fill: #8596A0;" />
          </VBox>
          
-         <Button fx:id="loginButton" maxWidth="Infinity" style="-fx-background-color: #00A884; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Login">
+         <Button fx:id="loginButton" maxWidth="Infinity" style="-fx-background-color: #00A884; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Login">
             <padding>
                <Insets bottom="8" left="8" right="8" top="8" />
             </padding>
@@ -49,7 +49,7 @@
             </padding>
          </HBox>
          
-         <Button fx:id="guestButton" maxWidth="Infinity" style="-fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 0; -fx-text-fill: #FFFFFF; -fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Continue as Guest">
+         <Button fx:id="guestButton" maxWidth="Infinity" style="-fx-background-color: #2A3942; -fx-border-color: #374248; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-text-fill: #FFFFFF; -fx-font-size: 14; -fx-font-family: 'Lato', sans-serif; -fx-cursor: hand;" text="Continue as Guest">
             <padding>
                <Insets bottom="8" left="8" right="8" top="8" />
             </padding>
