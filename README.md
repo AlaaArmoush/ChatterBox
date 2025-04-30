@@ -2,8 +2,7 @@
 
 An extensible JavaFX-based desktop chatroom application supporting peer-to-peer UDP messaging, optional TCP server discovery, and a rich set of chat features, built with a modular MVC architecture for maintainability and future growth.
 
-![ReadMeSS1](https://github.com/user-attachments/assets/505e69a6-1d06-4634-935a-35ffd446a1e7)
-
+![Screenshot_2025_05_01-4](https://github.com/user-attachments/assets/85a23dbf-2059-4b6d-851d-69eead79f33f)
 
 
 ## Overview
