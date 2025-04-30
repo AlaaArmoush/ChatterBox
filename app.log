@@ -1,1683 +1,62 @@
-2025-04-30 09:24:13 [INFO] ChatController initializing for user=null
-2025-04-30 10:00:20 [INFO] ChatController initializing for user=null
-2025-04-30 13:54:35 [INFO] ChatController initializing for user=null
-2025-04-30 13:54:51 [INFO] ChatController initializing for user=null
-2025-04-30 13:55:12 [INFO] Starting UDPPeer on port 1
-2025-04-30 13:55:12 [INFO] UDP client started on port 1
-2025-04-30 13:55:14 [INFO] Starting UDPPeer on port 2
-2025-04-30 13:55:14 [INFO] UDP client started on port 2
-2025-04-30 13:55:53 [INFO] File selected for send: C:\Users\user\Downloads\udp-file-transfer-detailed-guide.pdf
-2025-04-30 13:56:08 [INFO] Sending file: C:\Users\user\Downloads\udp-file-transfer-detailed-guide.pdf to 172.23.104.62:2
-2025-04-30 13:56:08 [INFO] Initiating file transfer: udp-file-transfer-detailed-guide.pdf (117187 bytes) to 172.23.104.62:2
-2025-04-30 13:56:08 [INFO] Handling command: FILE_INIT|ca258aa8-2d42-49ed-8820-240573e733ee|udp-file-transfer-detailed-guide.pdf|117187 from 172.23.104.62:1
-2025-04-30 13:56:08 [INFO] Received FILE_INIT for udp-file-transfer-detailed-guide.pdf (117187 bytes) from 172.23.104.62:1
-2025-04-30 13:56:08 [INFO] Handling command: FILE_ACK|ca258aa8-2d42-49ed-8820-240573e733ee from 172.23.104.62:2
-2025-04-30 13:56:08 [INFO] Received FILE_ACK for transferId=ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:08 [INFO] Sent chunk #0 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:09 [INFO] Sent chunk #1 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:09 [INFO] Sent chunk #2 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:10 [INFO] Sent chunk #3 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:11 [INFO] Sent chunk #4 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:12 [INFO] Sent chunk #5 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:13 [INFO] Sent chunk #6 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:13 [INFO] Sent chunk #7 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:14 [INFO] Sent chunk #8 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:15 [INFO] Sent chunk #9 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:16 [INFO] Sent chunk #10 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:17 [INFO] Sent chunk #11 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:17 [INFO] Sent chunk #12 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:18 [INFO] Sent chunk #13 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:19 [INFO] Sent chunk #14 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:20 [INFO] Sent chunk #15 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:21 [INFO] Sent chunk #16 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:21 [INFO] Sent chunk #17 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:22 [INFO] Sent chunk #18 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:23 [INFO] Sent chunk #19 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:24 [INFO] Sent chunk #20 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:25 [INFO] Sent chunk #21 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:25 [INFO] Sent chunk #22 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:26 [INFO] Sent chunk #23 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:27 [INFO] Sent chunk #24 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:28 [INFO] Sent chunk #25 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:29 [INFO] Sent chunk #26 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:29 [INFO] Sent chunk #27 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:30 [INFO] Sent chunk #28 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:31 [INFO] Sent chunk #29 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:32 [INFO] Sent chunk #30 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:33 [INFO] Sent chunk #31 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:33 [INFO] Sent chunk #32 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:34 [INFO] Sent chunk #33 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:35 [INFO] Sent chunk #34 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:36 [INFO] Sent chunk #35 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:37 [INFO] Sent chunk #36 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:37 [INFO] Sent chunk #37 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:38 [INFO] Sent chunk #38 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:39 [INFO] Sent chunk #39 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:40 [INFO] Sent chunk #40 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:41 [INFO] Sent chunk #41 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:42 [INFO] Sent chunk #42 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:42 [INFO] Sent chunk #43 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:56:43 [INFO] Sent chunk #44 size=1024 for transfer ca258aa8-2d42-49ed-8820-240573e733ee
-2025-04-30 13:57:04 [INFO] ChatController initializing for user=null
-2025-04-30 13:57:30 [INFO] ChatController initializing for user=null
-2025-04-30 13:57:37 [INFO] Starting UDPPeer on port 1
-2025-04-30 13:57:37 [INFO] UDP client started on port 1
-2025-04-30 13:57:48 [INFO] Starting UDPPeer on port 2
-2025-04-30 13:57:48 [INFO] UDP client started on port 2
-2025-04-30 13:57:53 [INFO] File selected for send: C:\Users\user\AppData\Roaming\Microsoft\Windows\Network Shortcuts\history.txt
-2025-04-30 13:58:04 [INFO] Sending file: C:\Users\user\AppData\Roaming\Microsoft\Windows\Network Shortcuts\history.txt to 172.23.104.62:2
-2025-04-30 13:58:04 [INFO] Initiating file transfer: history.txt (71 bytes) to 172.23.104.62:2
-2025-04-30 13:58:04 [INFO] Handling command: FILE_INIT|21c37f1d-5f33-4ab7-b428-24c0b5db8c0e|history.txt|71 from 172.23.104.62:1
-2025-04-30 13:58:04 [INFO] Received FILE_INIT for history.txt (71 bytes) from 172.23.104.62:1
-2025-04-30 13:58:04 [INFO] Handling command: FILE_ACK|21c37f1d-5f33-4ab7-b428-24c0b5db8c0e from 172.23.104.62:2
-2025-04-30 13:58:04 [INFO] Received FILE_ACK for transferId=21c37f1d-5f33-4ab7-b428-24c0b5db8c0e
-2025-04-30 13:58:04 [INFO] Handling command: FILE_CHUNK|21c37f1d-5f33-4ab7-b428-24c0b5db8c0e|0|71|[2025-04-07 22:17:05] 127.0.0.1:44: Hi
-[2025-04-07 22:17:12] Me: Hello
- from 172.23.104.62:1
-2025-04-30 13:58:04 [INFO] Sent chunk #0 size=71 for transfer 21c37f1d-5f33-4ab7-b428-24c0b5db8c0e
-2025-04-30 13:58:04 [INFO] Received chunk #0 size=71 for file history.txt
-2025-04-30 13:58:05 [INFO] Completed file transfer: history.txt transferId=21c37f1d-5f33-4ab7-b428-24c0b5db8c0e
-2025-04-30 13:58:05 [INFO] Handling command: FILE_END|21c37f1d-5f33-4ab7-b428-24c0b5db8c0e from 172.23.104.62:1
-2025-04-30 13:58:05 [INFO] File transfer progress update: history.txt 100%
-2025-04-30 13:58:05 [INFO] Handling command: FILE_ACK|21c37f1d-5f33-4ab7-b428-24c0b5db8c0e|COMPLETE from 172.23.104.62:2
-2025-04-30 13:58:05 [INFO] Received FILE_END for history.txt, assembling file
-2025-04-30 13:58:05 [INFO] File transfer progress update: history.txt 100%
-2025-04-30 13:58:05 [INFO] Received FILE_ACK for transferId=21c37f1d-5f33-4ab7-b428-24c0b5db8c0e COMPLETE
-2025-04-30 14:12:23 [INFO] ChatController initializing for user=null
-2025-04-30 14:12:34 [INFO] ChatController initializing for user=null
-2025-04-30 14:12:40 [INFO] Starting UDPPeer on port 2
-2025-04-30 14:12:40 [INFO] UDP client started on port 2
-2025-04-30 14:12:43 [INFO] Starting UDPPeer on port 1
-2025-04-30 14:12:43 [INFO] UDP client started on port 1
-2025-04-30 14:13:06 [INFO] File selected for send: C:\Users\user\Downloads\ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:24 [INFO] Sending file: C:\Users\user\Downloads\ChatterBox-20250428T022418Z-001.zip to 172.23.104.62:2
-2025-04-30 14:13:24 [INFO] Initiating file transfer: ChatterBox-20250428T022418Z-001.zip (291151 bytes) to 172.23.104.62:2
-2025-04-30 14:13:24 [INFO] Handling command: FILE_INIT|1719c581-f6c5-4929-8dca-8f2a4123e1ab|ChatterBox-20250428T022418Z-001.zip|291151 from 172.23.104.62:1
-2025-04-30 14:13:24 [INFO] Received FILE_INIT for ChatterBox-20250428T022418Z-001.zip (291151 bytes) from 172.23.104.62:1
-2025-04-30 14:13:24 [INFO] Handling command: FILE_ACK|1719c581-f6c5-4929-8dca-8f2a4123e1ab from 172.23.104.62:2
-2025-04-30 14:13:24 [INFO] Received FILE_ACK for transferId=1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:24 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|0|1024|PK    !              S ChatterBox/.idea/compiler.xmlUT Ȅh
-          ����                up" �MPkChatterBox/.idea/compiler.xml���N�0��H�C���8ph�C�	4����v�8��ۆ�&������;;~�N��CG���ݽV����~+�w��x���OP�&}�RV*��Y��!ׅ�;� l�6z�"_�����s��S!Ȝԓ�iěH';��ͩ��J>�䘖���\���W�@E_�K�!�S���o�M�"ԻE�6'he��J�/�E���u,Ͱ38�P���HҶ.B��oWOu\�*.v��?5�I�|Go�f����өM���PK��߼    PK    !             ' ] ChatterBox/.git/hooks/commit-msg.sampleUT `�h
-          �SwN��                up, -�%BChatterBox/.git/hooks/commit-msg.sample}�_o�0ş�OqH+�VM��J�"��X�D��&7����l��|w��&�E����=���Re�����
-�M�]C����͍��F^S~Wrݶҡ�Z�VT��ɷ�i���;�O�����Њ Lշ��"0�h	���l�����'>��Oպo
-ޒ�\i�� �a�p��(Hk{�*�uFwF
-G'$d	O�Yo�:�ye��皒�M���R��ϗ>�!�-7)q�]ͳ����`:T|�G�"mm/#��U��1����E�Y)*R]�)��H���6ڛ*��?�A�	_�H���~��u�P���N��6N�p8����������Wa��j{wy��p���j���GX�O��w��|��-��/��[e]2c\�+ }���Fǈ'��#(�9���^���j�=�^k.�P������~���Y�8� from 172.23.104.62:1
-2025-04-30 14:13:24 [INFO] Sent chunk #0 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:24 [INFO] Received chunk #0 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:25 [INFO] Sent chunk #1 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:25 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|1|1024|c�A1���P�G8�j��G����䈐d��}���7+�Y��g4
-��_����{���]E���PK����  �  PK    !              O ChatterBox/.idea/misc.xmlUT Ȅh
-          ����                up �~�`ChatterBox/.idea/misc.xmlm��N�0��H��e��
-N{�DQE��gd�%rqv-ǉ����I
-R�}3;9;U���jM����g�9˔���Ϧ�w�::B��32c2��z����/O*���T	s�/]6N���(�;�P���{� g�v�F���x��4�dωIN�:]iu�������U�	��6{_/����k6��q�os�ş )�;vC��ݻ��~=l7��39�ItL�����u�Z�[��VRt��PK8n8��   �  PK    !             $ Z ChatterBox/.idea/jarRepositories.xmlUT Ȅh
-          ����                up) %?dChatterBox/.idea/jarRepositories.xml���j!�������6��Rf�@�nB� ��N�W����f��b�E�FDϹ�O�-�gݐ�WhJ�dO���xP�.���f�J׫Ǉ�:<���cB
-�ڢ�J��v`ѫ�N���|�::��s%���n^��t�6+�z�@I+���2��DC	���uTW���Q.����w��7�s2�E�	+���_��J��?�G�BNw��?�i�޳�4:����t��\�\7�v>�����s�&���$�s���FI��g|��<-���PK;�o�  `  PK    !             / e ChatterBox/.git/hooks/fsmonitor-watchman.sampleUT `�h
-          �SwN��      from 172.23.104.62:1
-2025-04-30 14:13:25 [INFO] Received chunk #1 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:26 [INFO] Sent chunk #2 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:26 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|2|1024|           up4 V��~ChatterBox/.git/hooks/fsmonitor-watchman.sample�Wms7�l�����m����c����dx)�!���d[�,]$]�'5���+�_�B[>���z��Y����r6�(����f�$8oU�G�{)�Vz��׳�'��R�G�f�>��A~���07�\fU��P�˙^�[��Bh�̽/�0M�"�T̔�W��2�2��]X�"��q��9T%����#�����aar5U�?U�t��}�{=�X��R8��.�u�h�d��R�b��l�Σ���zs.	��؅�4*S4�M���;�s��m�k�ш(� �\x��K	���N�u�� N��;XTΣ��+��%�5ƃ��辰��[)������0Yv���<�G���Ť�s1@���"�d:(���]��$�8AjSj2��j��Y9������ϔ��t_���/V�i�L��E����y��ǟ^��'�����sE���O��,d��txx����/_B�:���6�t�֞�ev����i���h�������ȕ��vUYKA^mfk�Z�6��0h6 �%�`)P�&� `�dBSK��nRhZ�1�s̹<���(9Ε�tGA�JoW��0~tF���٨)/EA���������χÿ^����*&�:��@+k� �C��ӛ5OO	5_�Jg�q�d��	\['˄Ԡ�zm̑$��^���AO杖�r���V����?��
-���{��r���dnM%{ZC�Ŋ*GM��#��Kn�9Z$Q�rj:�Ar��.�Z�d�_B�����֗QcX���	o�z�e,��Lt\(�ˎ5	hm;�ś׻���hd����.�b}�z�Ȱ��Q�:l���:w��hG�y�i�%�d�x�t[���s*z��(��F�W�T6��J� VK��wGl���m�O���'��I.3�Sg��{�#Wa�c�Ў9��:g�����18�~��������k�/�_���� from 172.23.104.62:1
-2025-04-30 14:13:26 [INFO] Received chunk #2 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:27 [INFO] Sent chunk #3 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:27 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|3|1024|9ta���u/��U&�T?�LS������Df	K����I������4��.��г͌9�E����8G��,�@�^�X��"��d��Ȱ%�B�9��^P9:���		�WK�;����n�+3��2n.?�ϲ�9�y�x�ȋ���X,r��X�tFB/�2���.V���6nhLZ�А�ieq���¡.Tu �>p�
-�E�$���tP�s���a�$YH놠S�%7)>�q���2B��7�������9�Ǐ���ϟ��wa�=]��\�
-�:	Cx�P���=^�	)o�&�%8�X*�_��=J��"��T��R7������=��>C	3H��J��<:�9���2�<���d}�������__t���_���kL8�{�:)�"��6�yw� ��M�����OQo����xh����n�?C���*�Ӎbs	@��ϙ��b�!�ᝂWֱ���������O��H�x�6�|S\����NdB�G<}�K�b߈+���g��Ը���P]7���Cw!�w�,�}q��ᮺ7|o���'�n	��B��t5`*�o������N�﷛H+|��b)V.6��sЄ�3U_����a�(ʻ�,M$�'V8w3��_%0-ČoT8��r��.�`�#>!�
-���o������n{|'�X�N�*�d���8���k���Ty%�/�X�{�z��u����9׷<:I�t���;�l)����`�6��3t�C���]�&���������;K51}xA��^��k��C���fK�ۑZvm�[��{4�*��e��'��M��ҳ�xe��J���"�j��p�E����ýn�PK�|<y  v  PK    !             ' ] ChatterBox/.git/hooks/pre-commit.sampleUT `�h
-          �SwN��                up, y��=ChatterBox/.git/hooks/pre-co from 172.23.104.62:1
-2025-04-30 14:13:27 [INFO] Received chunk #3 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:27 [INFO] Sent chunk #4 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:27 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|4|1024|mmit.samplemTao�6�l���$`9I?fu �˰ ����-Z<Y�%R%);.�����dw��M�w�{wgo���]�Z��3Z:��vS���bl�(y�q�Ձ��Nd#����5S��֦�f�+�4lh}��Ʀ�nJ{�jr�t��-��D���J����1���ꊯ<ŤS�zU�±�nCڑ��`ubj9F�a�rH�.&�Q����'vz��A0��_����r�i�.Fs�lE�(��t�LE1�����g��6��v}�л��[��NM�F[�BB7����MV7#�;2��h�n�v�@)0�_��e�����`�u��ኊ4D��_��*�|����,��A_�>���z|�,�s��i ���s=�O��ʏ�F��ڱx�]e7`�/��7Y�8|%�`c���Y��/1a���K���x'q��c��ѩ�%tV����Lƾ����O����$��*���&1��k1@��G�|8��O�Ѻ�۔�*]ʇ�'䁩\�2��*80 �pO��%�T�g��B���m�md�U>���� Sz����:��tq!F��'>������y�R1��5z1BA�0.5��[�.�$������fFP�:��6Vl��o��H�7�����ȧp5�h]�=��}�u�# �p�;jL
- M>d]5��a�� m�&N4XD]Xg�6)uY#�(�c�w��9m���%_����ojB���k���X	����G*����撾Ѿ���1o�+�����~�E=���-���ao�P�uH�`����%�Ԣ=l���{����}�����j�<J��c�$˻pP1vX�fg�q�N;�3
-�Gt�0�y��IZ`�8XN�sd�5�[xwJ�g$0�y��H3�����r���k��ec�g�d����o�s�.f�W�6����������PK�P�  q  PK    !              Q ChatterBox/.idea/.gitignoreUT Ʉh
-         ��&���     from 172.23.104.62:1
-2025-04-30 14:13:27 [INFO] Received chunk #4 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:28 [INFO] Sent chunk #5 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:28 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|5|1024|            up  qjyvChatterBox/.idea/.gitignoree�A�0��K=�<�"qD���i#LSbG�|����W��uy̬�%&r������؛r<c�Ɋ��םۦ����R��8�`ρ�D�L�՞U��7�*�(1'K��"����o��U���&~�xPKE0w�   �   PK    !              K ChatterBox/.git/indexUT a	h
-         ��QEl��                up y�<HChatterBox/.git/index��<��ǟ�&BޜB�B�f�1�����S9�v��l�l�g�Wj��t���vPI'I"�����cI�:��x�=N���_��|��������u��}?�u;:y,  @�h�/�j��!x%H�����Ȥ�g s�׆�T�K4W[B�KW�ز�����SH4�ΥS�, �zF��q!�b[dZ�x=��o�{�fy�`��O��FY�u�S�Ȭ 6�A�71�~�b^�������u�)@��M&�Q�(	.�j�_~LХ0�,:�
-�ú.{̅�v�^�ו_l�U�h�(	?X���v�k�@k@7���Y ����)�.�Y����@���ɷ�$;���,����Ow���At�<d*�;Ñ��bvI���gվ����Ϟ?�o1�Bx�1; ��P��B=T�.�����N�z�z
-_N�'�����<k�_s�L)T�~$2��b��{�\OC�� 7�Y ^O���p�r�w�ԩ��.�'��lVР�P�xo�'�♪ܑx�:�{!S��39j���=���u� 
-�1A$:Z�P8�0Aa�h"1�0d��aA���f����v_���M�*�EK�+�8���}	�f��S��m�[�{! J�[ =,`1�/aP�an��j�b_(��YS�|���N��w���2�֪�cwz�H�ufQ���`�[B��;��D���ۿ��DAR�f�� from 172.23.104.62:1
-2025-04-30 14:13:28 [INFO] Received chunk #5 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:29 [INFO] Sent chunk #6 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:29 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|6|1024|G�><��PT /w�J��4˃�v�C���v�=W<W+y���Jʟ��!���JW|.R���r�� z4�D�	��5�4��U���=ws���?���=��Ư��t\2{�;f�����fB~�)=�D<��^TWݷ��^���u>7_�l�R�=��(��k�md@mO���w�*�Z4b
-���X.��MՏ2^��~���C��v���"M�^Ϣ�LQ����)�_�^��[T�]�_���L��YGd�p��mt���Ie�>��֣Q%p՜fb����A���c���i����K����U�E�&���E�suY�ҩ��1�N�O�j��3�
-f�`鹃� z��|Z�@� L�u`��uD�gE`����5Vp��L��-m"������|���M�A�T�x�R���CA<W�z�}DV���O���Hg#0�K^�W��1(h2��o����[�	+��s'
-��9uy�/{��L�N��;��
-`�$��Ő$��I����jd�c)y�1,�7�f���Y�Kx+XU-Z�[%HO�@�XX�=ְ�0Gz��4;�� ?�̯�ו��=��t-���j������Dy�x�^6���0=�"�oQX#��S~T5yq�Fú�כY��Anrv���[� ���$!��l���t$��Pk��.���'���8�%���[�|s����qE���_�*l?>kR|,��^��~Y�Ǎ�����j$�U���5�1��cU/pyu�{ݩ�?d��G�qK����_�>*a��o�%Ԟ�>z����b���Z�d����ǅ*���dJ���&�R���k�_�����re�����`����=˩+6���F{ܑ���+/#�r�̝=0?Ғ(��2�O�)����9���k����O�ϜE���dJ�ThU�A����V`R��!�&�Ke�[�����_��.�O��k�ؕ?~YF� +֫��ҽE�2�ǜ�
-�0?�	�s�~�0����� from 172.23.104.62:1
-2025-04-30 14:13:29 [INFO] Received chunk #6 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:30 [INFO] Sent chunk #7 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:30 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|7|1024|�ǭ�vj�)��'��v��e��w
-6`� �-�n��9���L�(�6���}�B>���y���ky��o��Ɩ�=�Q���E�p�+���/J|�?9*�)���/�;
-���FjB��N��$ԕ��g������&}�2�c�6+�l��O�ð�z�4�|�K����u���;�Տ`,��Tx������J��Y�mG@�P+�7΃���Z����n�8ں�=T�{ �
-O4��g[?S�I��o�b������4��\a<��VÓ�;RX��%^l��i,7	��G��|3�eκ�g��z:�'oi �K�[Xg0���P+��=ٮ�wK��rru��\�~���~i�q��h>c���8Ԋ��ݴe�F��Y�-�N��Gv���>X����Y�"�Z�\ENޢ��q�7j��ﴽ�Zq�o(��.�� �J��:��;���f��n�d��W1=�jqfZ�;{��/���g�����AK鸣k�!����+��A)�$�Z�?�����5�W �F�١��r��w`�z���Z�^���(����d���1�4���V������_�a�{W�+i�ܧ>'g�M�yx��B)L�%qC��/Cw�(6#���;l�?%����c�
-�K�_=�h8|�u�O��l���Hnߪ[�i��񾆾��X�<��,'p���3�!\�Vz,\�.�^��8M��8�u���p��	p<�� o�Uj��j<�áD�p���UV��*J�� �^��¬�;��j�����R���i ×ID���kl������p�;OB�P_Y��<����s�Ii5�]��)����"~�����ʺ�#4��ݺ|��
-`�t��xӷg��b���R.�uM��o& $�IS���de����L����}!�S�~87*����l����yg�G�`�'U�~D6�F�uZ�t� @8$^x�^In�*�GӤl�Ի��V�]<`�V��fN����޹��&�ؽe+	�q��kG�ݘzl� from 172.23.104.62:1
-2025-04-30 14:13:30 [INFO] Received chunk #7 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:31 [INFO] Sent chunk #8 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:31 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|8|1024|��v�ߟEX���`hx��S��n����=���6�{�{���@�7�߮X�v=o�r���F�hB����s�i�}���/�����~[5l?4�B	����^;�k��ʫ�5�L{o�F��dȥM���Pm$h�x���圧���G�r��Rs'w�c��Z[�nN�18�O� �5�;r���y�oA�[SRըh��Y(��S�ct�FU�6���(Ә��rg���_� A����C��PK�:8\�  �  PK    !              P ChatterBox/.git/refs/tags/UT ��h
-         `E����                up ��rChatterBox/.git/refs/tags/ PK           PK    !              O ChatterBox/last_login.txtUT ��h
-         ��E�ɷ�                up ��yChatterBox/last_login.txtK�IL�1202�50�5�P00�24�25�r/M-.A�1�24�20��/-NMC�25�20� PK����8   N   PK    !              N ChatterBox/.idea/vcs.xmlUT u�h
-         �H؃N��                up ��%�ChatterBox/.idea/vcs.xmlu�I�0��C�Z��� ��UB%��f,����^���7kX�ʨ���mw�)'}�ݙ�~7m�!4Y(�EI��P�X&��)��	�8d뒨/�K�5%l�/�!YoV��hw�7	�JF3����~�.�۷��m�W�HS��PH��k����
-�Rs�ba��N�D��<K�O< PK�4���   6  PK    !             0 f ChatterBox/target/generated-sources/annotati from 172.23.104.62:1
-2025-04-30 14:13:31 [INFO] Received chunk #8 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:31 [INFO] Sent chunk #9 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:31 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|9|1024|ons/UT ��h
-          T����                up5 �TQChatterBox/target/generated-sources/annotations/ PK           PK    !              O ChatterBox/src/test/java/UT ��h
-         0ɚ���                up u��ChatterBox/src/test/java/ PK           PK    !              J ChatterBox/.git/HEADUT ��h
-         �Zm;O��                up ��	ChatterBox/.git/HEAD+JM�R(JM+��HML)�w�IL� PK4�(      PK    !              T ChatterBox/.git/COMMIT_EDITMSGUT a	h
-         ��QEl��                up# c�ChatterBox/.git/COMMIT_EDITMSG+N�Kq��QH+�K�Q�I,.Q(NM��QH�I,(NMQ(��M� PK�:(   &   PK    !              T ChatterBox/.idea/workspace.xmlUT ��h
-          I?ܷ�                up# ���QChatterBox/.idea/workspace.xml�[�o�H������:ݞ��c.�C��=�̭	5v<�k��d����Wm��8��r&��ǯ������_�����	���\T$Yp�ƞݝ�7��-[����~8KH���v�.° ��q���R!B!>;Y�a��S����aj��@Z�C0o��y�u�E�O{�^w����v!�]I8,��B��4�F�ä�����%ʂ�\LIb|�\4�֌��2Yn�j��"-�Ve�R from 172.23.104.62:1
-2025-04-30 14:13:31 [INFO] Received chunk #9 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:32 [INFO] Sent chunk #10 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:32 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|10|1024|=�^�"ǝ��A�Hq�u�@Xf��� �A1�~p��=!�C�с�sx<F��\�q<�
-0��ɏmJ�v����= ���H��@���@��G�!0��T��y�sq�
-��2���
-�Y�e��7���L1��zs�OKz{�7�1~3d<�`g����x���A��k�	Qo���p$T4]Xr)}#L5�	Q��N�.$U����ռ��d��~T�|��:$�壁�O��x�<�/�#��zҨU���(����N��h�<�'����Q?F�t�ca4N��<F�t�ca�N��>F�t�catN��H���[�����ha�a���Ӡ=&�#"-��З{���S���cۑs<�o�숈���ռ�Dr�f7/��W�� �3]V7F���U��j �f��h�q��Φaq!��p4�w��y��3����Y3��t6�����ͬ?VD���h������ �����ç��j�^�7��g���3�MkQ5���J��E|�sC���L�K?����+��0��W����ƣi6��V�8DI]a@��=^��^eXvZ�C�r�<��e�5������#����W�b����a�N1"��
-l���� ���Y���]!��a5��	�*�h
-n�|Q�?���o?�&�������uHgtU ş?��D��>��o]�U�� �)�nHЉ����Y���CH2��4����\��RFMݼa�|��J0� �]a�����K��Z��/Z�j譅�-�P-S^��,_e�1��'?N�7���3��{U�t3B�[ÍCg\ܵw� &�h��^�]������n���p0�L9v�>�!w���1N���
-?��Si��,��=��t}�{^ �ȽG�z��KW���_D֬ч隠M0I}L��o�v�,2��)�x>��$	|1�$�]�_�����Cm�E�aY'-��W2���,��\z�S0vL$?�S�g�;��r�w"��g��E.� 僟��Q���Gx����i
-� from 172.23.104.62:1
-2025-04-30 14:13:32 [INFO] Received chunk #10 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:33 [INFO] Sent chunk #11 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:33 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|11|1024|�`��/0��-e]� ��0���Ygq|�#/~�������T���} ���{а����x��KE���b�#�|�Q��(� ��GD"),z�&XʟC|F؛/!5��x���ń�3�پ��>��ZN�g���P���{RR,<	���9�I�Yl��Z���*���
-V��y��:/�â�:`�(	����O�n����%����,WV0I�z�YȒ܄�B�}���σ��;W�JeW7���]F�9��F,��;�f	'A۞g��5J�r_�C�%-a{&���w�+���Uy�]Vv�|A^/'\���]�l��������~����m��n�b�-��v��R�޲��zq
-�V;������]��*ȉ��)��N� Vު�M����̑�²Ȍ�ͤ�7���=�+71)f����n*-cݧ����5ʇ�&�
-�u�?�wa�3�;׽�hV�2��1S�ީ�y��>�K'�1Y�����	�L�o��cQmhWOh�g���%��Y��ϥ7�|�.�hi
-���r֮ �p�t{��c޶��w�l}z��`��s�����¦�O^<o5��G��x�*[(�%��]-'�9
-n.�P��y�|�>�h,`��⠌��t�H����cprW�뮲�n%B�{�pe�E��Z_���c���b!�h-���e�:XkAO�����>�d}%�U��Lp��RER5��%]3v��	��� ����l���6]�Rdu�Z��kHÚb�~Eh�?I��s���<k0��FM bw��{L��
- {5}���D`�v.ʢ�1�ˋ߻M�po�E��ꅶ��
-�D��4/x�y�:I�C�K����������~#�1���?1/��2��a.��������_�ΟC����b麣:�b*��)���(�)è��~b>�,��=�e�wH��p5�1&�}�җ$��j��؀�+�ֹhʺ,˜�C��lh�ahuR�TL�ebC��m�X���mCUeE�$ێ�@kC� from 172.23.104.62:1
-2025-04-30 14:13:33 [INFO] Received chunk #11 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:34 [INFO] Sent chunk #12 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:34 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|12|1024|X~���j�f5���l[N�V1l���$h/�0�&��i����ULP�����hp�t��Κ	9�k�i-�It�mi
-�!�` l�c�j:F��a��ER]Q5��8<�f��)�r�)�iBl��K�\�8M<�3���G�c4A�O�[��X�,eX�c�F;+�eB[b]��l�Ԕ˲!�9�V��0!wˎ��,�&�&覂Ҝ��&&2MK� U�<iB��T]��&�Hs�(��i˖�g\Em�X-ҋ�ػ�6��62���"ԇF�Mu,[�A��|8��Yi��V��ng�b�L�u��#2��AS��[�+����������_*����a}�4?R≞j���onNB�(`���*��.��bh���W�E�\m{�����I�ג�|����'wù[߬Ub�sh��Ѵ�a���[2чhϮ{�i粷!n��]|wG���ټ�+~�����`�ڜJ2t��1P�J7}��
-�M�Wv�vPlϋ8}�?PK��{f�
-  #;  PK    !              H ChatterBox/pom.xmlUT �{h
-          �,��                up �zW�ChatterBox/pom.xml�Wmk�0��B������6����v���emǾURg�d$9/���]�6�v��
-���ا�N��;/�j"�E�(�f�[�	��THLc��+퓻���.v;�?7A���fxv��N\�K��|�ǈ:�4�J&:��Kߤ�O�Q(��~h"58�ޓ�����r��Hq~���4�GVl9��*�����Gx�T.<R�s�6Qf�r1���R�G*�6�cw���>���x������u,�U��RX�
-��$96*�L\I�x ������#1�XK�\�P�8�v=Ҿ���R��暯�9�FR��\HVK��/*�)@W��d4�Qb+�O蔎�S�j�]J�R�Ӻ*Y�g{������i+��i���Z��В��2s��H3ｬ�H�r from 172.23.104.62:1
-2025-04-30 14:13:34 [INFO] Received chunk #12 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:35 [INFO] Sent chunk #13 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:35 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|13|1024|��5kQBN潁�N�ٲ��D�H��Q�':*-��E(�ɺ�xo�E6�ro�jG�J���X2�����m���1���1�33|>���8(P�M�Z%�%��z�5k )��K1�Ih�ʮh�4҉�0��l��h�/�(�JĠ
-$�x�C�-��� �m�H�-��S�h�Q��Qk�!ω��v���8� ����]���xSm�@�d!m<�'|����J��OF�������c���`�7ʹ�B�|�cel��ua��A���l?�������A�"�d���j�� 5.�K[Y*z�2�9����ZR�n��pgI3�x%Q�����%�K��4�;����V��?�~������VI����y1)L�u�������PK�    PK    !              T ChatterBox/.idea/encodings.xmlUT Ȅh
-          ����                up# A'�QChatterBox/.idea/encodings.xml��1�0�w����z
-"I;h]�Rg	�Ԕ&)I[���Xurp;���=�<L�Z�A;+`>�#��Eۛ�S��,!��#^yW�����5c\9S9K�fV��׹��$��R@?��cvا����e��Hm�������߿�k�)��+
-��8~"��ph?PKHI�#�     PK    !              R ChatterBox/.git/info/excludeUT `�h
-          �SwN��                up! F�'�ChatterBox/.git/info/exclude-�A
-�0D��b����v/�\yq۟6���؍g7��Ǽ�
-���hc)�iX&
-k�Oo�@��.miu�k�6��p7�2)A�Ȅ����g��KlK��
-s�7��Q��q=���Z�ƏȜ����< ��uY�^1+
->b����N8��� from 172.23.104.62:1
-2025-04-30 14:13:35 [INFO] Received chunk #13 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:35 [INFO] Sent chunk #14 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:35 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|14|1024|Z#E��ù����깆��PKw=�!�   �   PK    !              O ChatterBox/.git/logs/HEADUT a	h
-         ��QEl��                up ���ChatterBox/.git/logs/HEAD���N�0���S��r☦B��c�i���My~�*ܖ>�f4�OF�� �E�ؓ�f����	N1�L=1����c�[��뺜�Yv���)KL���P�a����o67�w��%��+ؓ�� �BJH�Cz�m�\?c9A��[�@�ߣr=�&7�ŐG�5#x�P�yz��1��ª��}u�ŗyL	�Z��,m�|9�O��Z���PK�����     PK    !             # Y ChatterBox/.git/hooks/update.sampleUT `�h
-          �SwN��                up( �4�ChatterBox/.git/hooks/update.sample�Wmo�6�l���lD�a�I�iy��a�����"�e��"��H�U���=$%[�ݼ 1�&yw��=wG��L�BNt�>��Ŀ�Ų��+uG:-�ҐQ4-TzG+ɤT�>#�暲R-�K�K!�	4\���ᴢp.�<���K�ޅ�&'V�W��3�f�-8霝Ī����k�FA3��Ʌv��qn'�LQ�Z� )L�ص���c�VR' ��-p@tc�L�*8���Ѵι�y���ZM99=��q��)�RiaTY%D�V4�[ƞW�V22Mv��x���G��{�`��B�DV=�Y�`����������%��Q�x��i�d�?�}��ff\V�Ӡ�|�/���C��Q����3��������&gTɃ�F.��I�FJ~��i�L������e� ]�ӻ@d���o~�xs���!}9��d��i��y��Q���R�+i<m�HB�::m�-�Wj from 172.23.104.62:1
-2025-04-30 14:13:35 [INFO] Received chunk #14 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:36 [INFO] Sent chunk #15 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:36 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|15|1024|Ek&�حR����Z.�ڠ3f��
-���.��]x���\��_A�� Aˍ:!��ox��w�d�͕fs~���}�M\'�6���[��Rw���Z�K˗4�a�G�'�h�.USѽ�����]Ko�œ�7��6�������Bx��k�R��Sc��V��cN��?і����p�Ls�CT[~�� �VɅ#�N!Dj.�F#�Ë�1�Q�3�wu�K���y�5K7�p�X�5v�Қ~����I����	F(rWMRTl��I�����&�籚:pq�����O�
-��;�������,ξDGC_[�_bm5���ݺy�/4�=���L�"�Ɲ���:�M��N�ž�3=�j2{_�^s4���Թ*�m���֫~��?\�]�SHo�)W��d�������1v��m�p�;C�ע�O[�'D!����]�!'�&���ڍ�+�D��K6�d��&SQ�YJ��ͧ�ǭf��X;��|4����3<~�+h���6�M��#���{<	K���]і�WG�������
-ܬUh�����xFMU�]�׏�M����FP%t[���@���W�-�<��L�:�7��÷���_\�x�?'�ϯ���iO�5|�h}��#���� ��S㵥-�3������jN�G���g�wR���O�2�lSB��E�wc��{tp���AH�s�q݅��PK����  B  PK    !             / e ChatterBox/.git/hooks/sendemail-validate.sampleUT `�h
-          �SwN��                up4 ��A2ChatterBox/.git/hooks/sendemail-validate.sample�U�n�6|��b�9��� ��m��g�uq�T��V�ԑ�S�w��!)�q���@�Iqvfv�:��b%Յ���n�b��L���ds#GN�VԲ�IP#\^�P��B��e#َhť6$˪�jM� from 172.23.104.62:1
-2025-04-30 14:13:36 [INFO] Received chunk #15 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:37 [INFO] Sent chunk #16 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:37 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|16|1024|�V
-⍐�89�΢��+��
-��*RZe��d�p�%Q:6$�m=�P$����H� І�k&Y�*B9�6���@uB�!x�Fo@�〙�hb%V�*i�s2X�t+��{�R�&`e�i��~G����y !뚴�w�W��ED"���w(��{)���@C���C���ΰ i#���Q�UY�R%��,���A�{��1�x� �Q�(1�m�î�=��%C�ZX�5+���y��1��<���V�����7�S�k�E�`��Z	�+��| ��F�H�`��e�M���"��n��F[��T�]D���G�aW�
-��Z�ѿ>>G����'7��P`�M-�H~1��Q�Y�`ccx�d36�\�0��ӭo�b.�8I���\o�,a���pD''>v���2MNNC��G���x=&�0��Pu4NN�i9���\7�/�L�m?KlS�2~�^#�h�-��ҧOh�k��z�.⬅z�\���ڸ��*�A���r�G������VbhW���sH��nW��ω]>~��rH���I�f�1����b������כ������d����w��<�k�L�FǱ�};�̲~�b豰������y��5?_���D��� �����A�i
-i(+��E:�?�/�#�(
-�J�e�~��t�璉������� �����Q����䥆�}�'�	ז� 7�%���hr^}�\���X��^]�����;{����qk��L}0n����~6�e��O&I^�|�ր��#��,=o`�;?�1@Ϯ������P�����_�7w=�o��/�ʷ��Л���l�)���&��p��)�?PKNݞK�  	  PK    !             + a ChatterBox/.git/hooks/pre-applypatch.sampleUT `�h
-          �SwN��                up0 �U�fChatterBox/.git/hooks/pre-applypa from 172.23.104.62:1
-2025-04-30 14:13:37 [INFO] Received chunk #16 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:38 [INFO] Sent chunk #17 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:38 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|17|1024|tch.sampleU�[N1E���K:�@�V�VB�=�����DL&Q���������>���n��q��,�o#��S!�pWcHƞj�O8/���霷�.�Eh���_�p*^�����L�|����huV���#�iت7
-Q�<�O�,^&u�BU�<�q�8VGͥF/t�"��	~�c�n�]�4�Vϓ�W��'T��5��\˰����Į�Ya�qpL2��m��+�2���S����vi~�F����",�K} u������6���l�PK��L	  �  PK    !              L ChatterBox/.git/configUT p	h
-          XBNl��                up ����ChatterBox/.git/config��=n�0�g����:Ȑ�Aڦ%��i�t�ܾt��)е�����@�7�0.$I��q}G�Ds{n�]3���F45AtM��2șqZ��.ʫ�^r��dGS��p ��ʖ��v�)���1+g�F�ENއ�q�� .�J��T�_��h��D�ٞl���0�?��Dm_�a����Y��Ξa6�+P���pn+⚂6����s���Y�ӹ��PK~����   �  PK    !              Q ChatterBox/.git/descriptionUT `�h
-          �SwN��                up  �tk�ChatterBox/.git/description��K�MMQ(J-�/�,�/��VHM�,Q(��,VH��IUPOI-N.�,(���SW(�W � ʧ"i�� PK7�?   I   PK    !              S ChatterBox/.git/objects/info/UT ��h
-         �d:���                up" ���ChatterBox/.git/objects/info/ PK     from 172.23.104.62:1
-2025-04-30 14:13:38 [INFO] Received chunk #17 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:39 [INFO] Sent chunk #18 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:39 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|18|1024|       PK    !             - c ChatterBox/.git/hooks/push-to-checkout.sampleUT `�h
-          �SwN��                up2 >�ChatterBox/.git/hooks/push-to-checkout.sample�VMs�6=G��=��1�q�N��㺓�1�;mO\��I���d���޷ DӍfғ-r�a�۷��������bq"n��G9�=�����c��862��Bu���l�sG$��Ӎb��[-N s�i��W��E���U9R��T�R=�]��]GF ۑT��Q��	i�r�G@K���3P���z��_��:J� 	N���ϯj'���\������	f�`D�wՐ����wAY��Mt2hh��N���k��|���&k�n/je�Å�02SՉa�(@��Нu�l�ʥ o�06�8l�����8D�E/�:;��+ �l�^g�j�Ϝ/T��	��\𳽐�
-���O�)��R3c~��'*�/���An$�a얜�M�cQ 5ur�mt���#��,"k���h6��:�<�)0,��A���G�A�����%���`!�V����Q)>��h�B�4��u�p��"�����Ό�v׋������T�<�l)�5�_�,b,�hqv�ƒ���k�> ���Ϻk�'�?_-M��\��xA���������%~r9W���Cs��|�dDa���L�M�����e�r��K����vpӥ�y���3+Nv������r���̝��=�j/\4i�a�5U"SEQ���ͷ��j�AՆ�i���9��0�E��Ml�]l�V�� �*<l��k����Txu`�բ��h�Ѳ�s���Q8���+�J�!mx�,�K�ɒ��p5v��X:$z�d?���x����^d�a���ʼRs�vVMaG���CW�2py�5��`U�U=�q��J��>oeȍM��sܦ� �����E from 172.23.104.62:1
-2025-04-30 14:13:39 [INFO] Received chunk #18 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:39 [INFO] Sent chunk #19 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:39 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|19|1024|��@�/}��
-���H�G�6��MY��v����=F��&��E���O.���Jeg�`Ce��N�V�?=����iw�V|�_zE�)h.7��W��F��&��#O.�?I /���ܔ��@�T�H|	�Y��X�Rp4zܽ�ڬ�X�?KՈ�j�~��8� j���N����ky6�<��GQUzc��>�XM��3,5G��Q�Y��]��u��{=uH��l��V���SU�3�Ǩq5?a�[�bR:]���ܠ)�������l�t�h���k!:��0kD3$��X�X�kq��O�����[����j���w搆Q�D@T�wʫ��m/M��R4c��w�=�ߧg���������'[U��6��'��#���L�)���>��)��4<��t����4o����ƾI�/u�w�M�=����PK���  �
-  PK    !              S ChatterBox/.git/objects/pack/UT ��h
-         ��F���                up" �_�MChatterBox/.git/objects/pack/ PK           PK    !             - c ChatterBox/.git/hooks/pre-merge-commit.sampleUT `�h
-          �SwN��                up2 ,O,�ChatterBox/.git/hooks/pre-merge-commit.sample}�OO�0���O0{�{3�����@�m:����v�j���{ʇ��agJS�%�6����b���'�D|S��g�a��������Eh�����3�(&/X(OT���!D�<��h�_���<(K��4T?�#X��7
-e��Շ	6���c��
-i��Hۨ�@Y�#v/�Q{K�� ��}���mrA�v�X��=!�i9.���"�����՝/jcj�ʊ]�$k2B,�6���������~����t28m���5��PKD?�^ from 172.23.104.62:1
-2025-04-30 14:13:39 [INFO] Received chunk #19 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:40 [INFO] Sent chunk #20 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:40 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|20|1024|�   �  PK    !             + a ChatterBox/target/classes/module-info.classUT ��h
-          �%8N��                up0 fm�cChatterBox/target/classes/module-info.classM�A�0E����
-�-����\y�Z!j(5 Fv�˅�P�R�8������y�O +Lz��T�2���,Q��V�����4&#v�WNp6��fBI&+�g�UL�%WJ�p	~��ܘP��i�ӧ�0��4Ĉ�ր�x��YQ4EФ.~��6�ڲ`�}	�P}��C�c��7�Ʃ�} PK;��5�     PK    !             / e ChatterBox/.git/hooks/prepare-commit-msg.sampleUT `�h
-          �SwN��                up4 )m��ChatterBox/.git/hooks/prepare-commit-msg.sample�T�R�0|n��p2���.�[�t�RJ3SJ��o�b�c[r%
-���$9i��6�G����n��K�B&��t;]8���xU��R�`R-jVA������*a�T+������,1��D+���^�£$�T�sQ:*n��Ɲ�emG���T���a2j��k� !l�0��)� �"�@gu�ke�q�`FSv��*BN�7 �4aRI��Z���6fD�-;��/��������|��{�n��$�� j�e��Uf�ǰƁ�iِԈ�L�̅6�Db������DN�������c��
-,��\�����`
-��uc��>�L�90�b�`:"����l��ѐ�%�m��L��:㝉m�d�S޸�h�B#��W5�@�ɤQ����l�)0�t��Y��٦�<�(,���Č�<gԱRH�3ᾣ)�Dc�(KR�D!Cȇ���+�p�Y�!��N//.&����|�i��l� from 172.23.104.62:1
-2025-04-30 14:13:40 [INFO] Received chunk #20 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:41 [INFO] Sent chunk #21 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:41 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|21|1024|;ZM/�_��������Ѹ���I����F]��#=�Z���HJ�T�u��L�8�Ǻ�dЇ��BE�j�:��VP3�9-EG���"�-��7�n��D?ܧOP�e1�l$�)��WSn�
-D�6��}��"�0��]����M;�4<u�L/?�{n��pN� ��]-&Ͼ����L$�Mr=?����a/yV�w0?J�[�q	�/�3-��^�I3��-)�e{J2i~���[�"5�=��;
-���?�����C���pg�]zt~PK�60�  �  PK    !             % [ ChatterBox/.git/hooks/pre-push.sampleUT `�h
-          �SwN��                up* GEGHChatterBox/.git/hooks/pre-push.sample�T�k�0~>�Z�ص�\����Q+�2���6�D��:vf;M;��O�s����8Y�>}�$g����8(!���>�~0ʹ{��C����n�`R2� +7&�0�Aa����`����7�6�A� ������B�ػ���c8��+l�G��)*m��R!�,��i)�8���Q� ��
-$Xg˟��J�3ic���%~d��&�י{�an�3�M�:H/{��yJ[�BY�-����}���u��B�[!c4�"��q�݇w���h�o2��X�1��ڤ��s]�I滱G��Ƚ�Q���%Y{����Q���}�.1��{f�EbFa�ɦ1m1q��d�6�S�O�Y6�g� .�#U�e{���nȞy���7�����A��G4�^���/�E��أ�TܸzAv������D�O7�8���g��w���Í��e�:-��g��C���.o�*]��H��!�����HB���a���|%����'�C!HR��R�ߨ�٢N��%�l�W4N,4����9��K:2�B,�O+�%�%��D��v�<�b�&����a���!�[������(�|�1�K؊�At۱>; from 172.23.104.62:1
-2025-04-30 14:13:41 [INFO] Received chunk #21 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:42 [INFO] Sent chunk #22 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:42 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|22|1024|>�K���ȼ��C����R� ��m6��Z���c�;4��.�1����4TJ�2i���R�Z��*V�2¾X+W/Ϡx�F���Y=�?)�wY�L���ifͿ�~E��PK
-��  ^  PK    !             ' ] ChatterBox/.git/hooks/pre-rebase.sampleUT `�h
-          �SwN��                up, U�i�ChatterBox/.git/hooks/pre-rebase.sample�Xko�F�,��[E����>۸���A��nd��ıG�PbMr�3�(j���sg�"-+�b���﹏ѓof����U�$zB���l��4�G4?<�~��N���L�9�,
-Q*G{��ԯ��h�F�i��-e�t]�ﵱ���� Zf�"c�����K�p��Z�I�	Ţ$�(KK�cU�<ժ`�%xh�!�)�|��,̦R��?�V,��f���1(y.G��*�՚%TB�BZ��3�58����ԕ�Z����3ih-x���&M�a�0,�(�|f��ۄ�J�,*���J��1�w��Z���qԘ{�(�ZWjm�Ě�j㢪,<0ɮ�%� ��&�(�^B5xJ��4��(.��ǰ7�a���B�Z�y"S疲��AU�"��
-z`�Uz3���섵F,�+>���Q����D�O'4��2�9wN�Z�f��d3���̍l��0z̦X�<����~~yvqCwwQ��@�t�% $��H��+��H+b��9�4��������c�����(�G���*��@SK#��{������H�7@%� w�6U�{R)�@���A6��/�KO��S�q�\�e��乫��.`���俭�ww��+EϿ�S�5J�fS�E�,�|ݳ&��u�5�h��<��물��>[��H�(���͉*%!�'ۚt����<| � ��뙸��s��Z�e�>r��[oBclv��k�j�+H-Qf�Kv�0����;� from 172.23.104.62:1
-2025-04-30 14:13:42 [INFO] Received chunk #22 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:43 [INFO] Sent chunk #23 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:43 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|23|1024|�HOJF�F�m��X�w��2�\3���Np�����g�9��=�A��7��������:vp�u̛H��w�n��5ҫ��z�2� ��ۛ�����2V��h������-#�k�C��`;�����hoV�fd%uNI�SlB� ����?�����8</̒#���Xal�(�Y�x߂ɩl�³�e?�~�1}����|{�ه���b�^�mD3��1�N��ш���Tyf����l�;�r�0��m��,h��#s8}:x��w^�`���+{~5y9���׆:�v
-'���@�h9V�}��H%�����۷.�ހ^]&hd���u�GW!��߃����&�����q������7��/__DQw(��T.k��w���B��1�o��1^�dʂ~,)�[S<P=��E=�7e,w'� �����+Wܯ"t��2J�$K�Y>�%���E$�����%�۾#˫YW��Vu�O�+��k��)K�Q��3�u;�2�l X��/��3�����"�׏,�QO��k!���(N����Η�q0ť�u�I�3�R���7��
-�����[)+�D7���������]_]�D�<w����K��A�؇��.Bh=b=A ��uVqGt���,?9���?��*	+B�6Ĭ��qd��{����1���<A��2͖��/��O�.�/^���7��}����7�bCR���'��-�t[�5�=<�t:%4��q�ta�"��Jo0R�ВC�[|�p�gl]e�>+�`�;�8���$
-'�*��H,_v��Ox6�T�[�� 3l���4�sNyp�HS �3�Y+�ED/����3�� �@:lJPtT��7���kQu�ݞ���_�I�u���Y2ѿ8D ;6��7���q�)l��>Y���l��h��e�
-�d��JXb��PX\M����ʲN�Ik�ԇ��Ȇ]1(���Q4İ_�ʴ�F��g���dTx�q�[M����y^�"T(���GM from 172.23.104.62:1
-2025-04-30 14:13:43 [INFO] Received chunk #23 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:13:43 [INFO] Sent chunk #24 size=1024 for transfer 1719c581-f6c5-4929-8dca-8f2a4123e1ab
-2025-04-30 14:13:43 [INFO] Handling command: FILE_CHUNK|1719c581-f6c5-4929-8dca-8f2a4123e1ab|24|1024|&����;�Y��������p�wAg{�f;���t��7���^<��u����#�.�x��2����"g.��K �@6s>���p�+�ܝ�6���\�`7�4��&J���7�Г�Ǔf��X�z�Ux��ͦ�n�~�-���J���f�:=�N*w����Pò̭X�t]�C�y� pH�����x��­�RF/)��]T5�Z7�x�䃏��`?E�8
-�@Թ/����.���0y�^ט�cc�z�gkP�Ǿ�=�i_n�Q���	PK��XQ�  "  PK    !             ( ^ ChatterBox/.git/refs/remotes/origin/AlaaUT p	h
-          XBNl��                up- ���:ChatterBox/.git/refs/remotes/origin/Alaa�I 0��PX:�Y.���U�M�H��f=S�v��X�K;PK� s�)   )   PK    !              U ChatterBox/.git/refs/heads/AlaaUT a	h
-         ��QEl��                up$ z���ChatterBox/.git/refs/heads/Alaa�I 0��PX:�Y.���U�M�H��f=S�v��X�K;PK� s�)   )   PK    !              U ChatterBox/.git/refs/heads/mainUT ��h
-         ���N��                up$ 6��HChatterBox/.git/refs/heads/main��  ����+=`���4�.3�^��א�X��K�YPK�^�)   )   PK    !             ( ^ ChatterBox/.git/refs/remotes/github/mainUT ��h
-          �O�N��                u from 172.23.104.62:1
-2025-04-30 14:13:43 [INFO] Received chunk #24 size=1024 for file ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:15:41 [INFO] ChatController initializing for user=null
-2025-04-30 14:15:45 [INFO] ChatController initializing for user=null
-2025-04-30 14:15:54 [INFO] Starting UDPPeer on port 1
-2025-04-30 14:15:54 [INFO] UDP client started on port 1
-2025-04-30 14:16:01 [INFO] Starting UDPPeer on port 2
-2025-04-30 14:16:01 [INFO] UDP client started on port 2
-2025-04-30 14:16:08 [INFO] File selected for send: C:\Users\user\Downloads\ChatterBox-20250428T022418Z-001.zip
-2025-04-30 14:16:42 [INFO] File selected for send: C:\Users\user\Downloads\decision_making_study_guide.pdf
-2025-04-30 14:16:44 [INFO] Sending file: C:\Users\user\Downloads\decision_making_study_guide.pdf to 172.23.104.62:2
-2025-04-30 14:16:45 [INFO] Initiating file transfer: decision_making_study_guide.pdf (90787 bytes) to 172.23.104.62:2
-2025-04-30 14:16:45 [INFO] Handling command: FILE_INIT|32b79e03-829d-4999-8cf1-1e1a97d3780b|decision_making_study_guide.pdf|90787 from 172.23.104.62:1
-2025-04-30 14:16:45 [INFO] Received FILE_INIT for decision_making_study_guide.pdf (90787 bytes) from 172.23.104.62:1
-2025-04-30 14:16:45 [INFO] Handling command: FILE_ACK|32b79e03-829d-4999-8cf1-1e1a97d3780b from 172.23.104.62:2
-2025-04-30 14:16:45 [INFO] Received FILE_ACK for transferId=32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:45 [INFO] Sent chunk #0 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:45 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|0|1024|%PDF-1.4
-%����
-5 0 obj
-<<
-/ca 1
-/BM /Normal
->>
-endobj
-6 0 obj
-<<
-/CA 1
-/ca 1
-/LC 0
-/LJ 0
-/LW 1
-/ML 4
-/SA true
-/BM /Normal
->>
-endobj
-10 0 obj
-<<
-/Length1 41392
-/Filter /FlateDecode
-/Length 23551
->>
-stream
-x��wxT��>���u����k�d2�2�R��I	��	BK"U������(��� �#"ǎ�(
-ł�%�9"G�����' �s�����]��~�;;s�>{�g=�~�Z;#� ��sگ���`�ҥ���ڪ_`B��N]ͅ�2�
-緌�=˿�����7 ��N��8���p�������k��i�-�O�8u��"�ZO˘4n���=���}�8i��qoE/���PT8	���^Bh�T�O�4m֜ޯ����z(�Sg��#��Ƿ!2g��9���=H��>z����[��P>|�zF�DZ�кzz�z����w�|	�I-3+p=��ryp�;�f�C�I䈖g	���1�Oٌ�3P�k����8O��!�H$Z/`��cL0F��a���@"q��&т$$j�PF2�� �*�PA@#�UdBF@32Z��
-xِЎ���ߑ�aۅ���F.@��)��E��oȧ�� �0�����4 �T�0�?Q:
-f�4�L�R1���Q6� l�b[���"���`;�_P{�0� ���%T�b!jX�� �Q~�gU�* �b	*�	ތ�KQ4�h���PG�[P	`g���.�&���f�n�4quG1�[Q'����*�B�{�.�e�[�'�Gž�;`?t+`�#�#��@�p�hF�Q���>��o�4�،F���=�@� oSq��U�!���P�1�ߡ�h�84p<8�L|�&�8	U NF�%.�*T	�ST��FNCc��t4p���h\�T���Dk from 172.23.104.62:1
-2025-04-30 14:16:45 [INFO] Received chunk #0 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:45 [INFO] Sent chunk #1 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:45 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|1|1024|U��&%Σ��d�٨
-����4p.�8M���4p!���$ΡE*֡Z��h�]���W�n4p��K��/�24p9�����O|�V����B8��t/��>�pZX�9����� Z�8�T�!�pZ�0Zg<�֣{ E+����*�h5��*>��܈� nB���?EO���Bk�� �F&�������g�:�m�a��*>�|�܁ܩ��h�.�8`zp7��m܋66�'��>�T�c�_���&�4���/�m�����G�%�,�_T|=x� |�<��|�J�BGQ�_��ć�5_G{ �@{�7Q#�[h��h?�;��c�	�]t �'�A���!���K���$������ˀ����{�#?FG O�WϠ�����7�W�O�k����'�Y?Go&��/�[�_���R�z�kt�<z�t"�.����=�����c�{t����?�S�w�O�#��*�}�t�gt𒊿��%�F�ѧ��D��
-����}x}xU��U�MG� �k��������������_��o��������O���|����~�O��'����ӿR}�W��ӿT}��7��/U����ӿ����o>�sէ���������/���ק��O���������>��������ק�g����|:B�����5��~!XXu������_��?� ����Q`�ڳC�H?Z~�7���p��?�H|������~v������DN���g��C�@`�����y�&���M�_��O�2�����p�.��F�;����桬o�5����bg�<�f��f�&;��N�cv�_Z��2'ᮥ�R����G݋{'n�x��"@o�]ո.Q��/�6��� �#]�ǂ6��}��x��,^��1`(������e*X��Q���v���ÇI~}<�;��3��S���Q��Ҟ�� .��I��(��3� from 172.23.104.62:1
-2025-04-30 14:16:45 [INFO] Received chunk #1 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:46 [INFO] Sent chunk #2 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:46 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|2|1024|�����K��,s[ N8!����4�w�a&޲8^JRʄ������8�_!38�k�Ÿy`A����������?ɝ�,b^c�%n����H����9�/B2��3xC6����d��#����Odr�y�}��§�?O�E���G�`�ԏk�]���t&��c�K�Av;��0j}D�{�{��p1�G�Ix^�����1|_ �� 2���Lbj���[`�ֲws˸U��xy�h���?�� >.�p?��P��;N�r}�9��zX�8����܉��O�mx;n����_�o�?�/�
-S"<q� I�%Hf�;ȃd9�	����3�L�)`J�a�(�r��}���=�&@��u�Fn�w�����]@�޹�TKV�gq__�o��b�6t�|`u���FC4���i��Xٹp��Ɍ�U��I.���ղ?���>�?A�uģ��-) �����FƓRO֒Fr�����10V&���T0�Y�\f����|�|�\f�`%�Ǧ�a6�vgG���O�߰�p#����y���/������B?��P!�������B$y�F�ǟ3����>t�c��]�.��(4�)#��d^A�F����;����ȆA֯���2�Ȕ�^x �"풿�[�gaU¾���CP�w���2�����hF$
-��+��F����,���V�v�L�a�����̕� �=����h銐tE\z�?~an�e�!}@���%��������a<��� /�X��"���g�V�&�̮$f܈�j�i��,h	�`�"���g%��J�<ϔ��xX�B`'5��h.Wξ�'"A!��L{6 k�9�mr@��dM�SG�9�A/��x�G�O��A��Ƈ�{5�H���1x�ط���m�0�Z`� oY �����/�������溑�\�D���&ɺ?�/H;�����̽�V�7-M��Xo��
-%���Gx­�a��Cv'�1�P߳�K�I��Lp from 172.23.104.62:1
-2025-04-30 14:16:46 [INFO] Received chunk #2 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:47 [INFO] Sent chunk #3 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:47 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|3|1024|*D�C�i�C��H�S�X��7�t�-.*��k�.7�m��HVfFz8�L�}����t�mV��dTz���4��s,C0���V�oW6��୷�����p`�*�p�۟�i�W����|e���/WƒWƮ_�	*i����7��7����a��.�a��fu�LݮW�u�����I]���ߵ���I+�Vv��ۭ�:;���d�ݒ6���`V������A�];�&H�A�\�.]��.�L���q���w�����n����4��-��z	�>���� ���O��A�����\ݤ�1�y\p�����a��<�K�}�9�������o<�fVvuL��ݕ+��6�/��l��a�p/	u�\����k��F�+o�K�~ZZ�d����#�U�M�कU��4��h����+v H�����`���6��g��0w�3�w��L��݊1)��zC놬�qc��s�z9��5�d1-Q�(D��JR�:S_�V�-���3�]�E&7h:W�T:����.��+A����|dt�>����&Փ��m7D"YYTE��ЦPƛ���6ٳ�H0X��a�C�@���u����W5���i��_����1�=(��@*����X�3u��\��2�ܨ�Ak���gPl殓:4`�sz|�|���^�������l�m�A�K�/�~�u��ܹ�q��-�fԳ��#�_Lw��6�����R=�����[�8L
-�/ojJ\�w��?nk-fC�ȟ�;�i�OœW2P`��_�R��9P��{��@�Ѡ�s������b��n���:�@���Zw�t��u{|�v����n��nA���+G7%���Jp�r�YYݵ��4%�r7t[=d5	wh��"�'#*Vs��<W]6��r;YE�'�0,����]ε���g�0Ft�/�ߋ�k�5�4�H~XNhj���ȏ���to���Ð��ߕ��'LM�M	��t�:��a�M.�A��n�a�M�_\3\��s from 172.23.104.62:1
-2025-04-30 14:16:47 [INFO] Received chunk #3 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:48 [INFO] Sent chunk #4 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:48 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|4|1024|<���R�)Oys���������|��)͗��>�����������[�{?p��e(��Ie*O~��E��n����Z&*�ް�����&O�c��H�9^h"�cfı�$	�9��"ϝ#�! �HQ�"GD�\�R�G�TR�R�Ja[�
-�.7`C (�U?s�j��4���O�hÚ�N(��b�A,�������n���~9�U�؜y��ڜ���u9�*�����z�������l0�J,β�E~[Vn@��r<Y���o�EY.ʕE��=�D����a�{�-�Mv��NF�pAL�Xmuv��CYM�h�����̓X�9����G�Ԇ�Q�$S47ׅ�p3d��v���/.n�>3�~ fCV�%i�N���\ȋ��	A�c�m�e�B���>��☡���-��p,猾��AV�5_�i�u����r�N	��4_jF������R
-J�9����d�.׷�,�/<j�O�\G繱��"ٜ
-�RCo
-�:�}q^@��m_�+���‿�8?�}_�׾�1�#fK��\�N�"Z�H+$�8��H��Ű�"��+hKҋlv��N��
-�
-���mv/�Zx����b�����8�|�|i���wՌYC*V��[���َ����ك��?�T5y���U��}��F��#�S��R�%7Y;�>;���LC���<穪1���jU�����|���b�P�M��v�9@��pf/N��҇cV�1��� f��c����g�vW��������53PfE�c�p��_�?¯,��'��I���bR�#�$��҄����z�1��Qb��0����n�ܬ\�_��k��+p����x���ه�-~h����� �x�C�W���L˕�V�{�/�����$C!I�Ȥ�%�62����62��>=��0��盃Ș�m���dUHm�ԛ��->4��x�?�q�����߿�r���?�"<}&d���H��c>4]C~���k�K�����B�#�)ުݗJ�K�s%%(�8 from 172.23.104.62:1
-2025-04-30 14:16:48 [INFO] Received chunk #4 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:49 [INFO] Sent chunk #5 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:49 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|5|1024|�K�rC�@A��gXF��5xͳxM����F�����9��?�w�cHB}�I࢞�p�X3%�`	� �0���b�C_Ȳg@θ	Zv�v�#P�K��)�\pQ�f�Em�v�yФ��酅E����>Z�;V�*\�=��	7�*2|Vv�YM�R����AD\\5\�d��5;W��G9e��rQ� `�D2qӾ}T�,��3(sZؒdw!v��Ī��\�j[�P�;F�E�oHڗA &��K��'��-чL���.�0�������W3� ����6z�YI��r�m�b�r��y$b�yo���;�~�О���oX#w�)�k��N��n�k�i��&����a��d�v��M=����������=�<�:�9�=E��k�j��t�%w����G�uʛ�3�J�����ū��k5�@0?W��F�M��X�����Q?8R���G��"��5*,*.\Q�*P1�`��Sa^{��J�S��fŖ׾Ш���?x��M��̺������`��۷߹�g9�Y|ӎQ{�3�x�՝����?��E<	W�8ym�� �+ 	���LLg̟�."k�z���b�9�h8,�����Dk�0�S���t�|�Z�r9��b�ڃ�/EI-��DԺ%�i�=��QZCT	�</���+��Nz�˜Y��������(Z�ho��E��
-;r�������7=By�<H?E��g�g��t����k�E����3q+%E�*�_� ,�Z��sy%E���<.���=.�9��at^B�޾Fll}:/�Ooy1f�D�j�'�<�=�d1�#��l�WJF�da�A��|x��d��v^�P%U)Disk��b�6i��Z+#�23C�@�$�F�`�j���`��Dy��{�Gڶ~�]��|�3G��ݹ�S���w�z6�4?����gmY1�HrH�<kIF��X�����خơ��nf�m�Reg�]7ײL��r��i���JJ�ZY�g�ɘ
-(?�"���: �le from 172.23.104.62:1
-2025-04-30 14:16:49 [INFO] Received chunk #5 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:49 [INFO] Sent chunk #6 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:49 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|6|1024|�8ɤX����Xo��T;�?�O�uBmX��0Fa%L��mM�x��$�D��h�0��&�v�5{��j�*�F���4'�@R��E 9P$\c.�Q�PE&]߼&=*>�"
-���4���hד�z[L�ڦeU�W[�=?�)��U�p��۱~y�]6[� s��k����'�7jC[�K���rJ��T �JH�.�
-M��$�Qy�����fz�d��yF�$-# Y���bX��Y�
-̋�E�h�M1	�,\�ޒ�&2���b)�|	(\L'�R��B]�@�7jq:�%��	C���jUr?T��"�K�z��ހI].1F�j�_�6�
-C| ��������1m^�Imeؔ��~��dᚘE�i�r]��G�T��D#�@�p�1�42FLֵ,!�?��k��<�if�՞O�7�i<�2���� �l��XJ/�ܔ�)��Ϙ_�Oɟ�E�١�r1�\.W{̕�S̒�d6��7X�f0<п�Y/y�1�&��zC̊�V�	���OR��Y�Gg�Pr�Fa�C������8���C� �C���{����>����h$����͠�F�B�=�\l�@�H�jՠqMō�	�hN��F�����d]?��Ɲ�����~9��B�%���{/�т딕��>�螾�6����#��{��=�ӨVҴ�=�@α'�>ŉ�1kg�p� �f�0N�2���o�,�yN�،tc�?�P�6fxc�~:���'GQفk8��K�Zto��F��*�쀃)
-p��l�
-ˋ�1��>�>þ��ڛH��Hk4k�&�V�UM6����X��
-@�h��j�&�߂�ȨQ{Ŗ��\����1eH��cH�C[�8�����ﹰ�Ӗ����������e�r�ro��oc+��|e�^�������O+����#�vј2���=6[��a���j�"���%��ȺZ�!��}U��A��|���QxaJa5/� �Էj	�5%e���(�i������1�t�T�E��`��T4�ٷ:�� from 172.23.104.62:1
-2025-04-30 14:16:49 [INFO] Received chunk #6 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:50 [INFO] Sent chunk #7 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:50 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|7|1024|��p����{��w�~(n�_i�d'����������vD��l����3m=l=���os9M.^���,�F;S�]7Ͼ
-�ī�e�b�y��^�;��̦Th�=������j�S�f�e�u ��m��-nk
-xy.�k�yk_�`M�S"��d���
-14����w�6 ?��{�j��Y�5f%��v�Yxo*�?ܸ)Z����Z�!�3k�fҴ�5�]s���-7hÍ��������wS�-�7~�������,�2i�=&��У~��m;�Z���|�jә��&<��}tš���W�IK�5v�������[��zv[+[t��#�%�������N`�ڦ�&�zW�Vy�mwr}g;��7�d{¶��t�Ǔt꾂 [G���3�}�����Mq�d���5R�;��HVf��Mm�����h�1#1�G^�� �|�3�fb��rv���L
-�өq��_�ɨ��0V%hUE[�Ӷ`����
-q���_��kk������;ΐ���5g��7�ʼ�}\-;�L���g��h�+Ț���}�e&���G7��F�0�elX�y)��Y��%,S�yr�T�君��l��Z0zU1��)MM�{ �fرcW����j�%ۑ}����k�: �ψ�{�����������~ྞ���Y�����.м$WB�9s\e��q����)�@`�؊���y�j�!d�6������+{i�f�͐!�j���9���b�bY>.d#9Y��ri�SL��	ԕ�k%����!Ќ�l������ܶ��m�_k\GְQ10
-Bk�5�b�֘K֘���D?���������5�*��c\@�؎W|5��M�G�ť�do|��p�2dm^����r��d�k���q�w�)�h=t����)
-,RҍF�˴`/h��X0�(�I���TI �E�y�K�٫Ҕ��@����-C�xP��޶����U��U�WTQ��]0T��`z,�z"P��c��]ڋ�[�}�q��Ϸ?�h���.�tON3U from 172.23.104.62:1
-2025-04-30 14:16:50 [INFO] Received chunk #7 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:51 [INFO] Sent chunk #8 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:51 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|8|1024|�u�yzL����ێ��nk哳����4�$Z���{ccs�\e�8IS��`�7�����EE+r���O��mP~����װ2�c��V�p,�Y�A�m��H��l��a��l�+4^��<�7����1�	9��਴1��G�f@?�8{�e�Y�6a���ge�^�2�W�q�,�"<`8�QҬ���?��˩��p����Kϩ�m��3P��m��|���r��Q�ѣ˹�DޫA;�W�����F����AȥP�W�i��5AH��L�1�p:/0$�=R��s-�m>����[�'�;�{7|(ޅ���q�*��u�Q߂|�*�Y�ǲ݂C����%~��v�ZS����[˧�4�#=�kK�h�&oVVf&�xAJ>�׈DG�
-ˮ��_5�HǑI3�}��˚�%b�M����c�f�D4*��!SГ �O�a� g�����:��v턉K��{eu�|��➽���D�<�p��=�:��;8���۶������3�h�P�cF�M�\<�ۀ��uOH|���JAM�ʱ�*�b{�X��Y)uhIJ=z�{�yZw�iԽ�;�Υ��bԛR�))L�a���}�uC,C�C���))�M�L�2���z��-d��C�Y�K�(.�v��ɈbS�3��a�m�ʌ��j���'
-�1�.�=����y��XQv��%�0���x&��l05�cJ�ݡ`��j1���6�)�����ۅ;����rޑ�5r��eO}IH��������5����lZ�d���_���x�'����@>Kba�w�oT�$BA���|)Jk�{�h�dWgk����<7Vȸ�9�Y��p9��dI'1��f��m�f�l�8DO �$c Ehop|cUI�6�+	ڷ���fO�ߞ~�Y�}��li|7���t��eO�3�wК�{L���g�����,l��ۭ����Z�$��3�E#bV��  ���4^-�fŔ/bz�%��H.�i���qD��h'��T��E�U���&�$��'ٴ from 172.23.104.62:1
-2025-04-30 14:16:51 [INFO] Received chunk #8 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:52 [INFO] Sent chunk #9 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:52 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|9|1024|�O0��2K��;�;⺝�$rإP��RK�F��� y�����ӥ�#����ԗ2�}�6�ӫ_���~��v�L�_�6p l �>�uu[�VR��o��Ĥ����NB��y�W� A�`N�A����W;�Y���S�~	K���״�L� U(�"����攨��^�(e�]ؠ���8=/���5��!69t)d3�p���`/��G:b1x5� Jc M�AW��k�5`%!㟬�f�0�5n1�`(EF�7��&~b���{q�O6b�6�+0f���G�/���;/�LJw���g���}|
-�6Nlz0�������+6��Z7�iKn�IUuj������|��j�M�	�H!Z��/|E��6٠Tլp-�_���"V�ul�a�HE�r9�W����4(�ja8�G{���r��~�H�l�J��ލ�m)���JŠ�Q}"��po�Mj?�޼��Mnr���\C�u�7�v����9:%���s�8���k�&Ԁ�H�����"�L~8X�{�=5Lu�G�暑�Z1�ffIKŵv��%TQ�/��
-�J#T�:���1�qH���K���´ ��9_����O�뎐���~�	>�o��S��E�Dq��ly����h�r�Ɇt��rf;[7G�\'j	'Fu����)�X��E/=B�3�u�6��7�^���Q��r96Ey�a ��E����tz��D�4ՙ�� نt���/6�v1I�H���H���`<Z8C��~h ����4�!/��J��c�&�m��j��ET�8��*Àm���s�7JK�4��S����V�?� /!9q��S��N���W��2�U�_w�%z�������>;��`�/����������^��0`(��Bu��f/,��P��Gp�ks@:Ͻ�+^����o��s��n��W
-�ϯ�)�>�S��Gn�(V�2`�b���n7�*�Ek׺���������pJ�����s�s嚡�`�(�p�(��P�*�z�8 from 172.23.104.62:1
-2025-04-30 14:16:52 [INFO] Received chunk #9 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:53 [INFO] Sent chunk #10 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:53 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|10|1024|�c�j5ְ��.��T����n��7@�5+(О�!H�(E
-�uȘO 좱x.|w{�1��������)}��s�����G�-<?~$�����7�{�K����8��b��Q2�-��:�@Cc�S,����2Baa�����h`
-�.�ßˡk��ԫ��rY��h�t�\K/%����GP���l��a?�ߌ���=Qѻݒ�=�A�i��i/�[Zv0x���w[uP���}܏�&V��M�������(����Q�n�Y�|��	w�J�½����
-np�<<�����V3���У���!���5�������"(��ȱ�ZǺ��a6d�
-�ۢ�������^�!b�q�u�gx��P���������}��8�vZA�������M�(al��v� !����A\��k`���4���'q���HV �stf�Yʒ$Lea�!�E�<�M��$+C3����ё�t���CU��ꊑ*NQ8��e����?����v5�oR���r~۴�@mNǿ��M9b������#�gN�q_�?}f_��9pt������wtB�l��$�(��LZ=6z��&��|��)��^�+������~Jz�Һ6�����{S���p�Һ��c�������Ԏ�L������5,�V�m74.�1(zY���`4���\6�7��94������(��j��a0�EoX����U�ե1i��V�v��с�p�sP�I�Z���i�u�'9��]�l�$��%1f��FS�p�����b.gԘꌚ૏y�J��>�Z[�Yd��
-PQs�iK�v���c��d��w�u�,cp�ĥ#��m��޼t]�����r��1wé�PZ���5�ݒ��Z��v&�hn�I����7����rQ<�a,3��ef�l(���z:3=��)]}]Һ�d�	#S�f�c�g��i$�I�]B]s�����j�tS�,�s��t����jC˘��{t+�*K���խ3��zCiz�� �w�� from 172.23.104.62:1
-2025-04-30 14:16:53 [INFO] Received chunk #10 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:53 [INFO] Sent chunk #11 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:53 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|11|1024|2�ǡ�T84��f��fj�`?�+q5��<n��P���p�6w��SF�8��>6�i��Q�]��� �S.C��{�v�@�����Ԁ���$�}+�OS�}$G�Z���nc�jkPC�|A7ꍅ3��od�����'�����mwаs{��h1>]^7oٕ�_����L�w�-�]�N�GG��?�q��Y�_u��}��dt�7��㵳��:�W>��F��8�� uj������';^�����~Y���$������I��N�i9Wq^Qg�^��T�NU0�Sؕq7�۹����l��G��Ĥ���-�Y%^6���lG��S�m��]02"Fځ��5�0��۰���F*mն:cө�ޫ�{�
-+e�&�
-J�+j.'Ü �Jp��5� �Jv���#��W>x7�{���;��������է�úo��W���o�u� ��>\7ul�ح9�BLHʑs�J��M�|X�(k�r?��@�!���E�����pB8&ܷ~	X�x�'"-�6#�O�ub���t$�E���B��\?��S��s9�Ҋ���mI�TC���ס$�0��͎�4��b����g2����Gc�t��)�c�ۜ����P%G���TYD� �Kr�<L:���>^�֗��~��핏���a3U��DH�M�4^뒉��LS�E�ƨ���u7�0uw����r�P�����0,PM^ YIZY����l1�LV��ဨW��C?]�&#]ǆ[E�A�,ݢ��!Q�Z��a�5���&�l0��EQ�&�,:�����^qV�c���ш"?�0��F$��v��I��#?����!���Ng^���g��e-�L[\�G��㻜�1S�iصo4���F���x��z��Q���׶nh���6�Ir4%.',��h�V#{�+V�p&m@s��&X����5�����l��X�������9�j|�����%�&�D��}��|�����F�y`����_y�ZF&x�ho��m�S��3�ߊ� from 172.23.104.62:1
-2025-04-30 14:16:53 [INFO] Received chunk #11 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:54 [INFO] Sent chunk #12 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:54 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|12|1024|��jI�j�s,f �f5+JR8%��!���z����c��'Six�5똙�[8���䕑(����>j�/�FB���)��q�1���ȩ��	��4u�%e�jJ�s���%ƨ:O��SC��M�x�:��1UCRQ�D5M���9�Bh2^��"���f����z�]�u��a̶F�q=w�*L��٪�d�P}lq��2L�� ��"�ϳ\Hu�;��']c��JTOz���)_Иg]��=}:>Y���o��RO�Oƍ�o��<,x�!�M<�a�<˄�C����~
- �.��x���������e�L\`=��(��}�&˩see겲 k��;d�Ȫ�UdU�&gU��-�|���k�κ��l�~�G��3޷~�!v�a���dg�G�hv���!��qrd��\~S�M�[�X��Ǭ���oo�8Fe��$��}�~�~�>��6�w��3z���7�gc6�C�G@]ӥ�F�9Z�B��&2"����87�+̅�E�2�������(��Q{ȑ���2�'>��'|�b:�E�@.W4�����ƍsצ��ٚd�N��� �h�V�w���'n&j@�Y��`��#�q1��)w�jסL93�u]�hnJ�c��{V<�O��Sy�c���~��IO�S���}���u���4��M�j5�z�F�l;�╥7�O3<JFYέ�#��t��2hA�@)�Tl�dCW�u�R_���|��<�-�j_���`.���z�z�*�
-]���v��J���d�n��:�;-���q~i������}	����r,�\�!��6��&pgR~aWdŪgy���)�գ�:�Nh���i+�uZV;�P"�0��	7�����R�3���^�:�=���]�,��55)U��U��iT �0m��OA��tX���m�i��{̮�X�/�B��?{�ӷ���l�eM�5o����z�{y�co�x���K\`�A�]�X��F�>Ogsg�@�@{����y�yT�E��E�S�"��*�v�ZW��*�� from 172.23.104.62:1
-2025-04-30 14:16:54 [INFO] Received chunk #12 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:55 [INFO] Sent chunk #13 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:55 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|13|1024|��ɲM^&E}�(��"c�TY{�=G��գM�st�����i�h���zؐ�OuC)Ҵ�2�4=<ִ��	�ڹ������l}Q� ���7ϼ�<�ZO�1�� ��8w�nb{rD�:��:Ǥ�bJv������?g~{�ο�v9_��%U�����,��d���)S_=y��]�Y�@Jg[GXNŞ����u]t\���3��Xz&�q�x�XK����C�ί�_[~���Z� ��qQ���:(�%i����@׋t�u������&�濱��/�le�Z� ���T��:�0
-!E9aĊ1f�4�Y�,S���qᬐX*��#8���Z��TJ��ZrN����jQ�P��N
-��8Y�x��E�^��ݕ�r���w�>��m��l^���+Om��������n���[��v杣 �^`�^�,+���8�X�`����֎g�p34㵢���t�i�w�e���������T����o��m����ϱ^&�
-�a��n�g�d��y��&�(
-��H�����A��1�ʐӳ�tX�����P8��c)�3��ϖ��	����D�j����s}��H�rMD��-�JZjJZ�֓=0�f�5eKvY��J�q@���3��������ob=�zAڳt��3��\<����S���@����)�]'ᇖu���F<3B�rH;��Z4���q�:c�j�c��v���e�������.���Ou�l�H�J"3��H�h���9��C,b�Z�vO�mW��vSK_~=<�)��>��2���	��eo���N�:3jL��[#�xB��1���7�q''��bͤ�6��0�^�R3��yn{6n4���{�����.Ǐ3������m��q�[��W'����|:D�\�Uj��%[���v��gJ�6l�F�����n�!B�v��w���m0;�������7e������n�n�����2'cc3+��Ϥ_��)�h���&��1�cT��!U���F'ծ��N��c��� from 172.23.104.62:1
-2025-04-30 14:16:55 [INFO] Received chunk #13 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:56 [INFO] Sent chunk #14 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:56 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|14|1024|zd�f��I!��+����^gg�8�R}i/���g(5���d�
-P���Q�M�khy�΂;�:��\2o�/f��cj�LON:��i��f����Lإm�y��=��������{h���l��w�.\�m�9��]�C��/jX�K>}�Տ�]�����瘬���Ϋ��
-��!悚��>�ltr�՞b���A��bM�;��Q6Z#��,ZIiby��	>���>jbk�/�o�]��j�&[�-acm�j��/��~D����X��s�No�=B5�K�Y�%�H�	U���^�yٍu"(��D��k%�Ir��1hT��[���<<��^��O�wo	����ز�eټ|�����:�L�DG��XE_M�f��AsXsVsQ# �OS���ll=��&��|�UK�܉���!��Ml{�����Y�X?{�X��x��3K���%�/��NઘY�NԁZ�hlld�?~���_9Ɵx2�wP�hB�ce����l����"�	,KXΌ�NK��9�@˥���Pvٝ,�B�T��>m�����:͖����R���t����ݢ��n�d���\�ÿzQ1�EErc�^p�d#�W�89g��4�y���R}E��y���~��{��_�ﱖye�ѲqԻ���_��~'��!�pc���]���1�~s��G����!%��k��bK�ϲ�i��t�6R�ts�t�����8ȇ���5����a�0�\�Y����k^��gO���o��V�$q�� I�ȔCo�a�'Y8N���YC�r4{�j��6a�.U�U,�W���B�6�Hx¥�/�S�}�>���i5�z�ZSi��(M��4cX;ԉ���X¨��x�4�)Q���R��I	)Q�������@��buԦE"j�(�8�'k>��FW��Q�|r����j��ڨM�L��X���iK�
-p��=z�����q�0��Rs�o�� 
-���6^�_�,�y�ՇpC|v�8��o��jP�j from 172.23.104.62:1
-2025-04-30 14:16:56 [INFO] Received chunk #14 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:57 [INFO] Sent chunk #15 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:57 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|15|1024|�����TT���/H�s�%ש���X����q����"���j��Kp,x�0IGCIu8.�@>4���u��6�$�Ru�3՚����:�	��C$
-�� �蝴:����s�/�_����~b�A����0L���-� �.�"���Ц	�-�C�����z7v�V̉H^0�O L�2�!�-r����*�-瀠4_�hQ{_ -�1��JF����z�b[d��t�k�R}e�N6W;`��<Q�g���Fﹹ�֪���|�g�G�\�`c��ދ;����S~p���t���Q���0�3gN�G�o9�G΃�l蝘�cx3٦4)_1ߘ/2��<Km�p��QN8>w$�_��-6��t�N/�ӴjT�b���q�I��㢃T;69���!yV[k`1�[`�_*�J��.��d� uq�㊍7j$Q$�W�F^����*0:� �G�ikak�{���?y�����)Rc֔[k�a���Z]�~aK-Y6}Z����8]���Ltȉ^�U��)w�o���ĉ�dQ�W:�:�
-]�^�^�����H� ��Ta���MӌS�����9��V��F0��A�y*3�/M�%����r�4u��9-��+`$(��m��T�ณ�_�֧�\B��v.J|��O�D*.WT��
-��n���@�n��7���Q�l��H�-���l�������{�/۳w��=Č�������wa/ֽ��;��������� ��,�x�iYi�ܤ�R�R�����r0���}�-)��z���������=L!���tW�S���4��a�I˧�O]'��,缟�~[��(k�A���T�+_k�O�+Z�2���6H֑ޙvB�*�:��fas�3�����u�����Xb��t�|��lV�:W8��� ��[:����D��g�_�ָu��瞙U�;>�{ie����<���w��+̖cG����>y���|�R��%���DH��#�E��|�����Y��������Ros7$����Jo���C�y�[�;��IR� from 172.23.104.62:1
-2025-04-30 14:16:57 [INFO] Received chunk #15 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:57 [INFO] Sent chunk #16 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:57 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|16|1024|�5J
-���<�L&��O_پu�w_%��,.�;���)�����:X1���:k�e�Yg��O<7Ir/���|P6�&酭��O)gv�Ã_��4���y�%�cN��]�o*>����X��{�}�wfv;����z����@�^��ݱ�9f��8�泝ف�v�k��F���F�1"֪j�$MF���T��I��d���G���sJť�t~�T�ڋAHy��]M�8�ΓH�2��W,}��ɥ#n���[:�f���5�vx&�{i�̖h�K��P�\|:6�M��v���tI�:>u��>͒���粏0:������>e��d0!J{,9F�#5#��ڑ�H]�X�����Ur��1ܘn��ni��iåa�q�q�������6�k3�~(w��]~*}K���_ö���.��d�u��VV�6�E#��Y������<��N�s���9�8��E22~D�'�ΙQ�	`IX��N��k�嫓&�zc>�mG�LM!)��z�j}.�Js�̎|g�GH˂+_�DOd�,W{zW�����ۓ��u�I{c���i�Գ��U�k	|M}�uf����R������x���<w}
-�=
-b�m�AH4�FŤ��O���H�!�1��k�݀>�F�A�,f�H�H|�u#��B�F���[�_��f)5����*Sz8�-�u�E�6jo}	����=�{�/�Sz��};g�?p�KÍr��U6[�{��������M�)3�w�)��ﱸO���ȭ�':�P������NF�8tմ��?H��Q�$ѩaaJ��:�F�2Y'a�M� ��d�%�b�)$� v�t���:�^`ĘMB�pX8!��AR��p�����/XCVw�z�f�O� $�<��H$dO�=ўc���:NIW�1S��,ٻo�9��ݼQ�y��d�j,L�߻�偲l���`5���=��E�}�!��F�7\�e�,�3N�6�mZ0x#T��B�J1������T���u�E�]�\���uA~{�!з����	��>��ik from 172.23.104.62:1
-2025-04-30 14:16:57 [INFO] Received chunk #16 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:58 [INFO] Sent chunk #17 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:58 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|17|1024|�5v�A�-����*�b�Π�#}t�,pVv#�hL&OYY��#���v¥��ʮ���L1�>����Qk�޿�}74�:�oA-Y۲��v��\��D!Y��]J��B·�P )z�1*Qk���W�"Ҕ�n/�q�Z��No e �ޅ��6��ޙؾ����`�3Q�&,EQ�t+�.�C�0�\3O ��ɚ9�|�+���!-���2�a��R�8zDs��=)��^vKo��JgЇ��+�
-�$eK���&e��T$�E��p1�-��Q� �
-i$�F#!�@>��}B�[��I� ���XNc���Dӄ��b��b?��T�w��&kv9[*Z*\��s���\O����W�M�sO��'��͐�<���s!�#�Á�t6ܲd�A��
-��c�#Ľ -b"�c�����L��4�0�gd�T?5�@��IIf�����|��5fޭq�8��V�Ջ&����� o!!K���Q��A���t�cB��K������4�0�4E'N4���	���A�~�/�M�֘�2t��C�)�R��Lw���G���g�6�M�Uއ���o@V|Zs��`��t��]�11�`��i$I�ʲ��`_��r��oJ�M�z��FA�F�)�	�*zI�C:�E�ӋF�!"����`��""X0���(�u�Qb�N��mڬ&�%'Y.+:�ڻส��������{��}iw����veI�IXZY�V��mT#���ul�1&<��F6.��e
-��K	��6@�a-#�L�@x9hK`���$0%m	!C����~����2���L�����<���s�{���s��4�6Ǿ�S�
-ۦܠʜpaN��m��|�ą9ըa����k��_~u��-DW��aC-�}�������^�K��6���ע��|s�{�x119�OKz���c���ҋ��KO�s�c��z��b�$��R�Ž"�q����x����!����N�Y^��7��_O򴥹ҋ3bOq����Ε*�W�"���tlVI��|�|��e_��f���⺽�������+=y!� from 172.23.104.62:1
-2025-04-30 14:16:58 [INFO] Received chunk #17 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:16:59 [INFO] Sent chunk #18 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:16:59 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|18|1024|�x b9w5�������{>���%���w��WP�������|���e�}U����_@������o����&���ˆ��hv�~��n�^�}���#�#�uYυ�1W@i1�l6���nW�N�cW�|_b�(���s��ԣ�����/����M�4=�(�2�x�����FWc��*�lAS]^C�肮��3�`�I�.A{FcZ��
-z�.E��]�J!)&3Wj�����#��)hH�yV{
-�6�e9_ҵKh�����_���vۂ��x�x�m{!�"f{/��m�Y]�Y��c�⥩�g���.�r�Ժ��!�u��&�5����,kHe�urq�q�2h�z"�����c\�Lg������a-LϾ2�Ev�k���LX��/�������ع����J͟��9�_��<�[L����]\�?��rZ�&t�����j�f��۬-�.�����W�+�y3ȇ�0�\��s�v����u�������|���=�C��!���+��/�q<X���x�'h���@ m*Axt/���UU	��׫z\VT'˰�N�%Xs��cz g�s�:d�L�b�)�sld��h,��(SO��\����V{K^���N7+�'�G��'�0<U� ��x�(?���X���Z>�9�������g|��@�2�P#kQ#�������i�1X������З��~,����+�����x��f�@������C-n.^8�"��Ԩ�|򵶆D�O��on�~m��'64ů���Nܻ������s���'�s^�z����ݒ��9�yI0Y��^����`K���O�΅�EX wY�UV�s�s��򄱞��H����V�Y،)�g�v�3�m�&�V�8{�oh̰�M�J/��D^z7B�Z �/�m�P\�AR�4�A���6�e�FZ�O显�D���XHb�����/���+�~��m'ec���m�ދ������^�����׭��71:}��0Z�o�ً����6� from 172.23.104.62:1
-2025-04-30 14:16:59 [INFO] Received chunk #18 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:00 [INFO] Sent chunk #19 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:00 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|19|1024|E�c-,#�����A����9<#g�ʟ����J�����Ʊ�z<���p|	��g"<�79%���X�T�9�y��6�zR��W���'\����k�d���%yv�<q�g�/�5�,�ݷ�J���n��f׏ON�"�~ţ
-��Q]�ۅ��&A�9$�w��D&s�D��3WK�V̬�N�h5�U�[V��$#v7Ր Ӆ�{w.��5w��r�#��Ge|�������9�h�`���k��,���G��p2p���82dw��*�S�e��X-�i��:9������e��|�T�)2�k�"��y��B��>�"���}�-��:6��6��n����ٽl��d�k矵�����bѵ�T��B~� _��'pӓk7�q�E�8��g�.vm����]}��[�l��"~v;˩��8�Q��v�ǅ��S!q�0�Aa�DraR �()D��Q���x�F�7Q��F�̐
-�ze?��O���r7�w����r2ɎOT+�q8E�z��5����555U�nUH�bZ�zj�b��ϓ�In�)��V�dN�b�b�A���s;�6�?�$~n�ǡ?�H�bZ���%'a�wHF��*���I�["EV�'��U��ڊ�������J�O�n�UV���nUH�bZ�2���|~r�l�dR1}T��C��^S\����̫�[����I�θ�WM���߯��V���+5���S�Ր�(��� ~~�je[r���#��>��W��*����@���ǫ1�S9~j�j����pj^]C�R�k��|M�	u�STTp����8U�R���*f�*�V1-�?�B�ө�j����o�<�M�|�რ�O���}^�B�q����݊��S����g~�*�����Z���y5�$��iɇ�G���z��P�F�o��zM��(s8E�����}(��W��~��*f�*�bZ@S�
-:�::4`dH�$����i:�f0h�C��?4���&@r�uPQ�=�'��d��k�Z��V��*��Շ from 172.23.104.62:1
-2025-04-30 14:17:00 [INFO] Received chunk #19 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:01 [INFO] Sent chunk #20 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:01 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|20|1024|�x5V �H�Q!	��@+
-�He͈P$	!$POd:�c��(��(�St��Bh6��ݪ���iՁ��Z�SG5F�EY�e�B2��h%#�P0���h(
- #�$QP����߯�MQ4ĸ	�UC6�
-e�[
-T1-�?�� ~�pmm8�u���c��Pm��~&~�y?�T�?]�fu�
-U�8���A:�}X�*J�B
-��(�ǣ��8�
-%�.Z_<�!�(�r0�&�1�������~��٭
-���V�ښt:ut���GQ���T�����z+���`��RV
-�z��(�u�#��Z$�&��"��p(T��V��UL��#���Fg"C5Fs�tM�UH�x<�D"�JXM)`KSS�	�T�����X$��b�Q2\O�h�H
-@V1�U�x���Sww��j��S����Y�Q]]�E�T kn���Bͩf��R�D	��lE!kY^%�]���Q�m��V�qW�ꪘ�-jq^$`0���������A'멩���6C���Z�Z�knZ�&Tw��㐭�Ӵ��^=3��śc(�g%���:�J$��`#Y!����������
-������ [��G9Y�dR�굳�^��HֵXq��٭
-5T1-�?-[��t��L�p���@ ]� �kNS{{WW{Ko�}���_W�QK�QN7@6���=����t�3��6;����i-���;at&>4WC�P��B!Z�pa+Z�E��;A�u	t,�n_�=�&4�(�f ����g�C\/�	���nJ���ݪ��*�����ɥ�؅w&�eQWĊD:*���������`�����M�D�֎�ڎ3�f.�zVk��eqk�*f�*�UŴp��~��=v�L-	ZK�b=���Y�CK���,�_1��qZ�d�Ȓ�Ȓ���垎��xoO0�\��DG��}�����٭
--�bZ���^:n�]�8��j�JY֩E:��~��+V,[r�
-�O�y��[�l�e���X�rw]_8�^��T�����:��٭
-T from 172.23.104.62:1
-2025-04-30 14:17:01 [INFO] Received chunk #20 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:01 [INFO] Sent chunk #21 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:01 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|21|1024|1�K��0o[:-3���1>�?��b�iA��N�iZY����	������OC���a亐��:x�+��oOr?d�Ӹ��c���4j����5k��g�2��p?��)=���'��*t����=��1���f��{
-r_�{=���nY�©�	�[��m�{�@��4����h5�s��	��̞�[س��>�������e{0�	�C�k���pǐl��qm�����|��:L$�h�`�f�pӋN�g�+'��wc��V�E��_���ߔ݌�]v���v�E�)�ݧ��P-��ǞDӧ�
-�D[i�����i�l�OavԍV?�U�m�k�j������	��&���T�h]V!t3b�!~]�[>�*�5�]�f�Iz��.���SC�mн�67!����FZ���$�����)uVr��pj�vTd���s��(�_��]�v�04ܮ�}_��2��6r����^�*5���IwE�p	��N��b��=`�-�C��o �ɹ"3�{rs�n���+�v��M�w��;���c�:߱GW:b��Y�Npǈc7/tl3�]ජu���"X��a2�[�3F	z��"Xpy�!9�9۔��s��&�\p$JG\lF�w+BIx�LJ?�vb��g}��=��
-?�G���.�'��X�1� �k�a����_ ����{�	?��k�	_�>~,
-��4���j��=��4��~ S^��U�Ud�_g���lG[gّH��x�a����9ޒ�~:�lK<0�%�DE0�?L��o_���2\/S|'�p�ֽ���s����΁W�%��\fNxa&3���Ŵ(!|Wxζ�#<c������a��>*<3S��a����5�7g��Di�/<	���!��b�`�pXh��4a"�CtM`B�����?Ѓ�L�2�Pƒ��,�ƞ䞌���}/���ܾ.nd>�y�����F����z\��\z%\�Ȭ�.nd&�� from 172.23.104.62:1
-2025-04-30 14:17:01 [INFO] Received chunk #21 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:02 [INFO] Sent chunk #22 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:02 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|22|1024|cN����D��U,9�;��N��(�$����踛���3��@�\[Kk�p��`�X�AV��
-�X�FVd��X��,V�g�+b����r�>���jY�(+|��Y!�
-iVhb�$���	���=�5f[�ü^�^��[GS@4�b�B�?�p��� �lp����n�mr��ۆWOA�)<���u��)����SH@�9�|��$���Ѐ��a�:�N��b��w�;;��V��v�:˙��>�)��K	�\�am�
-����D}�^�0��a�%����Z�ͯ5��e�v��Ã��l�1s�.1���J�ؗ�ލRǲ�ai��4m��&K�v/Y��aw�Xk�(����A��Z�ǭ7?��8߲%^Iι�L������K֭��;�$�<��c�&m�V�Gm�q�Lb��'��Z��ʲ#�8M×�d�%V �Q�Dni�OY%�����D���8[��˾hc����}s���B�nqJ����B1%&�:1.%S2$���ߴ%���� ?���O����o���v7�(��h$	t.�qa|r���l��K��_M6�1��uŚ�V4�i|�H��m|N,]P�k/��?>�����-
-��1Z35�J<�x�\�%c����������Sm����!s�?{��G��i[�j?�+�=>9U|�._��R]~��W���S�/�/�F�w���:�Z�~9vw-�����Z[���]ȡļk�I���r������4�!��-��2�m��,�rn���N7���mj�e"I��e�#��e��!�N�2��e��\����,��[���e�X,f��=%�Y��"r�}%;%c92ڱ�2�1ȴ���e����.�o^?��qlc�����m�\^[,\�L�ݜ�ɢ+��͗s{Ӗb�q�hqs�hr�����G/n�K���L�]��2:�8�x�q�h~v��޾\��ʵzWDb�yb��Z��>"��G/��������Z�[n_��2�zj�D#�e�{VP�׍�T~$l\��.��S���1 y�Զ from 172.23.104.62:1
-2025-04-30 14:17:02 [INFO] Received chunk #22 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:03 [INFO] Sent chunk #23 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:03 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|23|1024||��8R��<�}�}�G�N�(��rT�ũ�A�P9�@��q�ڶ��A�cW�:� m��w̶��G�+�6�No'/�N���_7�W���Rq�d���͕�8���.WE���0Y.����Q��}��,��3�Y�b��M��u����b�Ļ��<np����i�٦�P~�'y���������hAe�$������_�
-endstream
-endobj
-9 0 obj
-<<
-/Type /FontDescriptor
-/FontName /ArialMT
-/Flags 4
-/Ascent 905.27344
-/Descent -211.91406
-/StemV 45.898438
-/CapHeight 715.82031
-/ItalicAngle 0
-/FontBBox [-664.55078 -324.70703 2028.3203 1037.10938]
-/FontFile2 10 0 R
->>
-endobj
-8 0 obj
-<<
-/Type /Font
-/FontDescriptor 9 0 R
-/BaseFont /ArialMT
-/Subtype /CIDFontType2
-/CIDToGIDMap /Identity
-/CIDSystemInfo <<
-/Registry (Adobe)
-/Ordering (Identity)
-/Supplement 0
->>
-/W [0 [750 0 0 277.83203 0 0 0 556.15234 0 0 190.91797 333.00781 333.00781 0 583.98438 277.83203 333.00781 277.83203 277.83203] 19 28 556.15234 29 [277.83203] 31 33 583.98438 34 [556.15234 0 666.99219 666.99219 722.16797 722.16797 666.99219 610.83984 777.83203 722.16797 277.83203 0 0 556.15234 833.00781 0 777.83203 666.99219 777.83203 722.16797 666.99219 610.83984 722.16797 666.992 from 172.23.104.62:1
-2025-04-30 14:17:03 [INFO] Received chunk #23 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:04 [INFO] Sent chunk #24 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:04 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|24|1024|19 943.84766 0 0 610.83984 277.83203 0 277.83203 0 0 0 556.15234 556.15234 500 556.15234 556.15234 277.83203 556.15234 556.15234 222.16797 222.16797 500 222.16797 833.00781] 81 84 556.15234 85 [333.00781 500 277.83203 556.15234 500 722.16797] 91 93 500 238 [583.98438] 314 [1000]]
-/DW 0
->>
-endobj
-11 0 obj
-<<
-/Filter /FlateDecode
-/Length 324
->>
-stream
-x�]�Kn�0��>���"�ҴB��H,�Pi@�!E*�2d��kϐD�%������8*�6�̣7�f��F;�ƋS�Op��1׽�W¿Z�"/n�i��6�Ȳ���ӟN�[����	X��4�ޜ��l<7ka 3s��k�|��־��e�Z��~^�^s��Z,�YR5j�0�V�k�X&��yv�+g`����N��iz'�[�X�H{�)H�
-�p@���dRx��s�Y�xO���b
-����)E�_�(�D1nI�F_I�J2�gBե䙬:ʗ�Hʷ+����U��� �n,L�6uq�OǏ#����;ڠ
-��Ƥ�
-endstream
-endobj
-7 0 obj
-<<
-/Type /Font
-/Subtype /Type0
-/BaseFont /ArialMT
-/Encoding /Identity-H
-/DescendantFonts [8 0 R]
-/ToUnicode 11 0 R
->>
-endobj
-15 0 obj
-<<
-/Length1 22260
-/Filter /FlateDecode
-/Length 12520
->>
-stream
-x��|y|������2��3�Lf&��d��2��dB��F �M�HX���ZE���J܀j[�	jX�V���KqiM+V�P�E��̼���$�b�����w��s�{Ϲ����LbDdHDSg� from 172.23.104.62:1
-2025-04-30 14:17:04 [INFO] Received chunk #24 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:05 [INFO] Sent chunk #25 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:05 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|25|1024|��~ծ1Ď�ٳ�'�̖;��y!Q�.��!�uD��P~ӂKW��z��׈R�)�w\p�C�_�D{��.����R�@�x+\t���?�b�_O�k�/���OT�Ed�/Y4o�on5U�?�G.A��y�I������U��I���3�d�\�|��5�� ?ڤ�ϻ�CQS�իx�-�w���	W⹝H�u,_�*^L�#j\��;.Y���4<߀�]DL|K�K2�~�\�2T|��,�I���F�S���˖��.���4V��cQ�X<O2�$2dQdc����+}�����0G���@��d&3�B�UCY�'�N6`��J�����?)MC���z�������0�����,� fS&0���^��(�'/0�|�( ���(�O`��R>����b*���ƿ�a�P1p8���4XF%��Si�8UP0L#�����H*VQp���T	���*`���j�8��TK��*� �hl���q�	�S-��T`#���p"M��IT�+�M�&j���d:8�&����fjN��tN�͠���48K����M��tp���ϥ���hv�/�F? ���\j�Sk�3�Gs���\�Rp�\Ls���P{�SZJ�?��i!�"/�E�e���.�B����/���L+�B�*��Z�K�b�e�,�1]N�+h�JD� L+��*Z\��Z�4���ˀW���k�
-���+��я����*���Z���;ip#]�IÛ�Z�-�>�O��u�Mt=�6B���t���	��E�w�M��L7�[��j�S���n�O?����p��;��]���n�󰆏�f�<J� �ҽ�m�h;��~F�#�= |�� |�~A]�_҃��00B� wj�G��Q7m�m�w�	�����ǀ=�8��~�<@{����K�����~��3��GQ��|�v��C/Г��)௩���/So�mz�vC{����� from 172.23.104.62:1
-2025-04-30 14:17:05 [INFO] Received chunk #25 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:05 [INFO] Sent chunk #26 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:05 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|26|1024|�5_�_����>�~z�=�~K�ߤ⿥��E������%�z�.���z�^~@�O����4����i?����O���>�HÃ�&�cz�gz��������A�� �3z7�:������G��_������1��9�5���N��J��#�����/�c�W�g�?��o�k��O:<I��/����a�m��l�qͦ�l������k6��߱��l��4��7ͦ����5���f�?�l��߱��4�~T��G5�~T��G5�~T��G5�~T��G5�~��6��e�?���?j6���M��lz�f��5���f�?��M�o��������m������M?����M?����M?�o����M���6��6��6����['�iT�."X_;r����a�`g���aG�������Z6ea�^�����@k�{��������� ,>a�&cli� /�T���e'b2D���c��G��kx��X:+)aVDh� v�6�.�gp��MbxBt�i�Rإ�؝şb��C��й�Ѓ?Hv}
-�gat�ďa��� �7��3F�>_��cO���HB[נ�������v�t��I>`x�`��ė�R����}��}�~�>�X�4��B؞�,]�5Rwb7ǘYh'�Ϡ�I���`�:����Y> ��R�Z�>-�C��M���qح�bG����O�t��M>7V�?�<�S����g�r������	_���qφM���h�߄���?3��,��X3���.�ֈo�k��?\��V#�ݿ���~��9Y&;��g���	fa��O���K|Kb��0�x�b�գ�%�a�c2�/c��l9�������pX�R�K�J���`�?���xe4�����ۇa�va�����w:��l[�d��!W�*tw	�
-������J��x�B�u�=�zy�2O����=�����E�e<��F���ЊGa��D������������Jv�������`�a��}r�1B=Z]. from 172.23.104.62:1
-2025-04-30 14:17:05 [INFO] Received chunk #26 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:06 [INFO] Sent chunk #27 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:06 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|27|1024|\�y�F�]����g���{�/��,�#��bD�����RP.���Js�8V�\>K�!o������jtu�O�k�������ؒX$���C���L< o�s�V�5�ȻX��X��g�w5kdMl2�;�-bװ�'l3�){��#�}	u�a��HX/lnv�[xExG8 A��b@�#�I��\qưJ\#����&>&��??�`��R��Z�R�G�&�ސϑ/��!��O~C>)��	�]��T�C�vݟ�2RiVnT�R���`Y�=��j-�t���1�)�eG���$�9o��av�ߩV�a]��}KҥT.�S��W�=T�^��:A�/��)�>��煱�6kg��6q���O��m�
-{�x�%����`*?f�a�/����]�V���ͮbUl-�%��l=�v	3�I��t����X5|͡��E�1�SN��n����L�I����=.���0��zm�gk��aA.��]LG�T��IW��ɻ�Q�aI?�-��>�W�K�ð�p"X�S�Y�1CK��3:;�[R�]݌��B��6����6~E|9�
-ٯ�0�5��D����%ﲍ؇g��q~_�-ę�3�a����|��I~L�%�J~]7��'���k��n������K��ڤ�FG��-t��*>MX<֛I�׉��D-�`���~~{���y8�`scDо�4a��{+V�Z֍�������_3+%�B{*j�V�}� ��ŵ~�]�g�Qח8Y/D#����)�IX�)T/����cv�r�#�k���S-��%,����#��+�Ʋ���46�*c�i������֌]=��2\Q>��txɰPqQaA0?/���ys��23�=nW�3Ցb�Y-f�ѠWt�$
-��5�}�`{D
-&N,�ρyȘwJF{ć���y"�v��w:�
-����T��'��j��d��!���^���9�Z���>���ғ��&-mA������a�H�K:��Q�N�qB`�"c�0 from 172.23.104.62:1
-2025-04-30 14:17:06 [INFO] Received chunk #27 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:07 [INFO] Sent chunk #28 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:07 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|28|1024|�i4!iB*�t�d�qLK��;�[ЩHF��!���=����F���4�g���%�"l���Gl!��&h�Dt"�֌o)m����yS��淇�����6RBh�>���GT�в���L������;;7�"}�ZN-�slmE���;��M�Ħ>�&\��aסI	Ub|�<�����!0>����X���M����P{q�h�u�l	�#����y�Y;��9���t՗~zIɰ������ڒ	���Ģ�2-���T����e�G�IP��o�=i	`L�8,E�F���A*�+�4b���i��|Dη|�_4 p���9�9�|�ē\O�T��H().�*�L������ʒa��#v���1��ZG�b��~��{T���Ⱥi-�g�ό�Zj��o�$m/Y7X2$��&����i}p���JmX2:�\��xQ��iF�iڜ_Cg{rn�f���(5T�LER'���B2%d�Z)��!f��b�H���ӔzaD�Rj����OL`����^�E�PO����7b�^FF�Ns��i�3w���f���4�V�����5v�w�뉯������6a[gGC�����wǒ4�ԊA,a�K��q~��n7�N4��Y�O���o>B��g���#�)�J;���S�}��^Rj�]�r|1f���n27i�#�q�W�<�V�>]�yׇ>��nMO��������|���eO�����K`1��#Ԫ�$K1�)�(]��c���ɀõ�<!�����)��5�j�i�I��2�?%�p`9��N�2��>���<q�d�銷5\�G1�n�d4�Ad>�L�������JkNP��##�RQ/C|���>�E���ɿsD�4/��|��&�o���7��ѵ�6�^2�%�e�B4�
-ͅ�"g�k���p��WR�;��.��|Y)�k�Tv�|���E�¦ۉ��K���N�5j���9��S"魪��6͵��6fS�<a[+Ts%F�v�:7zT)���,��V from 172.23.104.62:1
-2025-04-30 14:17:07 [INFO] Received chunk #28 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:08 [INFO] Sent chunk #29 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:08 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|29|1024|Х0��U��{Sw���m��#S�m'�&9~�j���Vq�#ʨ����1Y'|�b'���r��` W�bwU���j�w|��ñb7�+Y�Y�/,�������rץ�	��;�nŭe�s����K��:�����݉��1ܴM�I��%E��sxeV&��R�Q��`4�Ǉ&Q�h$3e�,e�"Z$���2>O��n�䠸Vh���|��xBAxL�.m[��Kr�/�]-c�F34�3�:
-��I��5Ф��?�jO�|b����؞/c+�D���>�{ϮP3�:�p��(��N�p�1�����aO�!E�T�(I>��e�� �:�h�&p˒�q�ɤW�R��0*Oԃ�E�`L�t�7M�#�$֯*�A�����8�Մ�A�	IW�_�z���k�/�1T�Т�u�M�f]���$e�n���tB�=����a�>5�|�X�*�z��ý�����+��Y\$Oű��pɊ��hk�fZ���a����?USm�Z���������{���m�	ju'(84
-&�&����Z
-i�i���*���3�SR�a��lv���1vu�b(��ja���'�"_�0y\߾�p��L��ɽ�^�x��.�ߑGJ��j�L;W:�];��g0���Q]������u�r��v�d��|��+N����"\��u��Z���p6ƺ��t�hde8X���g��k������C;.�p���.y����z����Nz.�>|~]��O����8
-P9��.Q2�Yr�+��̉Y��߷�b�ޘ��������~{�֌�̗2^�4�t�4�.�U�+JkM�L�^ت{B�k����v!;�|D�0K��Ss����y'��l�
-eV[xl6�l{v$��Rv�0VA*rm�E�f�լ�Z��ix2��a��b���E�FQ�Qp��:M9#��"C���k�b�f73�ju��S�,܎�wKc���?��>t�����nѝ^��.i�.�~Xq��o�P�� wG�4X���m��nBG�� from 172.23.104.62:1
-2025-04-30 14:17:08 [INFO] Received chunk #29 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:09 [INFO] Sent chunk #30 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:09 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|30|1024|����X%���/T�ȑ�X'��r��::] 7X9�j$n>�2��iN�Ad��d�������$f��>3�q�#m�<=��?y���M3��#?˫j�?���n�4��;Zo|*�s�u�dU���7̹�)+ߗ5�aL췎rOA͘�����E�{m�Zߡ�n��K��W�SuU�Y��c�n�q�k��5�KEW)���I��l��,M��w(��f+|e`�����3�j2�����3:rX��H�� E��u�:���]���5����y
-t:�����\�W�9�t���{�f�m���{s��a�
-�R�n�*s���_}.�=w��O�����,�{���Ob����wn�}B�S;�<���s?1c������i-�VG�k�m�c��*��ww�m���w�w<�t��R�}�K�:*�l�ٮFO�y�Y�rUy����l��m7�owls�:�t���e�9}��[+,<'='�Q[Jز�IdĜ9RL���T�Q�&h�n���|n��\�ROX�S�̚�����-���Ζ����#!�m���4a0�	�����*�k���EiD�/�S�^�����i�:����_���s��g̼��;wy鯞cA&1��o�zS��+��9)�=�Kv�M����r�}��͸ǰ�ғ��;�D�,]�qj�v˓�'3^2�l~�x����Œe�JS3��i�5%lK{&m_����NN�Fa��z��U���h��[���P�dzf�U8��K�/q��-J�PI�z�4��`<���Ўn�u8��ݒ���ښgR��J��Z�37gyΖ)��׫[X�������4G��T�G-t�z� ��-��?j4�@'�����#i�8��¨h>G 8�y��nN"��8��_�>�� 7)mZ�V�d�Zy�8��~�n!�$�a)0<m+�{_r_A���9�~׃T���-|�<#��庥�������5���)/�}^Mc�K�}���~��,{)��U'���\;a�J��n�6D��H-J1֪r�,��#r��_>*�^�]^ from 172.23.104.62:1
-2025-04-30 14:17:09 [INFO] Received chunk #30 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:09 [INFO] Sent chunk #31 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:09 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|31|1024|+w!C���!��id��)]��I�t��]����h��v�.���m�!�m���1�T�6�����t.sX�Þp�^h�7x�f�XZ4��^��hK�#�m�V��'̑��E�EV**-jF�3E�Ԍ�p-��i��◔�l�lF�{5GR�))�YY�##��t��s*�S�r��{�FՖ���B��,֎2�v��0JT�����Su$�] ���1� \��.-�W�a�h+��+��WPV/�
-�?�tD��
-��~�>PsZ���	�j�����p��[5!b>/	q/�B��4�ܚ3r��0��ntZ28�\�č}��*k|��f�>�.�6f���'9�#떔�>����l�Y3�W�y�U�����	B�O�k\��I��m8�b�\�E�(���9�%8�J�e�����e����jљM&�`A�����dQI��Ϛ+7/����:<�<�Q�MA��ϯ�bֶ;D����{�;�S���La�ᄖ�͔v��w1Lˊ6���O�&)GH�Zc��M���*�[���Ͷ{�z���/ռ>�J��vMX��G�*N�U�#���ܭN��}��2��4�%�S��t��j��:���[ج۬���cx[x_�����ݧ�6���k����6˫�7����MMn>ENIqV+��B��O�9��+ծ��]?jXj_�X�Z�w��-5���(�	7��w~�D�w��9�^9��ؗ��wײew޹l�]B�ML�{�����Ƿ?�}{�}۷��n�]$ݍ��qz�W>*ub���Ֆ��pf�8�2)�>��~�hu$�'�d�N=5�L&��:xjH)�ZmA��o���s��#5XH���Wm���OK������;s�耋�)���t��a/b'{[n��%vݲx�5�/��,m���b��wg{���{�C[����*m���»ef���by�,�:Z�K��h���f�Vs�,Ԛ��s�p�Z�(�oQ��`7�:�!c�c�C��X�����v
-2Q� �c]8f��� from 172.23.104.62:1
-2025-04-30 14:17:09 [INFO] Received chunk #31 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:10 [INFO] Sent chunk #32 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:10 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|32|1024|��,<<�����S��1���<1+�)����6�e��|����4f­hJ�º�FO�����g�3�T
-�}a}����}�1�A��c��L}@����)��f�f��wg�Sp��Z_���r"WWd�eYd��t�c[n�Y��y��r7868�Ͻ6�Pl�5�ζL�5���*�y�*s��2�2P���r����sssJ^�:l��r�i��.�!m}�iw�����c��o��S����0]nO����b\4�_0s��s�7/񜞡=��H\ha#ss7[��}!��\�?�l����*�9��]R˒�X{��s�f�[+c*kfR;[ǎ1��O�8$q�T8S;Hbs�c� 5�\*�vU�U��VQ�[��
-��}ȭ�P���ծ�{V�
-{g�`��!�1Uq�]�?v�Yް��>t1W��ߜk���z����ޣ��\����a�t��/�3{ΐI�x�c�M�_��7ty׬�p*�%'i(�u����/s�-�x�ۜ����%�G�V y�	%.;+�ڴ�M^�Հ붭�8�����4W�d�\���l����W�Vخ�|�v���[*�����=��8����/�/��ݩ�e8�-��*ߙ6)��s׼��{oƾL�۲�̗d϶�?�� +M�U�U�Ks�4��}O��[6�7��
-�e->�����6���?n���~]-��E��ֳ��6%=�<�+�܎T's;'�Ũ�=|�m��rG�b;H�=L��8͏����?�R�f���XJT��bG�C-�A�cVZ�s�s�Slw�snr�ws��;}�2�����]���)R�=={����Q�5��;��m5������[�� \~J����Hqjs�擆�geJ���2?E���T�Up�g��Ϲ��d��j�!�c3�	ee�W\1�aĝl_����n�����ۥ ��:uc��$lVz��m�E�+�GW���Q�������V�ARF��J#;[�l�J��bȗ�J�1,�6N������gJ�ƅ�����U�;����Ʒ��'�Q from 172.23.104.62:1
-2025-04-30 14:17:10 [INFO] Received chunk #32 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:11 [INFO] Sent chunk #33 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:11 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|33|1024|R��%��bc�Tkl�iR�q�q��B�6�)��	ɠ�ďu;<a�'~�;��i��fN	3ɨH$hDO�(��ɢ�p\d<��\ya1(��`�u&S������F�)H��H��2���`0��#\�U@T�~�T�K�E��<[�0�lǱĥ��̑h���a����k���C/�J�^�m���B+B�za�pO2�x��^=�ߠ���q�`̟���R�������~������fvclہ��� �>`y1��lR�)~R�ƦIӱz�,��Q(�T>D�7�;
-م<�[o��0�ג�d��J�I��$����R�aUz��a�YJ���K+KkO��1��s�:�r�inw�T-����Z>�@5ړ���`դf�'^}�;_Hj|h�@:�<S���r�d��8紕�j�\E�N��j$���FH��kk�رaFc�D%;�cU��v�v6
-�5���S�jI�M����Z��8��9�b0U�o�*r
-������X v��	?X�<mJ�����K���Bo����)XV�&��� ��L�o���0T�'�F�!85��`�hR�d���Q�#��d�J�©�Wy��Ѫ�l�~c�=a�Đ��0��^lT2��zl/.�\������D�$E0~�~�~�Q�l0H���ۭ�U�n0aN��M^��S��h��j4Ig���������~ŠKԟ�b�W�i�אE�|�̈́YN6*���fқx�&���O����oK�:�ȩ�l1'F��S-��\�z�g���֟㙠D��)�b�JI��#�����p�A���8ɑ��o��Rl�������2��r������4JMR��o��qķ��p8�d�v8�,���w�w'jĩ����1+55�,�܎�g�����4у{����C���N�`�����:�~
-C���CV�"��-͝6ب��v�ɚ��	���|��&��?��(Bַ����̡�������$^8�~
-C��'o�"x�͖��A�����ȑ��)#�ʇϰ_�B�`"/ from 172.23.104.62:1
-2025-04-30 14:17:11 [INFO] Received chunk #33 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:12 [INFO] Sent chunk #34 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:12 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|34|1024|Q3�`#��,o�ࠬ�r�^J��Y�4���U�_�_��t��SC�?'1s�����SZ_�lv��8�4�8Q3�`#�_���^�p  ���_M�)?�~
-��D�$)Bɷ���)?�L�)**��|�����4a��y(x#�<Iʿ�V<�812�5a���]�u�8H3�wJ/��4�������l�+���D�}vEE��s��%t��T�3�!MOc�a��*FUPE"�1G!ʫ��#hak���P�LL�	I�0��l�Ǝ�Q�dV�رc�`��Q��Jʸ��`����M�7|�/��ӝ�%To_���1���:�/�<�����������}�%H+i��m ��|��>^���J6��m��7�|1[�/�8O�V�3k��Oy���a��x)oE7�~N��7
-�῰�����/�ik�H2-�3ޗL��B��4�=AY2-c�y�i������{*��x<-翤��4�f�"��D�rZsQ�-1J�{�A~�)��g��ˎȍ>#����G��c)�~	JV".F]EC���63��b<�_���g�3i���v?|��!ۡ�<��܁��uf�����T:�3��z�z�g%�&�&�A��p�H�k�u��s52��4��o�6g���"^�����{�����>qs��Y����t�R��:�x'5#
-'S�@���h-� ��hɈ�^��6Z����H>�u�"u���"r��ݩ.^��Q[�&��hY8��{ʛ�����E�2
-�W\�� 4t�����S���ס�Z�׊iXw�X'�03^�^��!����Z����	�Gc��
-��E%Z���U�To�6�x�n���ʟ�l��\n��i�H��|$3���Mufq&�9��Em�P�EQ�k�p*�b3��6�9�4o��v��'��7.����b-�3��Po��ߢ���;8
-�((R��I]��Z���N�:�L�X�N,M'z��/�(�<���!^F�� -�ʴ(f�WK�����3a߃�c���6Xy�<QG� from 172.23.104.62:1
-2025-04-30 14:17:12 [INFO] Received chunk #34 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:13 [INFO] Sent chunk #35 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:13 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|35|1024|���6[�k�W�TD�_����/�#kC����Q�S�N�]|���m&����y���&z�	������������W���$����	��ъ�#�����,�cT6W�=mAJ��c�x�����]��jA�y!h/h���eo������4jq��
-�GC�Ʉ7?�pg&Wy]���,��W�h�B\�Wx��'���A�*i�$}A��uZxJxf�+tG�����Ɏ���_F)��\��+�Rx����h0�ۻ�y^��ǄG�U�l���(<�Z�q0u�N�!<��l���y{�M�&�S��%�V�,���l�������|[}uv���-6��XE>ڃ�"nn�JU�����K�u�.-���R���R��u4Q@k�"�C�f�p%��x���
-q5�e0��D$:4�Ht@��D���jD.��vH�C�]�h�D;$�!ѮI���C�]�h�D3$�!ѬI4C�͐h�$�!��fMB��
-	�&�BB��
-	U�P!�BB�$� Q�2H�ie�(�D$�4�2H�A�L��A�	$|��>H� ��$|��A§I�!a��vM�	;$쐰kvm}V#r�~H�C���D?$�!��~M����.�)�{"�!�"�5�����ٯ���~��O}�6�f�Z�u�\��}��l�&ۧ��jD.�DHD4�$"��@"�ID �DD��D$� ѥItA�]���$�4�]��%��J�_^�j֢�sֱ"����]C4z���i�FD�h�J���e�(���*��Y�[e�s�LE���q��g-��CĸP��J6e��E١<��;�~E����v���;t�:�W�)X4;
-�B�j�xNX��j�0���V��j���b���=S�v�[�Y�A8�I���Q������=�X,�t˓���hp����M�"5zq'�V�k��K��Z^1�[��d�{��>����ё�W{��������B�����D� from 172.23.104.62:1
-2025-04-30 14:17:13 [INFO] Received chunk #35 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:13 [INFO] Sent chunk #36 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:13 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|36|1024|�<-��3�'����X��AwD�Q���yԻd{�i�97Z���f�W�3�t�����w6ئE�E �hA�s���QZ�Z� h~R*/�R ���Vsn=��g:*Ѻ'#r*v�CG{Y��T����v�a���x��#����a�U�wo�`��F댜�ag�F8}»5�F�OQ��{�w����=�oF�oԚ�z�������u�2朗�ޕ޳��ӽm�ȏz����ݤV�"<���N�(�޳�{�.6z���o�o/�_����d/�*O�>�[���u|VUKQ��c�&�\e�2F	(�J���8��]o՛�F�^��KzAOz'�z$�/FN���������G!qo�^��)�*6	M3Ƴ�H�j���a�is"r`<�8��i��ȨPS���
-5E��s[v2vK+r#�=�f���8Ϻ.���j'��n��%�ү����<�Kk=��q)Ս�g��$��	�S�ّ��f�D�n���D<��)r5�V�`,�����֖^�C�5L��RG}+�jl�f+ب���Ǔ������lX�_���s>���_�h��$��v�5����4�|�ρ|:����������Z>�cEZE^/XJ�ùN��˴�"�߰�'Y*�X*��D��7��,�q�'�?�ƇX���k��?jk4,Bl�l�t�'�n�Ϸs���݂��,�tޢ�����Ț@�o���P�</��I�7�l�����>:B��W��][�RwZ[7��Rs��jxe-��ں3���Z�Vo���U��jm5,�z�ܲSO���j�LF�p{��u���1�+t��gM�n��v2�Z#������ԕ��"�3^d�\Ly֌�g�fۓEvd�����g����Ϙ��U%��;��A+�P��z���*-�s*'�<cXu��z��V�V5E�g4EF�Q4�^ߊ��y����4z�}(�lo��B��E�jĭK�t]���
-��3�˗?��8�h�v_.������Uݥ�	��)��9�2�
-���'��R from 172.23.104.62:1
-2025-04-30 14:17:13 [INFO] Received chunk #36 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:14 [INFO] Sent chunk #37 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:14 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|37|1024|�Ħ�M%����J��t��j�"ӻ���h�V�V�VN��Z)�h��hV��pO�B����w����Q&}hbW&k]�U�jpA�+)��(�Z��
-Wk"H�/���
-endstream
-endobj
-14 0 obj
-<<
-/Type /FontDescriptor
-/FontName /Arial-BoldMT
-/Flags 4
-/Ascent 905.27344
-/Descent -211.91406
-/StemV 76.171875
-/CapHeight 715.82031
-/ItalicAngle 0
-/FontBBox [-627.92969 -376.46484 2033.6914 1047.85156]
-/FontFile2 15 0 R
->>
-endobj
-13 0 obj
-<<
-/Type /Font
-/FontDescriptor 14 0 R
-/BaseFont /Arial-BoldMT
-/Subtype /CIDFontType2
-/CIDToGIDMap /Identity
-/CIDSystemInfo <<
-/Registry (Adobe)
-/Ordering (Identity)
-/Supplement 0
->>
-/W [0 [750 0 0 277.83203] 29 [333.00781] 38 [722.16797 0 666.99219] 46 [722.16797] 51 [666.99219] 68 [556.15234 610.83984 556.15234 0 556.15234] 79 [277.83203 889.16016] 81 83 610.83984 85 [389.16016 556.15234 333.00781 0 0 0 556.15234 556.15234]]
-/DW 0
->>
-endobj
-16 0 obj
-<<
-/Filter /FlateDecode
-/Length 299
->>
-stream
-x�]�Mo�0���>v��o�Bj�*q؇��hb�H#D!=��쮓	�c�}�i����77�=�(��tu�mD����߈�r쭈��[f�ck�IT@���wl�j:ト^�B��6�M��Z��#��kP8��޾�#BD�m� from 172.23.104.62:1
-2025-04-30 14:17:14 [INFO] Received chunk #37 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:15 [INFO] Sent chunk #38 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:15 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|38|1024|B^�e4�EH����ζ��zsAQ���P�©�/�c�y�_���,T�q�+%G�lO��Dy���T0=1�2v)�%�ʲ��z忝��s��.e��;�a�P�(8���.����o��~��uC��ʫsa��F�:Dm�i;�U�>?�y�l
-endstream
-endobj
-12 0 obj
-<<
-/Type /Font
-/Subtype /Type0
-/BaseFont /Arial-BoldMT
-/Encoding /Identity-H
-/DescendantFonts [13 0 R]
-/ToUnicode 16 0 R
->>
-endobj
-17 0 obj
-<<
-/Filter /FlateDecode
-/Length 5871
->>
-stream
-x�͝ێ$9���)����ٖ�L3���H<��	x	������ v���?3�v�
-ۙ�w�J��v�y�?�7�bJɷ~z���u����v{�t���u�6���?����z����75�;5P[67��w���/����w߻۟��BWF�o>�H��ؔ�N��S?{��k=%�K���ܾ�XlC1�h�u)\�o?���l����__��Go|��}�����S*�_| ��^�w	�xmLtH�T#�#�g\b�>�.�۪v�Ɇ`����˽��������<��ˇ�2I.������t��;�Zŋ�|zt����ׇ#������P2��G�~���Q|�FZK��FXz���ny�{ۭ����7��5l,��L���.��
-u��2�/�6�=�`/�t?`�ݖ�h���|�!]*���c��L��0ף[���W�A[�:5�B��a���e�[Z���Zz8�����٦=��F��
-M�TeJu�]<nSi��o��D�_�Z��B�;RZ���㘣�����~3�ᮛ��Ӌ���^�ﻍ5�I���Ҥڞ-�e�RMK����]�|��^���tf�L�i��ش��`�iZ���z��'�T��ݛ�)�Lj�j��0��Q7ڽ3u͹�T�p;�F`B��?�j��@�{ from 172.23.104.62:1
-2025-04-30 14:17:15 [INFO] Received chunk #38 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:16 [INFO] Sent chunk #39 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:16 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|39|1024|r'p0�}*1,���)]o\��UO�R;�����3�Ov�P�ݕl}@�Ļ.����{�T�63����:$h����z>�m��m�6h�wKMk��w�~t�ߤ��z�����&�]�FŶ3���ʦu�v�?L�p���Lw���g_�ܣ!�#n�z�0�D"wb��͆�,`�A��i!��	E;kd�/�U���p��8?0?�\�L��N,�=���>:����=�P�O3���t���jg�g�d�w�G�#S-@���$��X���d�y�id�jB��C���1���4e:���r�z���+5�~��j:KS�v�p4i��[�!z��Ct���N�8��u��"�e�v=$S��=t#�1b<�w�=F<�kdM����
-�HG&&�I�Xg�v�ۋ�������K��|̖2�S� ��܍���/[�H�?i=�d���T��J�3��H��W���I�i�� ��@�V5r&�h�������f���D��q}�]FǱv� {q�,�������yߙ'��t��x�׬)�`Ƭ;�^o4�޴s]����$�6�ƩQ��2�G�H��'�c޼G�Ss��<�\����/�a<�dLO�yr�������6D��������V�:�9��i��N#i��H�u�sa B>�H����G�D�|:���$���u�I�F���H�봦�:�N�:r] �p�܎k��$0 �^��r�F�z��u�bf��8$h���S��\���ui{�FZt��i������N#M�i��ui{�F���H��v��~`���Y���\�-����N�NC��C���,`�A��i!�����Y#;ߩ�\u�u��ʍk~�����ި��\�k@�?���0YUV�gԀU��5`rcF5`�TX�9ǂ�������Zm��;ԀU�܀������Y��5`�k(��6��w�e��_RJ��đJ(6�Pl'�@+a�A�-6�b�Q5 i4f���p*a���t���mב^�װԀ��5 i{HZ�)X from 172.23.104.62:1
-2025-04-30 14:17:16 [INFO] Received chunk #39 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:17 [INFO] Sent chunk #40 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:17 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|40|1024|�H��7��՝y-5`�%�B���ץj@�3D,�b�� 9���l�B^������'k�ڱ��2����2�B9��: :$X[1C�����+-Bu��܄Y|�]��)��bX�q`A7�=a9ښ �"�U�~� ]�n��4Ɯya{j�+P�W@-^O��?M�KГ�4PK8����_�X��(A'IT��T� @-q���6$Ջ�} ���Z�/���
-��&�a��ş�Z�*�-6�.@-N�8��k����*�!P��@-��b5P��@-VO�I�'�U�δ+P�,�`5P�v�J_ �*�b�j��� [���WN�}5r�I��Y��9����m^���7�,lL�RX23a�a�5�Ƚ��3{�|v�����9I����k,rg[��m,>��,������;�IڋZ�tQ�MRE-i�Ѥi��3�����颖ԝ�M���l��3���r7��y�g2-#e��M�u`;��be�'�#h���Rd�7���߰�@cy�[80��^���&M3�ԝ���&M1�ĝ�U�����,�����r�/�}���� �*j�eעv�`a��j��s�fn�;X��l�uܬ툽tޛ�5P�M6�3�B&Ή�<��A��J������s�#|���4��v���WYO��.\��Z<���s-���Nעʖ~�G�A�����گ&��sE��I�g�����}F�4���V��A�6iC��&	,��D��p���@Fl'8B+����؜���%U���o됦�u��j[��}[�4��C�����~.�)=����j͛m]�~�~�;��/�Q�G�նδך.�D?�AѾ��$�����Uث�a���&�¥�
-e��,�����	e5��'�`?Ï�)\��}	˖e?Ï�.��/��]��6���YX�3</��j��9���c�..�~,�E���c-���o��.y����v�&�{ ��/C�� 0
-���x?c1� A��ͫ���y�	1jC�����?����ߗȖ from 172.23.104.62:1
-2025-04-30 14:17:17 [INFO] Received chunk #40 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:17 [INFO] Sent chunk #41 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:17 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|41|1024|?��?��pC���eC����mCÏ%?�ШZ��lhtynh������B�R�i�밡��4�ԃ'�i!����g��|gC��"�;��͌�lB��^�6_�u��p��^��z���^!M�+��^!m�WHӓ5R�z���^!M�+���J�f��Y�88?�� ]����/�h����2R���pY ��D_��H ���bs*�+�ʪ^!m_1#MoA���l��}�F��WH����z�4U����+������.s0��^w�����YBG'�-v�${A��C�>(�W#;��WI�9�A�}�A��cY	�u�5m6H��^���]_�Z�D�!�ə}���}�4�zh�|[�'M�j Uu,��}��4�zD�zԴV�Pӻ&$9�	 mH���$��_�{��R���D�^l'�@+K�A�-6�.<r�Z="M�jz�(�gp4�>�k.��^<"�^Թ=MGE�<��U#�GT��8�5�|�G7�CA.���;HxI_$���8:	m��� �r�:�߃�����'i�<Ј���a/�S�A�E�a�̸Z���E�n�Gh�y��N�3�����gB{��}z#���קjIU�L������G���V|�AXiC"�&9 ��\��KV�H%��&��b;Ih�����#��S~����G�'~��`��i���3�hf�W�IT 	�{Ӭ i��� �w����D�!kN ;@]Ϡe!��&�jd�	��~_��
-�s[r.<�-t��
-�*)rT�j���#E��m+�9�v(<���Q5�q,%m��KU���iL��Vr�A�TiCB�&�/��$��K:�H%��&��b;Ie��$��#h���o8�58���Q�8h�i+<hyi/<�v�FU7hyi�F�47h�i�Frݗn�F�%����a�47pt�Nl.�x�hO��|)�͍&B�|�W)*���S1KM΅���?<�5��[���s�7����=r��>�N6��\�� from 172.23.104.62:1
-2025-04-30 14:17:17 [INFO] Received chunk #41 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:18 [INFO] Sent chunk #42 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:18 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|42|1024|���g �\�ڬ���B���u[C9�����$�P&MC9��9��� iʤ�P&m/�H���{9״	�W(���h�y�܍��bA��U�H�j`�؎1�X��
-��m���sK��/n�!!��n'(Ǭ�LRsG-�ak��I:��M��l�45$q�rպ/W(wYBACy���S��F��v�PP^�
-Y�(�S#3��r��ٟ�j�nI���+M�1�O��g(����]�c����{sp?�j��P����h�q���Fi� ��i�V���$I�+I����zQ?sDi����I��na�T��4���� �$�&8��V�u�'�N�;��2J�x����A3k���؜��JWTE$i{I��U���+��"�4]D�����"M�ĝW��'͑a�U�%���r���x}�X�"� �v^-v�t���O��|�W�\?��ӷ��խ���*�w`�]w�-�%�(��r`��4KܥY�K\��)I�g���Y)����iL����AaiCb�&Y!����K��H%#�&��b;I�a� o���b��۶|��!��������D���9���,�@�I�&5+%M�JIT@i�R�� ���\(A����e��YG'�-v��zwn�,$��(W��|(����zH��r	��[
-j���}�E��o�`�|��}�E��o��ϷH��[�����|�i�����A�wߖ�I�����,��7����N�VV�?�v[l.]p��i�|�4��]q���I�|��7Rm��|#M�/^o�U��ү�o]�H�z�m��D�כo�g�W�|;Hx��6ͺ�/Ao���Fb>I����͞p(<���r�y����]��r͡����w����kh��&���'?��&�]++��o������Adv�{g6I;�I����)f��3�4�lRwf��3�4�lRwf7m2��fa6���6�'�ݘ<�/&��Y����6a8�혢���������K����l�vf�����3���٤if� from 172.23.104.62:1
-2025-04-30 14:17:18 [INFO] Received chunk #42 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:19 [INFO] Sent chunk #43 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:19 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|43|1024|�3���٤)f��3�jݕ�+�]�HЯ�/w�������W������i֕����Q#1�c6=�:*�]k��q����-@��4�X��m\�����|&����/�.�C��\�K������2w�[��{6��rd4�|�`󧗹I�#M�͇ؼ~��i6���9�z��w�m��B�$�����8RA��D"�����������K�y�����ܤ�Ŵ�"���l��.7��l�j�y{ ���lmټ�X���]n��ƞ�&}�0��l��.7�R�*��]!����⩑�O�����|�e��f)D�,S_����Or����z��*��w���)�W��.,���?��b��i5=����r\_��1��=Ҷ�=���^�I.�7�I; .&��Gھ�G�^�#u_�k.�oJ�AN)iCr�&Y*��l��K��ӛ�`��N�3��Un�ppZl] ���$MUn1*��^�����$M�n���n�� �p�k�����E�.K(x8���׀�>C����&�R���"���
-jwS<5�I������0�����4]f��3"̒o~���cX�v��i��[{���e~珂px�=;K���r}|p�	�y}�������f�`�vCH�wCHӻ!��;���;����U���&1.��n5��&$��V���'!��]��ڈ=�Jb7�X8ǎ��̅�9�b0'�ʜ��Q�2G��O��Q�2G�������5G����.KD��|z��5+qt�Q�R�i����O�����F��Q��k*W�����Tf�7K����P�~F��z�^1�W���*��}"L�^�+ƨ:��{�i쑺׉��u"i�N$u��6�W��U�ppf��i�܍�ŉ�g$,#ex�M2`;��be��#h���Rd_���I��G�b_��>&i��������`�v����G⎾�5W^��w�#A.��wX�7���K���$��
-�l,I0�d�X�h/��|�{Ÿ��$ǜ��M=]W~ from 172.23.104.62:1
-2025-04-30 14:17:19 [INFO] Received chunk #43 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:20 [INFO] Sent chunk #44 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:20 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|44|1024|��+���b�P.!:G��}�����o�휮o��q��Q��/!{�*��>O�����������K����l����m���r-K�������/�M�s
-endstream
-endobj
-4 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 594.95996 841.91998]
-/Resources <<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/ExtGState <<
-/G3 5 0 R
-/G6 6 0 R
->>
-/Font <<
-/F4 7 0 R
-/F5 12 0 R
->>
->>
-/Contents 17 0 R
-/Parent 2 0 R
->>
-endobj
-19 0 obj
-<<
-/Filter /FlateDecode
-/Length 6632
->>
-stream
-x��]۪Kr}�_�φ�S���� �ͳm�?`�3�p�?8#o�"#Zj	�Hlv�UUy���Ȉ��w�k�����?�ß%�����<������9��=�{���v�N�W�ޓ�����ۿ������nS��_�W���ꝩ��A���Ϗ��o}������F��!�D��֑�N���N�ף����-��>~G���� ,T��*!�P:�St��е9�9�����J'��ξt̵	
-wpW�P�xϋ�єjG�5���Z���Xk�j����`D���{��6؛�k�����k��2��߳o�x0��\����&c�&�EW�`��S����#�=��s�r�����Bq���g������Y���W�m���v>4�6}l#�|��,Ќ������<M�����=M�I���c�`�zK��E��-9O�'!aO�����҄��uT�z�C�[����\�0�5��=b�T�����~�V�G�\��z;S�@��45=�/o���oˡ?~y����h������q�G�3����o�.��B���_M �ǵ��~���O(k?��8������f��|:'���|��Go;<���&}�۱��q�so?~�x�K}��������~� from 172.23.104.62:1
-2025-04-30 14:17:20 [INFO] Received chunk #44 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:21 [INFO] Sent chunk #45 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:21 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|45|1024|,�eASt# ��9H%t�\)	�jp!cp����	l����:|�U[��;H4")��D8	Hk����_U�^޲���]
-�Z�ԅ��>-���y%�)EJ}�j(�LC�HbH��:8��L����Q-�ĉ���UN:��Q0Y���C�2vIR�Q�YGO:#pj8
-B��H��4����=�4��K%*f�F�K��@ˏ_#��"^��|ڱ/���Ӥ���i'M|�H���~��T���4��ߋ����h��;)�NY��0�mb��v|R��+����I^G���O��l��:���?��E��_q�W��ו����⩦�Rlۂ[��#Y���-yk���f�!������E5�x��G<��{�p�7��` �1>��y[n\��{�u��=V��d�g��F��y�b�k�Ai�S�9��躑�w���cJ�d��
-!��w����ܜ�"��-53@�u.��#�[{Q��<ܿ�N|������on�J���{ݤ�:�����T��:�"7X�-u�s�r��B�X����&��RXFī����B�.&p,�n�u
-l������i�}�v����*�u��z,����E;s!�G�}�jCÛ�[�K�?&=��(4����\�O��*��2��u��.:�.�{w��E0:���n?�L�\�Ĭ�����\B�,�\l��]_���XC��=Ne]��d7�m�3)��iRI��ַ��v��6E��BAOY�C�A�n�TC}˓i������9y-!3|�B_�o��[�:nA�ܾ��
-nQVp�8b2Խ�Oq|���d.jco}>�vj��o�-���.�0�ZO��!P�a4�0wqzC������C���CI � BN�=�G�e`��R���-�!27����o��0�Ŝ9���&$	t�R�aEK�i�ZlbZp5�@4t�\L�&��k�L�t�I��g�@������61Nn5p�j2ס�\�f`#�����=X)� from 172.23.104.62:1
-2025-04-30 14:17:21 [INFO] Received chunk #45 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:21 [INFO] Sent chunk #46 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:21 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|46|1024|,�	��2?a�O]�tR�-?~qs���:��n�vvZ�$U(��I��N���΂�wk�v8a���>ج��O5ث�R�WT�����[l	��L�^-��yO��E�b/�"�]7�]D��2��^��ձ�^nl�����vn��H���c߄y��9�σ|�@�L$B�L:��h�2U�jd�ً@�^j�jݍBL��pr�7}.N����T�E ��	�"��]B��T�-�k #��AA?h|��/=�4��Ke�}��:������^�J�^��q��#�������+9]�ꠊ�4b*璎�Ԭ��J.阊@Sh��S���1+�|�f�w��%{W�с��<�Aq���,�z�$JȄ5-]��j�JnM�`%��[4X�y�J��0�FHEp�n�_,�^X�A��됊@R5pj��� %���!��t�ڪv�L�M��$3:_08i�ny��Vɫￎ�����mC�+S����U����k֩vr��r���� ��B6B��͐+#�
-��3��B/ ]� �ЋE��ma��J�fa���n�bU�n��-E/8���퀟a���<>�^�	x:�X�%����A�+�����4�-�-$#�
-ifXD�V�˅����-#����E���B4�-D��B�:>�^� �I4��A�3�^0v��h��=%�-#
-p��[��*�������K�!)�#�s�2���i���<�	���_)E��>����<��)�i:H�@�Ӎ��8w��H"�<�	�3O�Vn
-r�n�\��yz8�Y`n��ŢK�-��8ጵ�4g�A@�Qr�^�x�U-e��k��w#KҴ&Z���;N���F�F���H��4���
-h����(GB��4��sO����BU�:t�s\h��N��Ŝ��~��xH`�<x0i�(�?eK}���UR�-?�V���ܖ���3 �����JerU��1���y���������&���>�U��~m��	|'�
-� from 172.23.104.62:1
-2025-04-30 14:17:21 [INFO] Received chunk #46 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:22 [INFO] Sent chunk #47 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:22 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|47|1024|v �k�?��`VH�" l��HX�T!�F@�ݥBU@H��rp��F@H���؎�
-,V�w���pX"z�F��̃#1g�@>n�$��ԙAC��e�ᠿ�	T� ��8��������I8�U8H�
-	T� �*l�P�e88����`P���������g���l�K�����Y{ˏ_�s�e� ޻��>��ϵ���M`�Վ�7��R�����g��u�W���˃Œᨳ6@�Y	T9A���F��@�$��	�r��� �FN�`Œ�>uV8�Nt�U���:+��"�uV��P0�B�@n����.�P�d�`�Y	�,�:��F��@�i&��4���j���(U�J:�G�u`+�����>oTZa�`�ެ��T�S�QiEQ�^O����Ɠ! O���g��xf���9���;�u�V��ۍ�0���[�O߸U����ƻ}޷�YS	3:�r'��>U���sŝs����B3����~����{����
-��]b�� 5��&W������sE�q;��_�����j� �D%P��1s����	T13�F�L���	T13��j@�tl�!:����5����F�\�`^sf�0ۂ$���ԙ�AC��e��AU��
-�z5�d>Bf�T�L���U��@2�B��"ׂq�m�/{�n��xD`�<v0h�'?��d<
-����������ߛ+�wpJ�R��9�	�0�<s"�]2���;�(;���"S��4d�#S55��k.j���w��\���E|�m}7N�=�����x��8gpa��:Kh����.�P��|�j5�M >�No�;�(_$���T.��>�|�Q�}̓�X���F�l�@�Fͬ���������`#���2؈ǎ&�D�t`:�'�)i_>b�TC˓_��1��T���w�,>�O��zRh��WL��"��O�K�gZ|X���5| from 172.23.104.62:1
-2025-04-30 14:17:22 [INFO] Received chunk #47 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:23 [INFO] Sent chunk #48 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:23 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|48|1024|X���5�|X���5�:��N�`͇5|X�ɇ5�w�k:���q;���ϱ�'��;
-�0��5�K�e	�r"cEK�i([2b�FtV�ޫhd4�}��:#<���h�2���:���3���cwb? f�B�n���ީ��Ѧ������8�9���P��m�-G~��z�ýt_Sa��8���@`n�ƾ'	ܵ�c���4Ƕ��|�s���|�Lp��z��9o#ٺ�Sh����AA���;I�m��X���@c�)n	TK�A�+�%PQ,�����3���f�8�d�����vt�#������T#�̴�a�I2�	�3/�����4T-6�Q,�j�K�����u2�@qh�	V�_U�I�"X��ٖ�[�8 F4�b7h{AG�0v��`�A&�'AG�(ht�������E��wE��I�ﯥJ���5YҨ���:6���t��l7���i��iH2�/��N�fH_L���`H_���@cSN�fH_���
-B	V�+2d����쀻�T���G��� ��9��|��X�@V(u 6�P�t���%C�l0��C��[E`2(�'�hQ�OE�dP�OE�dP$�ר�ߒ"�����E���\CB;MG�D���BA|�U�ڕ�Z����ʯ�d�C�z�
-#���n{�yt1A�H��O�	�Y���O>�g�S:�0�)�-rJF��@MNɬ^�n'P�N�ޭ�٥[�;�씎�f��v�K�O�(���4���x2�B��*ɨ_�6�P���h�/T;d�r�Š�X�.����@�E&P�S4*J�Gc`;�F����������Y� ��������UJ9�)b	ch�5rJ������g$�#3L/%�FgEX�Bf��M8_��ċ�2Di�"���%�X��	�� �3	�x� �Q2!�"�b�L��Y�����Iǘ��Q2���\E�LD���(��<��Y2� ��$��P��Z��h�2UK�+�A�6��r��Y1J&��Fڐ�m�L from 172.23.104.62:1
-2025-04-30 14:17:23 [INFO] Received chunk #48 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:24 [INFO] Sent chunk #49 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:24 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|49|1024|��Y1J&j�+Fɤ�S�G�d +1J&��Q2���I�%�	:ʖ:�Y2�TC˓_���0��]���������Ԍ�^�te�t��8�@���5��rv9;���8�@cGJ��yۜ���*��Gq3�z�GvS;4̃�_̙��Ô2%)�"S�gQ4-]��j�y�2�"*�#��t9��v�!���T�G��<��MU�q ������ܑ�N�&=1Q��,�C���Z�����/�^�va�φ�ߪ'' ����{>��/��4��;��?���w��/�A�W,i���JZ�{8�;	��4�@�s�ݟ�4�?P���;	S>J)С(��ZM�Q�N9�j5�*%�E	ִ�{��>�{]#��{Dprq�q�G�����6��3��=,��l�P�\��X.�v,A`F�6�(k&Z:LCŒ��QB!P�q�J()U�&L�q6+(k2�F�@M�٨���v�
-�8 �aTP�49��cGC6+( t��J�(ft:��º[��*���%��[�gޙ���z8�>��a���uy����H�ʪ#w/]��� �گ�|U��Z-����ѱEXMa��U5�;�=0p�=�]�*��
-���8f+$j���T�T��:	��#e.���OՑ�<US�ʩ����R�_u���` �l�0�������Q�� ֵh:�b�=4�5l4[� �:���k��ju-}���u���&L�¿�����}dw��EP���H3IZ�Q�)����ӔEh���eM�� F�4czDXڄ�B���`G�������3y���8M�v���H�if)!jM��F�T�iqd*�¼5y�uW���ݓ�����A����#�G��T�Q�B�w/3�g�l��5l(�>�� ¾L:�����k�	�]oQ��o����p����V���W����m(_c*������ƅ�Ó[M�oH�_�y���
-��]�r�O��g_D��[�~@ from 172.23.104.62:1
-2025-04-30 14:17:24 [INFO] Received chunk #49 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:25 [INFO] Sent chunk #50 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:25 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|50|1024|}�M�.��.曁���/|���oM��/��wHꖾ2;�z�Ҩa_���oA(��)߂@a�x�R��_�D���0"��x�R��F��2�5�������Kh�kM�Q�7��C,�V%��x^�D(���J�y�>��J#~�7�p+�n�_�#�����B8W~K��V4���R�R~�)Mu��%V[J�Q*ql[��8x^�T��	�a�%�ڤ��hX��I����K!�,�PGѸP[�������$��_�������1�q������,����eX��\KU�k��^�Tb}��I��B�����r�D�E	���}�B�| ��G60�.���(�1�#7P�#"�.��h�����x`E�e<�"¦2���v���`�]�s5=B+�S7|tGx�����<0.y��T9`e�p`��1l�DCqi�U��e>���xr�� �r����|�D��ɁҟT���2i�R�F5���dDr��Gl���M����h;�q�ш�%�����:�S7��˫�{kk��w�Gkq���{���4$�u��|$�����3��.�h��$4>�Rd��-n7��	v� W;����#0�ֆģ5���s{Ng�l'�u�50���x���ñ��8\Y�X�d,V���Xu3}KZu;��_W���h��v��:ƊqX�3��v�����(/����7�%��8���sp���0�%��ΒGa ^溥��U��EV�|���B��v�O�)�cw?�Y&#�.���֥��JM��fKC��%���!_�!��ֵƃV�T�3D�^�@�_2CGa�Ce�m}-��VV�ޑ}d�[wz�j0��O����B����_����恸
-endstream
-endobj
-18 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 594.95996 841.91998]
-/Resources <<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI] from 172.23.104.62:1
-2025-04-30 14:17:25 [INFO] Received chunk #50 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:25 [INFO] Sent chunk #51 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:25 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|51|1024|
-/ExtGState <<
-/G3 5 0 R
-/G6 6 0 R
->>
-/Font <<
-/F4 7 0 R
-/F5 12 0 R
->>
->>
-/Contents 19 0 R
-/Parent 2 0 R
->>
-endobj
-21 0 obj
-<<
-/Filter /FlateDecode
-/Length 5252
->>
-stream
-x��\ێ$�q}ﯨg*% `fvZ϶��%V���� ��vwά[;Xt�af2�'�AV=}��������<�{^���Ͽ���Ň���c���p���p��}z��/��/������տ��7��7錥>:'z�{п�ã��?�������y�[s���s����!]�i�f��w����K��M~߀��s/��ԄUJ<;Vrr��������y�~e>\	gǼϑ��?J�����:����zW��>%\�c��ܦi<����&X��U`����]�9�]��ʳ�����U�%�(գU��N���Y�� U~��K(|~�3�3�j�g�N$?}
-%84\~��}(����HG�����rwh���MXyH�9��5���"XӺ])
-4�ݪj���-Fiw�+�v��i�r��uMot���r�f���/�n1"���b��$`,"��!+
-bp�)0	�d�.b\L,v�e��������;g��o/�}�s�Ƿ?Uh��']����//�;��#��_��R��w��q���ag�;�{"���e���>�������s�3��ả׽�1��U�>�H�d^z.���5.���k^����o������g�+���[�b��*�!��YB��!��m����*�	�BU��������vzEhsTR����AR�T��Sx�rP�`xcL\4��6N�ݥ+���)�0ZŪ�i��bU�����*f�bF��a��F��e�
-F+gwg9��	�y/L6ŁH�bĈ�����d�/`\Ȭ�˺���.����BL��m�:��X���`2b�O�^fDf��\|V�q��������X5��R�&� from 172.23.104.62:1
-2025-04-30 14:17:25 [INFO] Received chunk #51 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:26 [INFO] Sent chunk #52 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:26 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|52|1024|��O�+�}��;��y�>7��e幢bS�Ǟ���'�l�"φ�h���0E�3���zW�lX}��$h�aφV��g�}�?�B�0��
-���L7) �T
-LRYT��F�4ƛ���yR8$Y���T��
-8]6LU��j��?)H��X��^���z��y�φ����x��φi�l��O?��?� ġ�s�����	bc؊��l
-L6�����P��z�?)���r=ױo���ݞn*���Ը4��}�����~� i���w��G�0>��Ut���;B�Q���+���ۊ����T\X�`a	��E.ŅU�d��B�Afe�е���dB��Q�<~d(L��RA�O�@M��i��a6�%�.��pB���ݍ+��KȆ���\�)�(�{]B6L��3%dCU	�0C��XAC��GzE�m �[
-�I0����)6F��%$�������v7���]��w)���^�1� ~�dz���u���Q.��)�2M+����dL�٧i��6�B�5Y��}���X/X��0��c�<�ڵUN��2��`�J}6߿�Z�puk�G<��P:�OK�'B/%���ֳ�O�;(��'�\���6��ֶ)���0�=�y�l��ܥ���wa�N&T�Ʉ�:�0�r T�Dl��׶)�NN����Ʉ�D,aC_x���ᄱ����⊴qY�]�Ι�iê�~��i��7�s�Ʉ�"���{\���"�����ZٶMX>��r��[ۦc ���ŸٴMA��l�dT�;�"YL�ٲi��.�.�Λo�M.ꡎd���kI��y���u2�U����̿���owPU���m�mG��]�M`#�ÿ�	X�~���1|S&sw���wù0:1���
-]�
-��{B�,°������*ɞu |�?,oV���S��&�c�Eaa� �� ���(̽�7��R��[��G��T-ު�NPJUM��*�^�>�\q���2u�tK�0K4.g�7�{��pHn from 172.23.104.62:1
-2025-04-30 14:17:26 [INFO] Received chunk #52 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:27 [INFO] Sent chunk #53 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:27 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|53|1024|R�;����5�]ȭ��{I^Yr��O�ŲR`t�WP[��'TY��vd�+^Xe�.�	)t�Rc�T�E����5���"L�X��k�E(I�E���Q>�ϥ�j�e.��['��@đ:BĖ���DL!5Lj4�TE쀴qS�N\*+_l��0�}�0�!]Q�~$LWV�ٵ7���"LWV��ʊ@]YUl�Q�� ��a*+���0�����zl��b
-�|�~D�b.9����⌼YY�2߳�Zn;�t�J�m�i��i��I�4�ǥZw��q��!���8h���l���}\��Ǖ,}\iG���5��h�R�;�нL�'�d�bA�L�!�@QH��6��t��`d �K���e�;t%�+X"��%�+��j����:W~�t��#���-�\�&��H.?���x} ��["�vM<#�["�vM<1f��%��M��.�λDr�&�w���v�)�˨��!�Ͳ�>���>�b8&ԤX8&вX���m ª���2�.b�{�2����c�Y�!T�a�e�� B�4�Y&����θ�ϐ���$SD,�(_r�,�H6��$����⎴q[�N]x��gx�0�
-"��Lp��a�g�<C(��X���W;G�3j�	.ƕg� �C4<��`��8�,6Fm����� �A�bn%�
-�����3��%h���\����2τ /M.�V��6��­��D�s&�ksym���m�)�j_I�4�~}���Bh�k�/K��z&�2P��{}|ƳNyB��+��Y������� ��@��~J�<S��Y}�`�~?wr{|�^���'���M���v��!S~C�7�~S������A49G�|�KTj���*V���~ܗ��Ȉ��[`˶P�Y���H���+�Hëc�S}Oؔ:6�v����ӾS@<;���w�p�c��}��:Z�jw3�V"�S'�;6�:~PZ�(��� �4��V���й�t8�)5�C�^�l����(�`���VM�"�M������eey;�?��o�{�ށ�c��<�ur�� from 172.23.104.62:1
-2025-04-30 14:17:27 [INFO] Received chunk #53 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:28 [INFO] Sent chunk #54 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:28 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|54|1024|#l��"�Xa.����\�.V9��b���_*���zyq�XY/�;�G��o�q�#v�:F˃��rc܊��l���X���pYq��K�>^l��r*aت�������
-�*C<~���ϝ�����*�zW��ݜ#W�؊�����_E�i!>�E3�&���[�닕uHkW��X��j|�����g��BpE�mݰ@ൟ��^�r�]< 2��q���j7����]�6�Y	W^�D{�q��9���4k���ڨ����g2�6'��':Mn�g��?�< ���͟�{��4�;<��9�/�#�7�����gk&�ƲU|�;?b͓���yÚr�]k�;�r��<q��d�:r�h�1�L��1v��cv���@�+�[6��·1!�K	���ڶ��	i]O���+��~%Lׯ����PU�6����T�*�R.͇H]��I&rI�&�KM��J�'6�*�-'�+ZX�N�D��+wo.�kv�v%�5 �v%�֮��ڕ0]�fkWB[Cu����Yl��]	յkņ7U��f�*�J튳`��<�,7��v[`����Y�~���87?�]��5���Ӭc�́s<�۞����m�sL��t�+`v�[w���S��1��6!zo�0�5&��4t�k��?�lטP�5nw��A<i?���R�gH7'����%�Q_:����\�$қe�G���M�#��]�;s��x��1azg�0�1��9�1&Lw�	�cB��azg�0�1&Pw�3�?�ϥc�$�50	���p�
-BlOS@L�a���������̼�1�v���>C������L8�8�u���x\-�q��DoH4�u�0!�8D�u|Ho�s�{�)ޣ���*�x�!�cӹx�{t�D��j�[E�naz��0�'O�>�C�Ֆ'%(ΣI�y+�"LY;Ł�b�����,�`�@`X�ဴqS�N\��N�h����;:�b��\�������Ị�#Gk����;���?E?W�k�^� from 172.23.104.62:1
-2025-04-30 14:17:28 [INFO] Received chunk #54 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:29 [INFO] Sent chunk #55 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:29 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|55|1024|��j��7ņH!��) ��0G��M7\�]��w���������q:uY��?�:��}x��f�9:'�N�O�a�+j���1�«ئ«�a::����b������ޕ��Q�2~d#Ly;ł�������$�-�p�A```�銴qY�]9��hΫ�>@؆�.g9�b��*f? Bh%��p^�����J�\r��y�����'��ϕ��G�%�^��#���Hd�1f��"b
-�g9��y�ͩ��.�λ�we��C>f�<����$cOy.�u u~��:π�Gov+�߸��>��@�;=~�A�����#�\;s�q9%���;>.5m>.t�D՝��u'!v�]�cR�٘0�Ƅj6&L�1av�M�b�1WV6�љ���8�0��%�#�G���fba=6��#Xx��6��ݙ:D���0�ńY..�U�m��z�0[�Oh�Ohf�Ou�Y\�+���`�O��+�Z"6Fl�ԟb
-̀`��h\̩h�x��3�&�y�%��zW��O�ɭ��Gԙ�o��d��G?Rܼ���/���{�5��ZZgj=�SZ�j=�SZ�K��)�#���}3��AO��^\�ݍ�zv�C`w���^Yw7�hBǻp��79ܺ�!��P���;�&=z�Kz�"�t�QS���>[Nv7���K�i��=��onO-O9��F���ŭ1��[h��4��&ܖC�q��,�>t��mD�g���o􁹿!����16�X�rCԂ�����f�/�fC�pYq~~��Q������/��{?T��'kv��일w�����Q��I9����bk�����"���<�'x��|�	a�> �Vmջ$��]�6U[Eu�FЬ��KUmsT*~T0�S,�Q��P̀�P�L�@}4M\FV�H���еn;���*����m�3ٺ�b�n�ئn�������ٺ���n;��fRu[�hH�n�I0����iW�MS`$[��q1���Nwqvޭۮ�{?
-��1���_�v
-�o�`�V�� from 172.23.104.62:1
-2025-04-30 14:17:29 [INFO] Received chunk #55 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:29 [INFO] Sent chunk #56 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:29 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|56|1024|���x�@�����g�̪y|<}>��פ���Fe�:0Jn�#bC�硶�+`ڒ��$a�K'�APX"Lo�f��0az)L�%UB�6�I�tj�YFg�gH��dB"���/T��
-)�I���tBshd!DqGڸ-w�.�zv��0�&���yӚ$L�&	��IBuk�0ݚ$̴&	ԭ������s��> �0�ȁI Ʀ8�Sl�ZP�{��`�3f��,n���8Co���<^��j�}�-gg�x���-g�o-�o9��o~˙�Ѿ��8L#�,դE�l6�w�m=[�_Y�W���d�������~(
-endstream
-endobj
-20 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 594.95996 841.91998]
-/Resources <<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/ExtGState <<
-/G3 5 0 R
-/G6 6 0 R
->>
-/Font <<
-/F4 7 0 R
-/F5 12 0 R
->>
->>
-/Contents 21 0 R
-/Parent 2 0 R
->>
-endobj
-26 0 obj
-<<
-/Length1 35160
-/Filter /FlateDecode
-/Length 21078
->>
-stream
-x���E�7^UݓSwOOO�i'l첩aaE2
-d%�(��b�&�
-�xf��]@&����#�z*������e�{������}�����t�o��^�B< ��a���zq[!��3��7dL��!q�_�n�|���Y?x<BV-B���3fM�: /GHU1e��lV�/�<%p��)�\X�v���?����sfO����� ���6i�l�B:���=7m��sFeFނP�U��}u��Ig��@�6��:
-W�;���sg^t��������8�3����4��P���I��f�7^�Е�G�`�̩Im?�D��gϚsQ&�F!t�"Z?�©���x����oD�}/G�^u������I�"�TD��Q�����3d����h� from 172.23.104.62:1
-2025-04-30 14:17:29 [INFO] Received chunk #56 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:30 [INFO] Sent chunk #57 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:30 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|57|1024|y�j�ԏ�i2��l6߀A��`�1r��1�F?k�H�����.ہ�
-�Ј��&��ȌL�9d�%{	
-Z("��+�� hGV@�� '� ]
-����3�"�9�
-�;�oT0�<�a����"
-F�!`��?�(�<
-�Q�P�"���(`���(X���P9JV�`%���
-�{�B�jkPQ��`-*�C����ߡT؈�e�oQT�U6)�Ue���`3�<�  ���zD��� �F�Q����a�1���$��� ��%���R��?��N��X4 p:5�9:S��h `��g�A�Ch8���f?C��0�)
-���NE#��9
-NC����yhd��h:x��3��O�L4�g�1��?A�h,���L�9��Eh<�Ũ�/Ege����D��h��h2�hJ��Jt6�Uh*�ՀG��9���4�k����]���h:��|����h�"4p1��h	� p��7�Y�7����ͨp�p9�x���Vt�
-oCg�C+�%��+�t�hn�]t��w�+�V�tU�t/��>W�yٷ�jt��
-�]� �.�Z��Zt=��
->�n��=� >��C��o��h1�
-n@K 7��6���m�F��܌n��C[�2��
-nC˳���|�؎n��ځV �D+�Dɾ��Bw >��ܥ�ntW��Ϣ��C� �A�f_Fϣ� _@� _܋^B��*�2�����K�U_Ck _Gk����@�����C��[�a��|=�.Z�}�����Q��m��A���+�w�)����m<��~��e�E�*�O�8�A?COd�A�P;��
-~��gw�/�N���=	��.t=�-z�;��]٧��h7����g�O��
-����	��7���g�<�/�%�_<��fw��
-v��3���U��N�+:]��K�^�_��_��_���@���_��_���N��� from 172.23.104.62:1
-2025-04-30 14:17:30 [INFO] Received chunk #57 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:31 [INFO] Sent chunk #58 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:31 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|58|1024|������W���No��N�����:}��U:� :%Ð�,A9G�KU���j�̨Q�rl�x���*v�nYC�%�i5,R��ƍ�e�
-�Z�i�8%1>�Cn�����W~8�K�.��r�գ���	��9b`�N�\��H�>c��ܟ�����H�JN�WhT��<�c�ޙ�v�4Ƞ�T���`8��`]��|�(9��	��[�Q�96j�܍}K�{�N���Q�z~s�ٞ_^�M'������G�JO>�-�Ȁ�B�߉��Q�����y�M�etfT�+1_�a�>�o�-B��b�[B�Ȥ_�r�#�~Õ�Q�~��uآ��.AB�Ȣ5}��~r��{U�E�7�xǢ~����I�w���3<������/oʞ�<���5mz�o�u�� g5nݟ��ZM����"��l�-B(��2�?y�nb�|dԼ\s���g����~� �y� ����?�L��\�����x��e1�0�gIn���t��*������U�U�U���^�Vڷuo�ηWgh�g{�Fi�d='ګ���V��?ؽ��ɵ�u�t��:V��GǨ���^��wt����(������`P�Wt���ͷ?N�=��J����Y�Ro<N�=ۛLJ����7�ۛ��t��f������7�t�����-�}��T�����t�����A_K���M�l��J�����^��=�kV�ڛ���V�^�HW8�Q��~���EQi߃��ڤ���t��6��Y-b��#��8I8�\R��H:�<��9�<����摫��(2~*�
-�U��褺hh�Se~E']o�q�O:g%���Ɏ_N>�m��c��Y��[!ƪ?�| �E�����t�I�uȨ;����@���i=ˉ�Р7��Z�>�G4 ���O'=?y6_g�Q�\���@�5��9̵���M�7�z���>7�<��_�R~.��Y8+ 㑀��~��k4DFS!ڙɕ�oPV�h��o1�}��`��h˳!F�QN�e�������MS����~�"7 from 172.23.104.62:1
-2025-04-30 14:17:31 [INFO] Received chunk #58 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:32 [INFO] Sent chunk #59 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:32 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|59|1024|}�d��DG�ߧt���g:�Y�4���>#�R��xH��}�[ n����S��R0xD�+ &{���4q�w��5]e�w��
-= &��Y���OE�I�b��'J�f=�F�ν��>�b2����%up�H�
-3A�Ζd��ٽ��诸���n�X�0�(s]vi���= [Go�s���L8kĬ�σ��>�K�ɮ�b����<�c^�)��B�����l;�,� 6��ڂ�|�~[�:�d�dO�N���
-��|���(�C�1��{������#!J�b�e��X��x�z2��b6 7��h{2��
-��#���Z\�{c/���KX�c�.mp�[ 2| "�M+��{%d0��8�G���*|�߆��G�F�5Q�����}��:�nV��+���� �M=_C_��%q7⿑I3�5vd2��S���C�Fqh[�����}Dy/���A�u�F��z,�Xp��O�C/6��p��~�d�L�fR�k�hvc�֌-�9�]&�]�m�>q!�oܧ	(ЂfC�O)���<�V_��j쇾���y����ǁ���j�(�2��rf/�d�����ْܑ���b@�������F��p�ka4�xx=D��B<�-v`.���3�<��g�ٸ_���Q}o�;��#�-a���`�Rd
-��� [��.9� �tf��\��`�2o0_��fK�!�Dv.{�
-���}����̎�wu<�)��˜�Y�y&�n�Ӭ!�+�؅��X�s�U�����?=}b��!v���a�u�=�+tk�~����c�9�=O������I�?���W�����;���E�)E΁g���'m���H~abL�)cʙf"<�Bf<�_����X���R�tv���Q���]u�j��%�WjN}f^G���W�3l3��p�0_���:|9�"^����g��&R��	\>����Au����LT�𝤐��#���qd�����i�0���ds7{+� from 172.23.104.62:1
-2025-04-30 14:17:32 [INFO] Received chunk #59 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:33 [INFO] Sent chunk #60 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:33 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|60|1024|��C������O�k����[�(T�lb_G��d��fSv!���0=X�	�2���D�Ѫ%7�0�9|���~ ���F���F2�|e3�
-�<�N4����T�<^���{�Rt5n�ѨA��m(Df���(�/|-����D�9g���6T�_|:-�KPw���Ur��S���;;
->~?�@��c�^v/8��`$���Z,�< :bHf���T�۝�o8��G|%����w0_ⵤX���Ҍo����a�a�v�6iR�h��N�e+�⟣��iಜ��W]K��[����l03Ae�|�.�� �m)�� �!��Yx�%��l���lb?�ڱћY���6\�#� n����ԏt��.eo`/��h�h��Vtz���[q��0��A��6���Jx���
-u���O'��<|�Vм��G�c`��x�睃�C��PW��A��A܎Do�ud$����r�}ȼ����6����N�=[�ν�J~8���[p�r��� )��~�}7�p�>�ރ��[�}���&�dYnl����]Sݫ��������0�J&
-�h$
-�>���r:�M�
-<g1���N�Q�X�`��n�h�Mlcc�
-i><	
-&u+�����m��f��-ehy�I-�\K��%�u��0����/h��F���M��cm���%�\I� �	���s����@���K�]�b?��c}S�i��0�� i�T�=<�1lo�J����~� �	:��
-������=hc��'��6|Ę�������tn��܆�}�,)�	jRnӦnj�(�	�G�-<�޽��vM��2�>{��1m̤��|
-�ۯ�~�Aǉ,\\h��{��Y��q^�f�,Yh[=bL�� űc�p.�6O\���q����a�6|�2@��>U�����Ӓ��m�p��K�OҸ�����7�\�v��]�KF�	��᱓�yђ��nq�gϚ��c���̖|�hꞘ�U����45贮�ŴG�S�!�S� from 172.23.104.62:1
-2025-04-30 14:17:33 [INFO] Received chunk #60 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:33 [INFO] Sent chunk #61 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:33 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|61|1024|�1ax�j
-S�ђ)��>c1��v6P�6]��%\oZN�oSE�p`ɏ8 |���%��%�(�#�I�']����T�-��,�i�B�|ea��vr^x6�c;il�b�`�xi��&C�m��1�| MvoFrqjl�Hkvw��Fњ��5]�O'oU<m[�6��g�$k�s{�a�O�����4bܘ@�%�c;hd�\����.�j�6�a�$�"nF���՘f���(���>�]��TJp����8 �c���xR{�=K9�8-�Ͷީ�����3.a��l�9n�}��f�@K�4��K&.�Ԟ�?9��K���[2���N��gw,u�5�8�\ܻP��h��������O��N���)�#m̛�*Q��z����t����O��>0�g|ϴ*�5��Z�pk�����k�R�f+�_��~�{��q�S�﷮/ܣ��z��g���~�w���F����(7�@����56m���G�.7_�@t�$z�V�E�}���*�6Y]W�GhB��H��Skڱq+��X�`�^����C\:-{#�v���P�hݐ����OuC��:�X�QG�%A>�G0����
-Cv7���l������e���k�,<7�}�R�
-]��a�h�P8�i���Æ<h������+��?in�gn.+K�1�kP���ȌM@U��	7��3�jw�͞V�|&d8��vl�/��l'�?^{j}�uFE=4h�_-\�4�ƙHK���?�)2���X�8���S�����Çᡇ�: ]����-u���PULK��{���4͕�N�MD��bޑ~���*�S ��=2�#BP>l`l��#��C4�(���R\�	H���<��p���(���S|���O��f�A^����T+�����peEUy�d�I��*���P,�pHm�k��mPkr�����Υ�v	��˪*+�s�1(%�v���oLv�V���I����Y�+�������6?D��:O#���*�tD�j�M����4x from 172.23.104.62:1
-2025-04-30 14:17:33 [INFO] Received chunk #61 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:34 [INFO] Sent chunk #62 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:34 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|62|1024|�q����OW����*���,�U]���P�+|٨7���-����Z\�5>�I篜�`l�H7���]4c���d��O�9D���x��n��I�Vqv�jk����t���B�������:o�|�2�C!�A`��:^���JKp��^ʈ��D�:W0.�����uq�Ypj.8�4N�l�>,��`�O���r�}��L�^��wBx`a\�9N��{����I�.��X'���RCo�z�4��n"A.�xHg��=V�ۣ�"!�j����
-���O�ȼ����s2�̆��	�݋�Y���uB��ioS��ɛ�tF��x�@G@�g��3�o�_C4O�;���^� !i9�qV:���@��g�sǜau�_v�T� �J��q�F��UE���T����!�B�`%k=��w�epΡ�h�+�L �L��N'a���F5�f|��L���K�e���ź�񝺵����q�"ޫ{�_�~�?��6�㗶1�t��o�A	h�*f0�ߎw>�$<�і�������இ�	����+����;U�_�D��M�����t�e?}G���-чwd@L���Bm���٣(��7��g���q�Yg֚Ɏ�ψ����k.�g$�?���c��C�L��#�"W�Bas�^H׫���G����K#�fg��;��VX��O�/�T]� ��59�5�q1��f���*���u��~7���
-b�X2ƪF�Qg�5F�������V��Sꨌ
-�b�-A�� 1cZFE�ꪜ�J�'u��pu�8���Y�����7�$�Oh�g��2$⢇ps N����%� �1>��X��h�+:��"��vHXD����o$z�o�S�+�����irJ��JNQ�풦"�9	�Q����2���⚩w�����b�Ԡk�|�8idS�YPs�M��R���7�&�����+k+��֟1���t�ֺ3�]�Z}��ؽ����C��,&�/؟A_<�Yк۳?�^��:� from 172.23.104.62:1
-2025-04-30 14:17:34 [INFO] Received chunk #62 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:35 [INFO] Sent chunk #63 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:35 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|63|1024|�.w�:��2�eg4Z��uZBKTP"`��৵��P#���=��=�T:��Iĝ`Cyd'��z4���4�a�)2y��� ��u��S���ØZ7�u�5���xtO�Li	jQ����)�(ȫ:�S/�|.��cE�|+�,N����|l<��C��ْ3�N�b�R�e=��{ K)��v��iw�b��r�����L�4nM�L�^�4V'�D8�K�q_A�((��K�
-[�����ȏ��)|��� �N�7���/[���
-�� �z����>&p
-�J}��@f�4��Sฟ�Ry;J}�F���a�!�!<�?"8�h f:dd�2��E���\sMn(�Zqk�W�Ә+#��d0�u^��5�Z�A�r�������:ҿ��9�:#����>��Ocg^�y�� ���<��s��x���Fo�J֜��ޓ�\���~ʅ�e?ea��?�̨ƨ�QyYY%�;rjd`���B��\P��]Qy{�����[w�_��"�f���w�7�_��b���M��v �	�Ő*��b�����
-bi'8y[!ݎo��/7�q�P��W�'�m���Søz� 
-x�5O�5�*��x~���0U~��������8Yp�j�"T��zl9u詨�D�"��V�elU��!���Xd!�,���-�1�bI�����6�*�r)�+9�J�ܟ#c����g|Qd�s�x��[���x���th]qו�oMs��w��{תW'���&����%��9,s��=h��TJ�3�Z^W!��\A��]׏��λTR��� zS6�u_P��{$�C�{�OK8�e�l~������'�U}&����
-X"��J��,P&٘vr�l�*�4�׏,>���A.@A|�l ���ڌ`���t��uH�O-�uu u�sq�:C�[ph�ǅ?��5��E���= , 7?�]�y�����`%.�sCw&�*���Øa:��omj��c����(ޛΌ�&1��ұ��ةg� from 172.23.104.62:1
-2025-04-30 14:17:35 [INFO] Received chunk #63 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:36 [INFO] Sent chunk #64 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:36 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|64|1024|��#|���9�\�C�:OH�p�v�
-�$�H�u~��ڡuR&�([!���"�H~�{��)�(U#0e���e�(����:{��U�i�f�%Ȍm�rZ4Ҏ���,���N>1fC�Bh��hɱ/uR��>�,��B'�:�Σ�����^;���"�J��b�SUPo�$��r�S}�y���Α��^0T�98����+v?8���&p-R�ޚ����c�K?WF{%�)ܴ���7��)�z�� ��-F%x�l,
-����/��b;�?��D�\��j��A�Q�8�:
-��7�?��c�"Ҟ}[�S�gG��v8s˲Z��16�MZ{[YϴN�ε.���i������j�*�&��9-�@4850%878�`N��-���w����qZpg8^XE��'y�N�a
-���5��������$4��ʮ6�"� #k��3��ݎ�!K�zQ�י���Q�K�%I6�y��� #y��P}����;q5���YkBMGG�э��~PZ�T�Vz��@��r�"X��d0u�M�8`��Ge���K�F
-�P�R�8h�����]j�
-[PƀВ�hT��*�F�r�'�O���)`v(��y'B4���:x�еS���C3��jj,Y�Ε#�o��ev9c̚�j��I��u�����˂��vߢ�VMY��]/f�<����l��GO�R�V6üRiC��1�n�Au%�Z͐�uF�i��6���`�lF�p�L3�y�g9�aH"&o���7��C��QQ<�w�4QaZh.J��:�l��`g���N��\�� �%�٨�̂C�Έ)b�j���\�����?�h�s%��R�P�'<z}��5�.�kK�NM%*��u�͢c��6|��.Ê���=������.���k��Sֹxm������l��}�ٿo.	������ڂ�-K�vd�A��W�� ���T���'jo�UU\�6���2�HH\����U�(��Ԏˆ�@=�I�^�,;)��S!-�\GM�!�Q from 172.23.104.62:1
-2025-04-30 14:17:36 [INFO] Received chunk #64 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:37 [INFO] Sent chunk #65 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:37 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|65|1024|)�*�YRX���6V�2򈠇�4�����y�Hn@��XF�:��a�m��ZpK+j�(a;Je��~><�[���G���r*�0Ma�R&mhn�e6Zf�e=���]�t`�NU�D��*r�#����Ҍ����^}���㓽߹�/o�N�����W]r�*����?�a޼di�CW~���	UT֌��d߾%����r���L��bEF3k͚.|�aЋVЋv��(*���B��MjR�h]dGD�J2�0; Lf_Y�1P&���i��,g�~&��W�h�j¥TKҳ�)�%��W�Ʃ�R��J���Uʞ�5EP�l�
-tI�� e�A���D�z�g���>X/�b;@g�ȃ�>RoqU�>�ԧ�"����;�qP�;��q���\��+1g^q��E�0k3��f�����r"ǪUѤx�� <��l������a�6�f�0��m�P]ܥ��)/Ԓ�
-�w�0H+B���]���-w�y��";A�^U̮>[����]�/|���&�b�Ջ�ո��/�����w�_�zN�� ya�Eg?3����n�l�%�o/nq�n���ϓ￲b�M���r
-�2!v{+JB������Aոҽ
-ONuN7B@'MpMH/�9iI�d2]�	)�s�d�,���V��~6%x���z^'h�9+O�b��7�L��H�.W�WG
-�V�H��$�*x��Т~��_�g��c���C�r�\�d��v�n�K�y)߰0�uZ�})K���霅��s9�k!P�,&cn٢kD<�����#nb���c�܀���-��B��2m-<F�0�;>˳<��R���=x��i$�Kv((���iQ&�Au/T)���"Gj�U�5j����[Z�!:�V�?�*gk�<�_nJ�9���y7?�O�`�0�\��~���d^����Y�w�w�Q�_����_�?�3�u:��Wt��س]�B2��^:O?xh,��Q>G~jSr}������e�%�{wGW�6F�WD�E�..\�_&.�,�jGqS�y���l~�0 from 172.23.104.62:1
-2025-04-30 14:17:37 [INFO] Received chunk #65 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:37 [INFO] Sent chunk #66 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:37 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|66|1024|۪<52(���*��z{G�����S8�����Qw�]�$Sڹܓ�������KKJV���i-�)��ѪR{�%3.0���DL�Ǵ>����L�I�Z�~c���8�8�8˨1����Da�O,�r~7��?«yWE� �
-:a{\ g���9��Rk~�E	&�z).2����=�E��"iA���T4)�>\��B�E�B�NX"�ڂ[[[[��;���`t�,�U��>Ap��r�_�VJ_������.�vRǍ4�<NLV��K3[�##.k{����F�Ƚ��&�s�ȥ�)�IU�3�װ�K��ȗ5���h	���f��7�	����m���K�7ŗ$�%��$<`Ⱥ;�ۂ�Ik�Ry7����"�]Kh�R�P�?�Z����I��gצ|:�iI$f�`�%`!WQ���4�N���5X{�_=A:�DP�zR6E��$�6��d1ZV�ƣ�D�U[Q �`4���-\���T	��| C'�s#�v�������P����B�)��hX�{�S���ђ�q���-�H�ȍ#2��DS=a���.��q})U�<s�C��O�
-Ly>�cУ	?+�����[�]�lN]L���v��y�7�zA�+]��b\�(/..+�����"���o$����ƾM޺�.7�SyU�S�)��㩨rK.HE
+2025-04-30 02:05:31 [INFO] ChatController initializing for user=null
+2025-04-30 02:05:41 [INFO] ChatController initializing for user=null
+2025-04-30 02:06:09 [INFO] Starting UDPPeer on port 8
+2025-04-30 02:06:09 [INFO] UDP client started on port 8
+2025-04-30 02:06:10 [INFO] Stopping UDPPeer
+2025-04-30 02:06:10 [INFO] Starting UDPPeer on port 8
+2025-04-30 02:06:10 [INFO] UDP client started on port 8
+2025-04-30 02:06:24 [INFO] Starting UDPPeer on port 9
+2025-04-30 02:06:24 [INFO] UDP client started on port 9
+2025-04-30 02:06:53 [INFO] User sending message: kaka
 
-�o���5A�W�������ֆC>F����ө@���R9�]W[��^�T�"M��_��iSYִ��4�������y_	��r�#ob!�,'�N���"e������Jg�N����|�֊\R��b��-=آ�$&��̟�u�5�����`nt�Q����<a�B �3��g�����oJNV��u���}�c�*�r��&[I�l������TL�l���&U_O�O��xkg���Y<7xn�\͐�y��R����W	J����`�e��Z�.3�]Ġ����m���s�-�j�Y7�Hё@���$͉ from 172.23.104.62:1
-2025-04-30 14:17:37 [INFO] Received chunk #66 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:38 [INFO] Sent chunk #67 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:38 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|67|1024|��s~1��tN�C���Ɖ��^zI��ϔ����J6sVϧ��q����&q����C>ҌV�Fo�����7�?���O^}Žq_���h�þ����m�W��i����UT]�A]%��`���xp(4<DB�X(�y�Ŋ��ʫ��*�����ז�Z���ܶ�����;�#!:6��.*��ljx���T� �-j�.�=^��ׇ��)���'B��^�����~���a���{�s���xU���`0�֘Q�WW{}>o�*D���?>!>+�)�+����DE\*-�e�7��G���|"ۼ~<�ex��H�����+K� Ê�o�u�u��;+ku�<;ˑ�e �t9����8���
-���!�2GK�:�ء�2����t]n��R�C�/�j��R��r��x����x�"����Vƿ���L��pb0Ly��[���)�RI�u܀k^W�27W�
-����:)xB�rLۑ&o�I�+:?f���8�g���`���!/l�j�Kn��+LfNf3M�	w"]P�J{�zVi�)g4��!*y{
-dEa��h>,��>�7�&X�>�[n�ndMŢQ_,�~��n1�>���z��z|(ٍPZ�VZ���ҳ�����괫�0>�M�[�	�Y�e�#V�b�Vga���V������>Z㐲�2U�9\���,,J�U=֊�X�= �[���*.�����ҊZZ�a���p��
-�dF�ʻsDV&�e�1�q7�N�Ja
-�~��$?�s��.�E����g�����{-�;�pH:����E8*u�_�>�>ޕ�s|�})h\�K�I��}Q��򓕹W�Ҹ�<�zD�����e��:r��&�|#8s����*m/u/m���؛+ʥ�m����\T�JŎZ�yҲ��,l�n��I�;�����Z��lk�M�uN�h��ű�[i]!��ө�o�o�/tv����N�	GoK�����1�2��/hj�֭vk��5nӨmN�j��4�(��z��.y ���H�.�� from 172.23.104.62:1
-2025-04-30 14:17:38 [INFO] Received chunk #67 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:39 [INFO] Sent chunk #68 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:39 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|68|1024|W��ܤ���SA��M�}�@�}h�ܖ��m���7
-�ٟ���k���Ep4Jta�,�%��mtPЁ����U_ѣ�=�nW� ��������h�m����l6r���Ih�� 0�6�:M�#�G��h�t6��[�����_�|��u8�4�.
-��X��ůd^���,�v�o�z�֬}�[��p��x,6c�:��#����ޏ�ʼ��S���i�$���;
-f��C���hw4�YyN�ť�&ջt`�8טҋ�/���rmr]��;���c�~�-1]is���%�[���O��<�2�vfF:d��ŘR����\4`P���bPkm)�fx�#�$SAu�0�*�t
-1)D��"���XT�u$±dR��j�;�娐��M�ǕG=(�c�e�<�2h&\ u!<<�:�F�H�Q�h�esG8�9����l9��QT��gP4�2 $�s��z����.�F�ڄ��EF���o�����ck�X)��S7WJ��:�#��B�ԇH�tON�@�h�G$����E<*��V+������{߻�q�o�in�=�ge~��-#��y��3{��������5@�ӕ#�ϨyX��D�M��Gr��|�{XyK���i�k��ƚ;��O4�!�%��p�w��?�5n��VG]�����.�E%"��\Vf�*,&���몂�6��EK��`Ò�6�3Ǵ{E'�f����,F��X8&�����X�X�ؔP%���݁��V9�����AC���J^^Y��-v䖷�9��:7��"��Җ_��M����S-�0�9M���;y�Zy�"��;V=p��5E�'����豇���::�������Ds��;�?��ml��R�]����`٤������_r��W�Ъ/�P5�/���;�gs����������:�n������y�U��C��J:ybuJU��;�� ��َg=�q�.I9�y�==�<�������Ҵɳߣ�|���Ï��V�-��� from 172.23.104.62:1
-2025-04-30 14:17:39 [INFO] Received chunk #68 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:40 [INFO] Sent chunk #69 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:40 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|69|1024|O�3G=��Y8ȋ���Y���W��?�<��ul��G}����;�j|if�r����`��s@0y�,�,�,�,�"i�}�j������M�'
-��>�9��˒lg�m�9�^_A�^E��R{3i�����3�1�E���{�K҇vѤ��<7��\��qV�km�8-�E���"\dxdw䍈*�� �x�ȨV��,:��Xt�t�u��:�n�J�S��Fp�&�w��N�����D${�=�\ac���bY�M���w8!VpL�s�!m�03>�-$���Kd�#�88���ǂ.�Xc&u�d$�iL_�u �;��-r�>'�;�SNV:努
-��bH�#N9�p�dK��`B���e�
-�|W�-�I�%���g��4I.��*ɮJ�����3f+�c����nVlO��D���Y\(��"�-b1Ʃ0RS-S�S����6��㑝�a!�^����`!��J��㐓�hu9�&�[B���u���s�"���Jࠥ�*��'fr�z=fcov����>�-�=	��	2���.ɕ���\y����7���ޞ=��u�yp1qKK0LgsO�&��r���2�����+��F��R�g�?��r��JA-�3�ǟa���S|�M�]&A�A����G�
-O�G�Ӭ�+bb������z���|�׭�J�z�jq�kc�6͓��ĭ��W�GKmz��I�����"W-)��h�y}���~V�- K�QvE���h(*�V{�*���)7��U���</*@�� c�Q�K�N3�D��X ���ZaB�@P6I�� .6�'W7w��AW�}YIPM�g�W�w���Y��Wr�	��SC:�M��و���-�j�SV�l@_s�.�Am�<�v!�5�#�~���-��H۹"��~i��D>hb�����-����5ݶ?�mj�)���dbJ]~����Yw�ދ�͟?�������S��j�lJ��k�?��iC/�p��)s�s��[�E�ϩ�;^oq%���b���s�jO|��	���h���i���� from 172.23.104.62:1
-2025-04-30 14:17:40 [INFO] Received chunk #69 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:41 [INFO] Sent chunk #70 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:41 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|70|1024|OM��$�9���
-���,��9h�.���{ȧ�B�};��� h�"BAч���sl����;�����|З���-���Ε����	u�SsL����w���e�%�ڤ<������6c�X%A�b��h�e?��F�]t�2>���U:�&��Eu_teInXo���7��}s�Ƿ+��ﯼ���o_�>����t<zi�K/��K�Ce:���z���c;ƶ��	��yz�N)#}�id
-y��`}�����c�?���LNO�SA�}݃�������3�W�ot������r��ó��#��������@ �:��5l�7G�jW#<l`;�L����v��g���}�~�����<�!��E��;Wӕ��;s�$�A=mu�~�.�t�7����[��/^����b�Q�#[x�a�G�z����9���y?�[^z�G;�Y��m����-N���Fc��'�:�k�n|�&ʙWe�f��ы�r�K���E�q��7���c�������S���_n�2�Z~cb~���[��'V��𙉖r�d��u*�V"ȗ*u8{ �g��(�� Z�hk��q�7�z=�[�k�1�0��&�>0Үʢ������p[���>>f�Ί��p4����>�xF�`c�:Q�I��m�w"7� ����ImĦ�}Z��洶��rZX(��޸���v�B�3	��	ث��r:����z�)�F1����C����^����ر�,|妛^~���^!/ݥp���}�g��p���&�ߎ�me���k+n{�5�Q�y�MR�G˅w���m�l�����6��!mxѯU?�٪ڦyA�f�K���vE�XD�H��"��(������t��$���9�d¦�:�I�q9�b���ە�2�W�VV����1]�b@�j�j8�Vp�w`�eȆ�((�U�����㯷Ԝ2�k�
-�Q�y���}�*��tM�%�Ź�*�:�V9�إ��1�o�;nG���m�_�I
-�sQHn�	��B� from 172.23.104.62:1
-2025-04-30 14:17:41 [INFO] Received chunk #70 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:41 [INFO] Sent chunk #71 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:41 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|71|1024|�揢C|��gN^<�,����|G��Y�]<�O��ʀB�	JX�~�ql�)����w��M�3//\��M�6�e���S@sI�#y�<9r�9e�i�)΋��;5V7FC&�Q7F�
-%�s���0ϓv|���ɨGx'�@��	8f��px�N�y���>�.���Ɵ��P�m������ Ϗ Y~�<<�>x�Cq��Hg]U�dF���Q�:h���Lnv��b�m��:���� |��*
-�J�9�N��9n��c8��{�-���?��-=���o���N�lt�h�f���,�,��KoK���"[�,�uB�Xe��ޜf�
-�Q�ɚɞ�4yTU�2OM�(��D۫^����q��޽�B�lZ�x���p@8"�H�Y`�f� X�![ԯ�/
-q!j��B~_(ZU�+,��IysqyyIq��Y��S�7��Ʀ&�1TX��Ŋ
-�5�${ɵ�Y�2��N�hzUUE�6�����_Y"͇@�x���c4�#���8��@�>԰�a_��<%���w��9ڒ��:t-r�Ƞ3�j���z_�I��"(H8�z#�2Dl܏Uj������;�.nݟn$R�������߇���o?M�CP"�}�S��ܾ4Mv��� �Y9b8n�c�U��M�-�愶�m�=���F�$����3�LV��}f�)���Cˋ��Ӭ$���뛔�O�yl%�L5�ss����:�QN%�G���񖒾�i�7qv.�7��� \�gȽ�Q��%{�{���f�f-Ӫ��!S4gk�v3w�ת��-x+a<��~�0K�d1gEl~�5;m6�3$�lExCΊ���Yo6�!>gE8��$Sb�lΙ���j5ށ� ��Vo�ՀU������+S��)ey�j0(NjMN���-�1^�Q�	���̿�f�ۣ�j�j-Q{T�Un�7gM��5qwM1�� �x�-�x�U�i��*3�"�x��E��2z��c'�>S!�'��Ƶ3O����=�3ļ�����v|w���醎�O��n����� from 172.23.104.62:1
-2025-04-30 14:17:41 [INFO] Received chunk #71 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:42 [INFO] Sent chunk #72 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:42 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|72|1024|x�\-H�$�%f/�kx�|������|�y<�J���i��O7��ZϱkmA��A�1�	��Q9���Q6�*��P	�Ʀ�,�D��L-C�Y0�SPQ�����-P!�� ���-��Fw�Ӧ�n�.�M�M��ʉfѾ#�){�n1�x�	/����Rѕ]�)��ٟd���h�z �n��
-�F�h�@y{�H�*ZD�b�,@B�7rp& a,�:ܹX�m���Nx��㛺��g�d��g�u�'�WBx�����/Py�����soC��K��P�x��u��Ӆ��b�v��V�'��_
-���p��� �˲NY���֑�򰂡ʾ�P�`���Ҙ��fN�֢�Z�ȁ��jݡZ�ǭ�h�h��U��@�ι�G��3�q��ۆ �� ��@y	Jٲ׹���O�m�<m�YE�$x:UoN^������w�������qZ�fk�����]�"ŞϤk�(+���o5�eW)��>S����<�i��e�3��~�{y����C��h,:�ߣ�G{�_��uo�Xߕ�m����փ_�=n=Z�s_�`UK�]_��&��}��VV�F[�U�W=����kW/�]+n�7�n��T"+���*\�Yc3֠���0[Te1=bxgm}}�6A�_��	�v|��U��V3�&8�G�����td�6a�T�$�2y�N8�7iuL4���P��2?�sʖ��=�dˉ���n��=�Bn�ou��B��F�6?�u��q� ���R�Ï쎆���:P��ںj��}x��x۽�U�n��Z+V�=Of?G��7�_���b/�-!��s"S���(v�$W�H�PM���� Џ
-n?D��h�4z�u`dh�'��)t\��y{^��>�m١�{�҉#�H~2s%uiV`*u�ioZ�\�`S�I^��yZ[�my�=|�5�G��yq��WldR^`��>�䬋Wפ*�
-<�#|����.��_[�����~C����͘G��V��tg�+G���� from 172.23.104.62:1
-2025-04-30 14:17:42 [INFO] Received chunk #72 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:43 [INFO] Sent chunk #73 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:43 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|73|1024|�r�5�m�g�o��U���W�4�`xנ�k�[I�/�mZ��hC�u6���r�����F"�Z���t�El;~D�i��b����<�=�<*O;�lK!u��{�utj�2����P���L��hv���K�Gz�я����l��"΋'Oy�*�V��$ GAً����u��D�0�ݺb���nJf2��7O�\0��M�C�\L�i��[���0�c��(���Q�n�H��]Z�Nѳ�b�Ѩӆ,��9�{h~b.��B��Os 	Bq,Y�@���vG���hu��E-C ��]�ދ.���>��`���`�Ny�_Ѫ���J^���G�Jg�+X�{+����sc�8k^��B64	L���4?פL�ƻ�B�^'����}�
-�t%�}�ܡ��W�;��➦1�2�7�6��\2��Ѯ��qF;�'ȥ��z�Q+�c�0,��jq���z�Ɵ'����Yُ��ˍ�̈́L���Ę�*�0Cz^�ExZ?����0�{,7����M�Nb�l����m �����'^_S#����*Z���:��ts�z�V�S�k�v<]6XIm1��o�~���X'�d����±�SxpG��*G[Zmɿkݵ������s����r��lc��e��㓖0p��%����Cg(ao-ť�"����̸�Na�bL�~
-9Oɹ����:�eoJ0iym��/`�Ik��d��ծE�#�e�&�ii�����I�G-��9X���$�[�^�V��l�����瘂s��칶i�i�iW����n�?Hֳ�V۷��l�����󉂽ҋ�����_J�)��R$%����vJ/�^?���_�&Ǥ��<]Qn�be91�_N�(�gG0�"r�9BS�#oD�ّ�B�I$r����/.n�t�t��ĥ_7L�|�Û�uF����ݩ�3�����^o���
-8+�E��@��s�1е������/2Ȏ/n:@�"�9̢�3#Y}�6�XkM�Zc00���Y�xΉ� from 172.23.104.62:1
-2025-04-30 14:17:43 [INFO] Received chunk #73 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:44 [INFO] Sent chunk #74 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:44 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|74|1024|�r�p�%�N� Uᔣq ������Zyb.؉RV��vi�Kk*mGh;"s|i��&U`�۞�b����%������BɦrY��r�+(G8_9���Q${�J�U�S-S�ITO�OQ�������e����	�e5��s52u��D�ƺΝ��wz��;H���ȓ�"���ߖ��0�(��l+�:�,w�u�5�\p,����2fѹ���ݘ���9��Wn9�}�t:;u����x:�nz;�!wu�ҩ�o���6���~�/���7�����x�0+8+<��9����z���e�V<�d�"�#Ġ2,4�BS���`EyV��9��2㲊&A�
-1� ���R��Z+�k���ڲ�Hm�6ٷ�������Vnjj��n��EE�Ʊ��v\�5�tW#GW'�����d4���%ɋﲨ�WiW��u��}���䁿
-�.�x&1`>Bl�	�����@R�T��I�FZB[M�D)ɤNkAM�l��1&�0i�Hk�%E����c�UI�ϢT�4i�
-����!iUi\~�wι�^_���}���7�����>|=d~��C����������
-cEy�bq[j
-Z
-n,p��e�������Yn�Qo���\��ƻ�4�����k�M��)I�s7sYoޤ-+�Q�����Os�����\Y�w�U�48{��gtm���'ڪ9��=]�����Z���8rZ-�f�"�Ջ��U��Kd+��~��nP5.}/�%�͋��Fz`���RZ�jé��=��8����m1N���c��N��p"K��uc	H�Y�i��H:BCgp���q5<gu�]��
-�`$@�����GJW>Z��MP�O�-�~�W�A�n����[�u�����q�Z��u�8���߮t�~��[Op�x�v��d��-N���3W[��QJM��|�,,�p�-n���5�f�=�.7�{O���As�]jX	�5�&[�/���_������R�C�gϨ/9^Rs���Կ�����-���.^Ei�=h��q/���z from 172.23.104.62:1
-2025-04-30 14:17:44 [INFO] Received chunk #74 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:45 [INFO] Sent chunk #75 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:45 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|75|1024|���Q��p9_�^\�ŋ"��"j8�(�~&6_�~$.䌦��R����5�iĪ���$�B��`(TTk��#�Ug0�ڰ�2�dv��6��^����8����ƞ+����fCK8\S̼�^i�{��]kn�Y#V��8j�j��X`,o�YGk���~d�����́�A�>q�Es��G��v���c�w�,oZW{��֨9*v� _^C��תg����c�^�r_�����w��u������/��'&�q��v�Bq�f�.����G�|3�]̥����)��La�3H�q����d./~k����B�e}���֑Nq�����/R��g�0m�@Z���K/����]�.������W��V"�ߖ3\�uw�y�@on�|o �)�+��'�������[ם��l�>]~c������P���9`*O������;�'�2t�'���<��>�0p*OO��
-�s�Q����gT|#�\e;�f��*V�g��w��'��#��`c�eu��R6��+f��l��1�}�.��R��v�>�����Y/��h���B�o#�!��g�A�#l�=�F�uU�g+{�"�Y�<��:�{Ѫ�N�D��l�{Gݭ��$|���[�n|�$���_D9����uE)P?K
-�����v��h����IC�\+oۂ�����F�M �a��su��E���S[��Y���,�Z�w��!�tI������*�\qed�x�"x��1�h�/�Q�p0���Ff>�@�)a?#_`��g�4�,@� �41y�q���{�J�>?W^��p�sl	��S� ��:��x�I�O��_I�ۜ�]$|��lgO$'����5�s����j5�Z͠V3��-P����OC?���O3.B��P�0�-)�59%�E���}:�'��F|���>'�y7��t@�AO�	!�yD�1!�t�hC�	ZBT�)�������;p$��=�&���C��N� from 172.23.104.62:1
-2025-04-30 14:17:45 [INFO] Received chunk #75 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:45 [INFO] Sent chunk #76 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:45 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|76|1024|���~v�.y��ށ�$��&�)o�&}����MBy�O�I�)�F"�p�Th@O W Yxr9�Ԏ���G�8,q&�q�R��
-�6�n��Q������(�*��Q|=Q|=Qf���~����@/0��jQ�Z�P+ױJ�
-H/3'�_�>i�y���D��'
-��F�q�|�h/I8�G�@0 � N� 3�i�x��br��#л��ш���4~��׸#%�#r5����dT�U��G]���N�]� ���!4F��!Hx�[� ����Q��yQH[M����
-�U�~
-�E��S�Eݦ�ά�Ω"���6�ƄT�լTX2���[K�h� Fi�9�v��"�N� KL���F9�T�B�BR�H~$|�2ƕ�I�)�W�&�^F����<���F�N4M5�n:�t��tAB��VJo����U2�~��/=+�Aゖ���ʵ~���k�ʫ�J_��P���_i�W���xYX�{X9V���Ma�)�4��값��߇!�om4"�*hߗUX���$�=�����]�x��B`�������ZH��o}࠯VӬ�Xe�"�=�f��x�鏦Sܴ�To�3U�B���gr��f��ؼ�l1��f�Y23������Y`%V` j��ޞ$��ֆ6K��er�Խ��wg.`������
-�s�Ïd��6��w���m�Ls�{޴�3�9ܝ)�}�o��WR��H/�s��o�/��Z?�8.&=:O�(O߬�ON�X��1W��j۲=y2�Ӽ�GW��$դ"��]}��+R�	K�n�-���6K�:�9��X�/g�6w�$�e<������'s,@L�1?�1�*?��L~k�i~^��]�7�-Б��}�	�m+}��9(|�>����1]e�0]����|���'�5���\���s���l�1z�`�c�L<}ȕ����X;�D9����������`�?�u�n{�����Yv�cw���p2���%Ss�C5gW����fk��l���PY�g�a from 172.23.104.62:1
-2025-04-30 14:17:45 [INFO] Received chunk #76 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:46 [INFO] Sent chunk #77 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:46 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|77|1024|>K�N*�,�u���w��D�G�4��T{���":�'�j+������p�,��S�5�����.Q� �22Ӌ&t��xK�����MV�m�6��x*��tZ��:�{<�x���O����4K�1|��q~��hL��	�eq����Ԙv&}�Q�1"w�ߖ�"2O��{�^�G=#�4 \�(�x ��&�aDF�Ԃ��E_B~
-endstream
-endobj
-25 0 obj
-<<
-/Type /FontDescriptor
-/FontName /CourierNewPSMT
-/Flags 5
-/Ascent 832.51953
-/Descent -300.29297
-/StemV 68.847656
-/CapHeight 282.22656
-/ItalicAngle 0
-/FontBBox [-21.484375 -679.6875 637.69531 1020.99609]
-/FontFile2 26 0 R
->>
-endobj
-24 0 obj
-<<
-/Type /Font
-/FontDescriptor 25 0 R
-/BaseFont /CourierNewPSMT
-/Subtype /CIDFontType2
-/CIDToGIDMap /Identity
-/CIDSystemInfo <<
-/Registry (Adobe)
-/Ordering (Identity)
-/Supplement 0
->>
-/W [0 95 600.09766]
-/DW 0
->>
-endobj
-27 0 obj
-<<
-/Filter /FlateDecode
-/Length 339
->>
-stream
-x�]��n�0��<E�ݡ"; ��	���hl@�E!
-遷_�������gƉ���5ڳ��M��m��y�:	�m�D0����r�mq����ST��ş�t�na�������N�����u��Z�#�xTUL�*������(;�*�k����X`9!7rR0�^�������be�*����:�w���l���
-�Ie==!�'��@
-)+=&Hy�T��`����)U�55��	�`��DPp�l�59��ނ�)	2�����<� �� from 172.23.104.62:1
-2025-04-30 14:17:46 [INFO] Received chunk #77 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:47 [INFO] Sent chunk #78 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:47 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|78|1024|>Z�!�Ӯ��6]��0H5s��Sf!�Yi��ǯ�Uyu.,onrݡ6p�hv��j}� �h
-endstream
-endobj
-23 0 obj
-<<
-/Type /Font
-/Subtype /Type0
-/BaseFont /CourierNewPSMT
-/Encoding /Identity-H
-/DescendantFonts [24 0 R]
-/ToUnicode 27 0 R
->>
-endobj
-28 0 obj
-<<
-/Filter /FlateDecode
-/Length 4654
->>
-stream
-x��\ۮ�q}�_1�<f�N�0 ɖ�����q�H���*�LϑrbI3Zl�겺�"�ݺR��������q/G)������a��;�s�o�wϏ;��=Z�o���ǿ����T��j��Y�7��܃���q������������o���5��7c�f��q���==��
-�+ds�^JI���.p�;����w����n�/�G2Դ;n?�r�2����ˍ1_�oX��d�I�")����M>���ws�s������A�?�5���{�K�1��Z��4�q�81j�Z�ܛ�E���$pk��'ZxЙ,	�Xױ�r\!ݓ�,Mw�
-�c���fhFi�,�K.�xV����p��rH9��wW��	E�6��)�x?��.��wL�n*"l�Oe��Xjx�uT��3�ko����9FeϹ�t����lY�I?k��J�O�F��EƄ�(�~�.����{��gU��t-��0��@'`_c8`�c�`�0A��!
-��!2��)\�������=��$�m�����o���ao��JS������}���w�Xo��jLH���3��A�}þ�gieј��G��;=Z����ø/�g�Z��l+|����}�������h����z�����׋��T�;قj���w��S����~����[��*������0Au�$~j���%������J��Bu�%�b��m��PIu�AP�(���� 7���aǰ�����` from 172.23.104.62:1
-2025-04-30 14:17:47 [INFO] Received chunk #78 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:48 [INFO] Sent chunk #79 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:48 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|79|1024|�@C$@*Mp@> `�����QW<��R]���STG��T���t�{�u����ULG�b:�4���.M��`�Z �ph��Nм�tc�h�s�h�]� Mb�)S��QV]WV�˫Db'�Dv4� B�_3|��Q�m$WY"�4��4��Y��� �%�,�	f!d�,�ذ��#�������B(�:n!��8.fB؆[����������iн0|�\d\i�&
-�9D^<D�Bfh���S�+�$�م0�sX{�@*9H�)�6���^S�B��X�@p^�%��M'��5��h7��0��em���!
-���S��_��VW�Ϋ��r���9yė���ŜJ8���Hj!Mh�Lf.�\Q{$	�.iz�B�_��.���>�:����}�Spd�ћ��ĸ+��˩��?<�w��eu^M:�I;��ĵ9�a_��OW�!T�p������U�O�:����=�|,#�6�b�U?X��(�9ʛ��H8oLt���D�Ή^Z�l�@O��jh�P�n�oNgF.�~IK�� ��\*���⊩ B�*���\*�"���UQ�Ī�b*r�h�9A�rb-t���%t�����F�[u�n�a`�=o�e���B1�)�5viB�KS�.��x�c��]*&VFS��A�.�K�T�RQ�TL�.�K�
-��cM�a�]Z�C�K���� c6Zmб�� ��e.zV�k�����bw�N\���;��@�Ib�i8p�\����j,�����ˎ�H�+#�"�R[�RQk)wd#���KS1�KSQ�G���T�hV����|��G�t:�h<��� /���?���7�?���I�*�Fa�T��F)k6"L��*�sl�R���F�ќ�2O�6lD�b#��و@�F)��<�Š�Z0�a���N���p�ǰ�fa�`�C�Cd�-y�FCE����U6������F�ɷ��a�����Y�c(6ble#F4Yc��N�$1���Q� ��H�U� from 172.23.104.62:1
-2025-04-30 14:17:48 [INFO] Received chunk #79 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:49 [INFO] Sent chunk #80 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:49 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|80|1024|Ǳ��<^����s��Z0V���L_�Ù>7�=�'8�x�b���d�䐮��QU<��Y��!�$1�ᡢRcSQQ٤�*�x���X��NŎc'�"x����F]�!�x���x�lRc 
-ࡢRc]�����VW�ʋ<d��QHLU�ȿ.U���r�?.t�s<?ճ�_�Y^r�u!p�5~�N�uj�ǘ\�1��֊�XE��MV���߬��f��߬̊�P����̊�6��3�1,�1|�9�Ɋ�H��Ȋ-����S�+�Y����9k7�?ke^�B"/V1�����"���Z_&V��*(�-2׼X+ c8͝���ASy16��&/�@�y�.�C��PB���y��l�h��6m�-N�b�
-�;3ԥ�j��?�^�Zox�V�(^��g2���6�qi���O���}�.m��|�s(�k�[yw���3�������M|gv�{%��Ϥɜ�5a�����/�n~G���W��%�Dʜ��Ö�\^l�׈ں�vQ�7k���Jdl]%2�c(�C1"c(�tŨܳbL�3����{V�A�7k�J�{{62_�����f�0'0���C�Pf��E7���*�Fa�T�CyS�����Q��kg^-"T%�+&�����Q�TdL.S1�2��m��͚�o`NmYa'h`*��F�u�j�]@%��S5-���c(o2�-��V����� Ý�"�T3=P� ?�hprk�?=F@_���X�����~d�rb?|y����i1ז��i��~y�WQ5r�C�#<ڹ����k��a��8��c�D�ukK���9rgyBնwR�qk�pw��|�c�"�u�Vo��x[�j`-�=t	���r~;©�`vo�$������,%�Ki���SV����w�7�wX�y`��;,�����wX�<�O"<K'o&�����	 ��T�50������(fx%��J��J׷X�y`�d���k,�<0c�5�vy`F�k,�<0cjǓA��IXS���`Am`'hc:<��V��O from 172.23.104.62:1
-2025-04-30 14:17:49 [INFO] Received chunk #80 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:49 [INFO] Sent chunk #81 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:49 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|81|1024|Q��<0
-=K灇��^}�e�l{}t��,���|��s��i�u�؋%�X����C��QI`_t�1AG��j���dĘ&#F�$crS�1MF��M�
-u.
-F�g�0���t�l���t�9��8���S$����@�@"E�����̕��N3����͖�/IQI���.̨"��S���x��0a'�>&��N���p���N����(�����Wv)੆���=�"c�8��v�:�d 0��y��K@B�,7�B��t��o&���^��Ҝ�W�\�5��P�ڼ*��6���pb�:��ʉ���<Lr�Չh�6�h�
-��cӛ�� �b���F��I��`E�XqXqL X��R�S(��V��\D<��"lOu.�HR���M�ttF$"�4�<cz��Qɉ�INdLq"������C��ςi����t�u�t�6X,Ll{�<�K]�lb����U���*#������R6jq��*�����w��MI��ګe[�} R��;��zi�>�+e�?����^��8�>�����[<��vu�$�1Ύ�,��	�&Jƹ��l[]���kBp�}Oy]�3�-���{{I��7�q����<�e��~1�{C�vK�"�?F�;k�������<���b��:ģ%�жW_�G��Q��bk<͈����j˓1Q3�#jFeD͘��dL�20*v*��d�ѧY:���ƌ����a��qF�8��N���u�n�(�we�����%�NF}bL�30���QG��!5c:�fT}bL�Ԍ��N�~g2GS�8�t�1�O�	�>�4��&�;�4E�N��>�hѫԯ���y1�N&^��Lz��qd�Z��̧E1Ӷ$vLc�� �!K��!K��~f�� #�c�����TL��˜�\���Tc��Y:���gw�k��0pA�� �i�~A@��+�L��S�+�X}D�1�zgH�ޓ�G�[���-MF��1�5vsD�A�|'�iS from 172.23.104.62:1
-2025-04-30 14:17:49 [INFO] Received chunk #81 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:50 [INFO] Sent chunk #82 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:50 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|82|1024|8���ML��F���~ :�>"��E�RG���w^�;�lS��1n.2C˸�kx�5��ëz�5���x��%@G6^&s�D6^^�eD�5~��eT�5>k��y�SȨb���E*w�N��:��݁ˌ��ky��ũ��z������DnWE�(,��\��G�5>*��<.MQs��y\�6q��y\����}^���t)�g��ϋ����<�6�l��5^�q���Yvyܡ����=�*ׄq���R�=g�d3���Ԙjl�]e�~x�h$wy��c����)��n�:�˘����ᛒ��dt8��.JF�CI��el��J*�[��OI�wg��һ�xY�7|���oa���C$�Ct�qwǷ+#lTO��u��1��b�9WCŤ^1�WL;��:�˘"����2�*��]�\	*.��Y�&��s8`�Q�wq�`�C�]b�-S��U:�;��}�*A�������*"J�f�"S��l���۸�)�(v��j�(:	��&�)5�(5��^�E$Ag����u�%A���Q���`��|C(�E��E1����J��JW�(�^.c�c�M���)�Ȼ<(�j�&u_�1r�rG�yД�<(�ܑ�<�������)�a���]t�� �<h��m���;�ս�*w�+@�gg����=s*�=��C*p�n�U`q��u�:�B&�������(���⋜Tg��=�G��G����7Yޭ�<��+�����N�9wM`��ӓ,�C�=�0�ڳ�+�=�=Zl
-V�Uh!\Z�����b|��y!�+Y�W�4��W�̭���o�H]�=�,g�3Vm�V����g
-endstream
-endobj
-22 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 594.95996 841.91998]
-/Resources <<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/ExtGState <<
-/G3 5 0 R
-/G6 6 0 R
->>
-/Font <<
-/F4 7  from 172.23.104.62:1
-2025-04-30 14:17:50 [INFO] Received chunk #82 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:51 [INFO] Sent chunk #83 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:51 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|83|1024|0 R
-/F13 23 0 R
->>
->>
-/Contents 28 0 R
-/Parent 2 0 R
->>
-endobj
-30 0 obj
-<<
-/Filter /FlateDecode
-/Length 4271
->>
-stream
-x��\َ\9r}�W䳁���K�0P���ٶ @�gm����-̬�Z�J^n���`���R������{{/��������������>���&�{r���??��?���z��u���>I��X[\�۔yl{���ۭ}���?�����>q��-��xܿU���=��ۧ_���k��~�X7ci}�M틣�?>��1.����r��d�EO~���U�u�b6A���t/ѷ���ڐ�ѻ�ry6�����sG{ƍ�x�g\p~6��;K-�E�cl���biK��m?���|k��7�V��r/W�	��ۅ�����v��=��X���p��&0��:&�������`�i^��ʍ�P}�Xt�\!��S��߹o�%Ǩ���%cs��\����Ͻ/���J�?i��?�Y����|
-�U�}Ѫ�����}�⣳�C�%W�Q;�{�!_[�=�"��WiKe��L�*�D\W���-��t���˯;Mw_."�$�Ɏ����lt�oNwM^4�JM��<�Z�r]��ay�nΖF{���U��mY��-�{-�4��w���"8Ã�UĆ�A=�~D�o��LW�i�UsC3�k���٤1��F'V�n�!�u���Ѹ�,����W�l���SCEkkx��������F�>;�72���/4Og&���������z{������9���`�_~K���<�/D�/�U�b����b��Q�FX��~��,��nM�8cړ,ߪGª���	��]*5���P�U���%,�H#6+�}DZ6u{q-���d5)�1VJ���|�s��f�	馝���pa�Y"n��U\��0�P��z���1��O�ă�RS+��֋�n�(o{��d�}�n.����~����N	��2 from 172.23.104.62:1
-2025-04-30 14:17:51 [INFO] Received chunk #83 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:52 [INFO] Sent chunk #84 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:52 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|84|1024|!�:"ʎ�J (e�:��:���Z󹩓~V�ʮb��j9u��n�X[N��-�e������(����aD��Z]E�j�'�ǿ����"?J��X��9e��_�\g�g�_T��1���>�՘�3Te��ۀ��3Y櫬v��c�}�;	�����CG��wV[�tb8z����f8��F��6�KN3ad7v��֕��^va8H�b���P�p�M�#BYn��K�A��`:�ҹ0���{�*0�
-�P��i*$��ZW�K��u�QL{;/�#��"���/GX�
-�J�8�P"��pa�T@΄i�#Pq\,M��lW�"Zߕ��$���r���na�`�S�	Sd�3"\������5|�U����J��Je�7a��X�t�	�X���q��?2�:�[�3��ߙ��?o0���;ӺΈ��|��8�~��y�>�\2pHm�ywA���k�[JY�N)	�RJB)eI����0��%B'�T��J�TRI�cK*	��.Ye�-)yK(���2�r��ȝ�!˂B>6ei۔�� ]����x�Uj�\��t:I�J'	;��ūt� �NvH'	U�$a*�$��2m�$�*�$j��[:Y$��}!��Yд�z��N'a�h�^��Cd�'�NN-�����e��=��ߠ�x	mV��*���R��j�%m����Ӭx��C��=��!=��QI���3�.B���!��d\ɶ'裯�/���[�������e1��C�\��!q]+�=�=^8���?3n�_�B6c�Z��_�����h��
-���k�R_o_%!IIMzb���9���
-�v�^���F9����I�{�k{f���yu�^��܍#.x��~�^�AW�OW��ӯ�w�X��
-e|��AaN"���KFd�W��/���&���?'\�wȈd]���}���ݤz[}v��5ĩ����5��~y�������N��Z�Ս!�d�c'x��C�﮴f�p$`1�g,:�W�9������s|��)&�5�� from 172.23.104.62:1
-2025-04-30 14:17:52 [INFO] Received chunk #84 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:53 [INFO] Sent chunk #85 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:53 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|85|1024|��B��X�#!�c�F��������sI�k�L$��d�8�䦲�aeْ��%/QH�,"���+��PB<�*5E.y��"�ܖ1"o:����ѥ����n��Ghq�i8�]2JQ_�-�*�g��ᗼ������B�dX��� VT^���e��˲�V���RD��?D�~������5��ż�Qx<�������!�3����ȩ1�Ʃ���C��?�*Oy��;�t���y%�ƢmreL3�7E1c;�0V#ۅy�Oˁ�'�$Ʈ�6�a��ka��^9w�f�i�F/��w�t�G�0�7ـx&nU|X�"�.�V@1�B�Aq��ua!o���0��O҇��$EB��$Ę&!Fwb�E>�C1�:lXH�AZ��-jKM�&�$�� �"�>IYIH��Ƙ	����"!�L>.N-���/r��#�g{5�.y�7Ϲx�N�Gt�����Yߢ2+����ɜ��g|������:��~׼SJ�Bo6.�F�`��1#�L��v���BX=%C�"L�`�*&$L1!a����^g��dB�6&���yspQ��y.�~n ��
-D2��3��b�����ҕ�Tk�A>�x���4�KYۋ,�x�н����1��,��aM���x�6�9̾`80	��\��\6-l�{��`���5�P���w�ʃ�vܸnϘ����,��y{�]�|�����'|�=c�����g�m|���v>���g���.z�E��5�E��,��E��,z�6>���Asp5��r.�wn ��
-�0��1�b.�����ҕϢ�|��hɥ�F�Y4�Ϣ9�Y4�Ϣ�|́Ϣ�|Mצ���6�9�g0	���|6��FkN|6E�n`4��pѱ�ⳡ�ᝯ�Y�?��X��㺟�x���ă9l<���A�6$���9j$L� a$T� a�	;� ��s�i���*�7����������`�@$S(@8Sx@M fమ�xPZj*]y0{̓��<HЁ��<H��A�<H��A� from 172.23.104.62:1
-2025-04-30 14:17:53 [INFO] Received chunk #85 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:53 [INFO] Sent chunk #86 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:53 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|86|1024|�y�@Ń�um��k���<���9̓s�h��ăS�N� �+���*��(�{����+8�d��V��䥡�39:B5'au��lg����6~*��R�槢��;�Sɚ�J��T�J����䧲 �U<b�Ӂ�ͅ�3��ۖS@�DPt ��R�*�(-5���Tt���
-��!�,�
-��:�+�* �����0�	��* a]�[�5�=�* N�6�� �l��S@D�~�� (\�,]����*C�u�L���G�1�Ww�s1����x����ӵG���~5R��Z�2�ۓ9���/حA�b?�V�cD�_������~�i�ct�|2�W>ӕOF��'�V=�.�W��IW�F�D�V�#�-�&�
-g�(�[Dd�B(\᫡�xPUj�\8/ج8����Ӝ�.:0�sc��݋��E��1�s^����Vth`�耓�e颃,m�TtQ���C����V���9/8�����n�bW�Čk����Ǖ#�/�x�lrg����K�X�*e������^����]j���W����x�_H��F��z���=��=�=���$��R��݄��kBK�I\��u����a�";����X���5������K��e_H�W)_�5)_�����5)ǻ��_J�?rT�Lҏ��W�=o���X}�p4�%	GS~������r���S2(�z"��M5>%��W�_��?�A��A�Q��ǯ��"ī1?bx�5#V��+"��z��K��`�}��.{�4��%o��d��.y�Px��;�qa�y_3�y���"�w���1dŜ�W_8���)�}���R�(ѿ��^LpEfWRkr�f����Z���.��PG�m"����*���H�J�[S6F�zr���؞�1�S6F�+��+�����U�ƁUr[aQZg� �HZ��I"�DE6 )nU��$I"<I�P̒xuă�RS钼%���m�������s7�t���~^��~^Ř���s�Գ���bk sЅE�ML from 172.23.104.62:1
-2025-04-30 14:17:53 [INFO] Received chunk #86 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:54 [INFO] Sent chunk #87 size=1024 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:54 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|87|1024|e�h��¢���������
-�SY�;_L��'��Q������~�#�i����Ōvƍ��;����#���^�����'�n��Z�(��c�p8;JAW�SD���*������1v ��+{�D�ʞ���]����������?a���AW�Dx� f ��W�Di��t%��+{��DN���&��4�Se�QEDAW��Dte���ͭ���te'Aӕ=Y6�'�@7p��©�7�P���w�JD!���a���%�YS�����g���8��/).߭���o���_�����q
-endstream
-endobj
-29 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 594.95996 841.91998]
-/Resources <<
-/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
-/ExtGState <<
-/G3 5 0 R
-/G6 6 0 R
->>
-/Font <<
-/F4 7 0 R
-/F5 12 0 R
->>
->>
-/Contents 30 0 R
-/Parent 2 0 R
->>
-endobj
-2 0 obj
-<<
-/Type /Pages
-/Kids [4 0 R 18 0 R 20 0 R 22 0 R 29 0 R]
-/Count 5
->>
-endobj
-1 0 obj
-<<
-/Type /Catalog
-/Pages 2 0 R
->>
-endobj
-3 0 obj
-<<
-/Creator (PDFCreator Online \(www.pdfforge.org/online\))
-/CreationDate (D:20250428230057+00'00')
-/Title (Merged with PDFCreator Online)
-/ModDate (D:20250428230057Z)
-/Producer (PDFCreator Online \(www.pdfforge.org/online\))
->>
-endobj
-xref
-0 31
-0000000000 65535 f
-0000089719 00000 n
-0000089634 00000 n
-0000089768 00000 n
-0000045166 from 172.23.104.62:1
-2025-04-30 14:17:54 [INFO] Received chunk #87 size=1024 for file decision_making_study_guide.pdf
-2025-04-30 14:17:55 [INFO] Sent chunk #88 size=675 for transfer 32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:55 [INFO] Handling command: FILE_CHUNK|32b79e03-829d-4999-8cf1-1e1a97d3780b|88|675| 00000 n
-0000000015 00000 n
-0000000054 00000 n
-0000025270 00000 n
-0000024008 00000 n
-0000023773 00000 n
-0000000132 00000 n
-0000024873 00000 n
-0000039081 00000 n
-0000038254 00000 n
-0000038013 00000 n
-0000025403 00000 n
-0000038709 00000 n
-0000039221 00000 n
-0000052105 00000 n
-0000045399 00000 n
-0000057665 00000 n
-0000052339 00000 n
-0000084820 00000 n
-0000079950 00000 n
-0000079309 00000 n
-0000079067 00000 n
-0000057899 00000 n
-0000079538 00000 n
-0000080092 00000 n
-0000089400 00000 n
-0000085055 00000 n
-trailer
-<<
-/Size 31
-/Root 1 0 R
-/Info 3 0 R
-/ID [<230DC6F1E1FB6898A93DEE9EE190089F> <2CBF8CB6BD6BEA2CEFA5FF4B12424E5D>]
->>
-startxref
-90012
-%%EOF
- from 172.23.104.62:1
-2025-04-30 14:17:55 [INFO] Received chunk #88 size=675 for file decision_making_study_guide.pdf
-2025-04-30 14:17:56 [INFO] Completed file transfer: decision_making_study_guide.pdf transferId=32b79e03-829d-4999-8cf1-1e1a97d3780b
-2025-04-30 14:17:56 [INFO] Handling command: FILE_END|32b79e03-829d-4999-8cf1-1e1a97d3780b from 172.23.104.62:1
-2025-04-30 14:17:56 [INFO] File transfer progress update: decision_making_study_guide.pdf 100%
-2025-04-30 14:17:56 [INFO] File transfer progress update: decision_making_study_guide.pdf 100%
-2025-04-30 14:17:56 [INFO] Received FILE_END for decision_making_study_guide.pdf, assembling file
-2025-04-30 14:17:56 [INFO] Handling command: FILE_ACK|32b79e03-829d-4999-8cf1-1e1a97d3780b|COMPLETE from 172.23.104.62:2
-2025-04-30 14:17:56 [INFO] Received FILE_ACK for transferId=32b79e03-829d-4999-8cf1-1e1a97d3780b COMPLETE
-2025-04-30 15:42:00 [INFO] ChatController initializing for user=null
-2025-04-30 15:47:56 [INFO] ChatController initializing for user=null
-2025-04-30 15:52:31 [INFO] ChatController initializing for user=null
-2025-04-30 16:02:33 [INFO] ChatController initializing for user=null
-2025-04-30 16:02:49 [INFO] ChatController initializing for user=null
-2025-04-30 16:03:30 [INFO] Starting UDPPeer on port 2
-2025-04-30 16:03:30 [INFO] UDP client started on port 2
-2025-04-30 16:03:31 [INFO] Stopping UDPPeer
-2025-04-30 16:03:31 [INFO] Starting UDPPeer on port 2
-2025-04-30 16:03:31 [INFO] UDP client started on port 2
-2025-04-30 16:03:44 [INFO] ChatController initializing for user=null
-2025-04-30 16:03:47 [INFO] Starting UDPPeer on port 3
-2025-04-30 16:03:47 [INFO] UDP client started on port 3
-2025-04-30 16:03:50 [INFO] Stopping UDPPeer
-2025-04-30 16:03:50 [INFO] Starting UDPPeer on port 3
-2025-04-30 16:03:50 [INFO] UDP client started on port 3
-2025-04-30 16:03:59 [INFO] ChatController initializing for user=null
-2025-04-30 16:04:10 [INFO] ChatController initializing for user=null
-2025-04-30 16:04:39 [INFO] Starting UDPPeer on port 4
-2025-04-30 16:04:39 [INFO] UDP client started on port 4
-2025-04-30 16:04:43 [INFO] Stopping UDPPeer
-2025-04-30 16:04:43 [INFO] Starting UDPPeer on port 4
-2025-04-30 16:04:43 [INFO] UDP client started on port 4
-2025-04-30 16:04:53 [INFO] User sending message: Hi
-2025-04-30 16:04:53 [INFO] Sending message to 192.168.1.15:4 – content=Hi
-2025-04-30 16:04:58 [INFO] Deleting all messages, count=2
-2025-04-30 16:04:58 [INFO] Sending command: DELETE_MESSAGE|Me-2025-04-30160453 to 192.168.1.15:4
-2025-04-30 16:04:58 [INFO] Handling command: DELETE_MESSAGE|Me-2025-04-30160453 from 192.168.1.15:4
-2025-04-30 16:04:58 [INFO] Handling command: DELETE_ACK|Me-2025-04-30160453 from 192.168.1.15:4
-2025-04-30 16:04:58 [INFO] Deleting all messages, count=2
-2025-04-30 16:04:58 [INFO] Sending command: DELETE_MESSAGE|Me-2025-04-30160453 to 192.168.1.15:4
-2025-04-30 16:04:58 [INFO] Handling command: DELETE_MESSAGE|Me-2025-04-30160453 from 192.168.1.15:4
-2025-04-30 16:04:58 [INFO] Handling command: DELETE_ACK|Me-2025-04-30160453 from 192.168.1.15:4
-2025-04-30 16:05:02 [INFO] User sending message: Hi
-2025-04-30 16:05:02 [INFO] Sending message to 192.168.1.15:3 – content=Hi
-2025-04-30 16:05:13 [INFO] User sending message: Hello
-2025-04-30 16:05:13 [INFO] Sending message to 192.168.1.15:4 – content=Hello
-2025-04-30 16:12:57 [INFO] ChatController initializing for user=null
-2025-04-30 16:15:58 [INFO] ChatController initializing for user=null
-2025-04-30 16:17:42 [INFO] Starting UDPPeer on port 2
-2025-04-30 16:17:42 [INFO] UDP client started on port 2
-2025-04-30 16:17:45 [INFO] Stopping UDPPeer
-2025-04-30 16:17:45 [INFO] Starting UDPPeer on port 2
-2025-04-30 16:17:45 [INFO] UDP client started on port 2
-2025-04-30 16:18:06 [INFO] ChatController initializing for user=null
-2025-04-30 16:18:08 [INFO] Starting UDPPeer on port 3
-2025-04-30 16:18:08 [INFO] UDP client started on port 3
-2025-04-30 16:18:12 [INFO] Stopping UDPPeer
-2025-04-30 16:18:12 [INFO] Starting UDPPeer on port 3
-2025-04-30 16:18:12 [INFO] UDP client started on port 3
-2025-04-30 16:21:45 [INFO] ChatController initializing for user=null
-2025-04-30 16:22:00 [INFO] ChatController initializing for user=null
-2025-04-30 16:59:09 [INFO] ChatController initializing for user=null
-2025-04-30 16:59:17 [INFO] Starting UDPPeer on port 1
-2025-04-30 16:59:17 [INFO] UDP client started on port 1
-2025-04-30 17:05:38 [INFO] ChatController initializing for user=null
-2025-04-30 17:06:17 [INFO] Starting UDPPeer on port 2
-2025-04-30 17:06:17 [INFO] UDP client started on port 2
-2025-04-30 17:06:58 [INFO] Stopping UDPPeer
-2025-04-30 17:06:58 [INFO] Starting UDPPeer on port 2
-2025-04-30 17:06:58 [INFO] UDP client started on port 2
-2025-04-30 17:12:28 [INFO] Deleting all messages, count=2
-2025-04-30 17:12:28 [INFO] Sending command: DELETE_MESSAGE|yousef-2025-04-30171007 to 192.168.1.59:3
-2025-04-30 17:12:28 [INFO] Deleting all messages, count=2
-2025-04-30 17:12:28 [INFO] Sending command: DELETE_MESSAGE|alaa-2025-04-30171018 to 192.168.1.59:3
-2025-04-30 17:12:28 [INFO] Handling command: DELETE_ACK|yousef-2025-04-30171007 from 192.168.1.59:3
-2025-04-30 17:12:28 [INFO] Handling command: DELETE_ACK|alaa-2025-04-30171018 from 192.168.1.59:3
-2025-04-30 17:13:58 [INFO] Stopping UDPPeer
-2025-04-30 17:13:58 [INFO] Starting UDPPeer on port 2
-2025-04-30 17:13:58 [INFO] UDP client started on port 2
-2025-04-30 17:14:37 [INFO] Handling command: DELETE_MESSAGE|yousef-2025-04-30171427 from 192.168.1.59:3
-2025-04-30 17:15:11 [INFO] Deleting selected message with id=yousef-2025-04-30171425
-2025-04-30 17:15:11 [INFO] Sending command: DELETE_MESSAGE|yousef-2025-04-30171425 to 192.168.1.15:2
-2025-04-30 17:15:11 [INFO] Handling command: DELETE_MESSAGE|yousef-2025-04-30171425 from 192.168.1.15:2
-2025-04-30 17:15:11 [INFO] Handling command: DELETE_ACK|yousef-2025-04-30171425 from 192.168.1.15:2
-2025-04-30 17:16:29 [INFO] File selected for send: C:\Users\user\Downloads\ChatterBox-20250428T022418Z-001.zip
-2025-04-30 17:16:40 [INFO] Sending file: C:\Users\user\Downloads\ChatterBox-20250428T022418Z-001.zip to 192.168.1.59:3
-2025-04-30 17:16:40 [INFO] Initiating file transfer: ChatterBox-20250428T022418Z-001.zip (291151 bytes) to 192.168.1.59:3
-2025-04-30 17:16:40 [INFO] Sent chunk #0 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:40 [INFO] Handling command: FILE_ACK|34c2eb2b-fcf1-4079-98d4-d0b5504f7236 from 192.168.1.59:3
-2025-04-30 17:16:40 [INFO] Received FILE_ACK for transferId=34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:41 [INFO] Sent chunk #1 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:42 [INFO] Sent chunk #2 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:43 [INFO] Sent chunk #3 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:43 [INFO] Sent chunk #4 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:44 [INFO] Sent chunk #5 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:45 [INFO] Sent chunk #6 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:46 [INFO] Sent chunk #7 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:47 [INFO] Sent chunk #8 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:47 [INFO] Sent chunk #9 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:48 [INFO] Sent chunk #10 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:49 [INFO] Sent chunk #11 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:50 [INFO] Sent chunk #12 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:51 [INFO] Sent chunk #13 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:51 [INFO] Sent chunk #14 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:52 [INFO] Sent chunk #15 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:53 [INFO] Sent chunk #16 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:54 [INFO] Sent chunk #17 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:55 [INFO] Sent chunk #18 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:55 [INFO] Sent chunk #19 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:56 [INFO] Sent chunk #20 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:57 [INFO] Sent chunk #21 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:58 [INFO] Sent chunk #22 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:59 [INFO] Sent chunk #23 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:16:59 [INFO] Sent chunk #24 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:00 [INFO] Sent chunk #25 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:01 [INFO] Sent chunk #26 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:02 [INFO] Sent chunk #27 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:03 [INFO] Sent chunk #28 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:03 [INFO] Sent chunk #29 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:04 [INFO] Sent chunk #30 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:05 [INFO] Sent chunk #31 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:06 [INFO] Sent chunk #32 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:07 [INFO] Sent chunk #33 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:07 [INFO] Sent chunk #34 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:08 [INFO] Sent chunk #35 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:09 [INFO] Sent chunk #36 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:10 [INFO] Sent chunk #37 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:11 [INFO] Sent chunk #38 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:12 [INFO] Sent chunk #39 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:12 [INFO] Sent chunk #40 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:13 [INFO] Sent chunk #41 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:14 [INFO] Sent chunk #42 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:15 [INFO] Sent chunk #43 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:16 [INFO] Sent chunk #44 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:16 [INFO] Sent chunk #45 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:17 [INFO] Sent chunk #46 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:18 [INFO] Sent chunk #47 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:19 [INFO] Sent chunk #48 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:20 [INFO] Sent chunk #49 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:20 [INFO] Sent chunk #50 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:21 [INFO] Sent chunk #51 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:22 [INFO] Sent chunk #52 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:23 [INFO] Sent chunk #53 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:24 [INFO] Sent chunk #54 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:24 [INFO] Sent chunk #55 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:25 [INFO] Sent chunk #56 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:26 [INFO] Sent chunk #57 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:27 [INFO] Sent chunk #58 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:28 [INFO] Sent chunk #59 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:28 [INFO] Sent chunk #60 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:29 [INFO] Sent chunk #61 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:30 [INFO] Sent chunk #62 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:31 [INFO] Sent chunk #63 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:32 [INFO] Sent chunk #64 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:32 [INFO] Sent chunk #65 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:33 [INFO] Sent chunk #66 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:34 [INFO] Sent chunk #67 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:35 [INFO] Sent chunk #68 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:36 [INFO] Sent chunk #69 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:36 [INFO] Sent chunk #70 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:37 [INFO] Sent chunk #71 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:38 [INFO] Sent chunk #72 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:39 [INFO] Sent chunk #73 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:40 [INFO] Sent chunk #74 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:40 [INFO] Sent chunk #75 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:41 [INFO] Sent chunk #76 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:42 [INFO] Sent chunk #77 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:43 [INFO] Sent chunk #78 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:44 [INFO] Sent chunk #79 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:44 [INFO] Sent chunk #80 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:45 [INFO] Sent chunk #81 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:46 [INFO] Sent chunk #82 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:47 [INFO] Sent chunk #83 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:48 [INFO] Sent chunk #84 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:48 [INFO] Sent chunk #85 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:49 [INFO] Sent chunk #86 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:50 [INFO] Sent chunk #87 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:51 [INFO] Sent chunk #88 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:52 [INFO] Sent chunk #89 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:52 [INFO] Sent chunk #90 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:53 [INFO] Sent chunk #91 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:54 [INFO] Sent chunk #92 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:55 [INFO] Sent chunk #93 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:56 [INFO] Sent chunk #94 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:57 [INFO] Sent chunk #95 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:57 [INFO] Sent chunk #96 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:58 [INFO] Sent chunk #97 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:17:59 [INFO] Sent chunk #98 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:00 [INFO] Sent chunk #99 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:01 [INFO] Sent chunk #100 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:01 [INFO] Sent chunk #101 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:02 [INFO] Sent chunk #102 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:03 [INFO] Sent chunk #103 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:04 [INFO] Sent chunk #104 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:05 [INFO] Sent chunk #105 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:05 [INFO] Sent chunk #106 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:06 [INFO] Sent chunk #107 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:07 [INFO] Sent chunk #108 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:08 [INFO] Sent chunk #109 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:09 [INFO] Sent chunk #110 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:09 [INFO] Sent chunk #111 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:10 [INFO] Sent chunk #112 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:11 [INFO] Sent chunk #113 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:12 [INFO] Sent chunk #114 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:13 [INFO] Sent chunk #115 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:14 [INFO] Sent chunk #116 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:14 [INFO] Sent chunk #117 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:15 [INFO] Sent chunk #118 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:16 [INFO] Sent chunk #119 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:17 [INFO] Sent chunk #120 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:18 [INFO] Sent chunk #121 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:18 [INFO] Sent chunk #122 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:19 [INFO] Sent chunk #123 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:20 [INFO] Sent chunk #124 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:21 [INFO] Sent chunk #125 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:22 [INFO] Sent chunk #126 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:22 [INFO] Sent chunk #127 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:23 [INFO] Sent chunk #128 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:24 [INFO] Sent chunk #129 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:25 [INFO] Sent chunk #130 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:26 [INFO] Sent chunk #131 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:26 [INFO] Sent chunk #132 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:27 [INFO] Sent chunk #133 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:28 [INFO] Sent chunk #134 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:29 [INFO] Sent chunk #135 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:30 [INFO] Sent chunk #136 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:31 [INFO] Sent chunk #137 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:31 [INFO] Sent chunk #138 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:32 [INFO] Sent chunk #139 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:33 [INFO] Sent chunk #140 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:34 [INFO] Sent chunk #141 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:35 [INFO] Sent chunk #142 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:35 [INFO] Sent chunk #143 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:36 [INFO] Sent chunk #144 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:37 [INFO] Sent chunk #145 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:38 [INFO] Sent chunk #146 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:39 [INFO] Sent chunk #147 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:39 [INFO] Sent chunk #148 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:40 [INFO] Sent chunk #149 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:41 [INFO] Sent chunk #150 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:42 [INFO] Sent chunk #151 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:43 [INFO] Sent chunk #152 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:43 [INFO] Sent chunk #153 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:44 [INFO] Sent chunk #154 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:45 [INFO] Sent chunk #155 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:46 [INFO] Sent chunk #156 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:47 [INFO] Sent chunk #157 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:48 [INFO] Sent chunk #158 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:48 [INFO] Sent chunk #159 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:49 [INFO] Sent chunk #160 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:50 [INFO] Sent chunk #161 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:51 [INFO] Sent chunk #162 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:52 [INFO] Sent chunk #163 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:52 [INFO] Sent chunk #164 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:53 [INFO] Sent chunk #165 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:54 [INFO] Sent chunk #166 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:55 [INFO] Sent chunk #167 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:56 [INFO] Sent chunk #168 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:56 [INFO] Sent chunk #169 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:57 [INFO] Sent chunk #170 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:58 [INFO] Sent chunk #171 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:18:59 [INFO] Sent chunk #172 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:00 [INFO] Sent chunk #173 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:00 [INFO] Sent chunk #174 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:01 [INFO] Sent chunk #175 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:02 [INFO] Sent chunk #176 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:03 [INFO] Sent chunk #177 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:04 [INFO] Sent chunk #178 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:05 [INFO] Sent chunk #179 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:05 [INFO] Sent chunk #180 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:06 [INFO] Sent chunk #181 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:07 [INFO] Sent chunk #182 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:08 [INFO] Sent chunk #183 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:09 [INFO] Sent chunk #184 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:09 [INFO] Sent chunk #185 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:10 [INFO] Sent chunk #186 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:11 [INFO] Sent chunk #187 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:12 [INFO] Sent chunk #188 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:13 [INFO] Sent chunk #189 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:13 [INFO] Sent chunk #190 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:14 [INFO] Sent chunk #191 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:15 [INFO] Sent chunk #192 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:16 [INFO] Sent chunk #193 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:17 [INFO] Sent chunk #194 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:17 [INFO] Sent chunk #195 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:18 [INFO] Sent chunk #196 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:19 [INFO] Sent chunk #197 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:20 [INFO] Sent chunk #198 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:21 [INFO] Sent chunk #199 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:22 [INFO] Sent chunk #200 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:22 [INFO] Sent chunk #201 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:23 [INFO] Sent chunk #202 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:24 [INFO] Sent chunk #203 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:25 [INFO] Sent chunk #204 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:26 [INFO] Sent chunk #205 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:26 [INFO] Sent chunk #206 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:27 [INFO] Sent chunk #207 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:28 [INFO] Sent chunk #208 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:29 [INFO] Sent chunk #209 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:30 [INFO] Sent chunk #210 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:30 [INFO] Sent chunk #211 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:31 [INFO] Sent chunk #212 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:32 [INFO] Sent chunk #213 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:33 [INFO] Sent chunk #214 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:34 [INFO] Sent chunk #215 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:34 [INFO] Sent chunk #216 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:35 [INFO] Sent chunk #217 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:36 [INFO] Sent chunk #218 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:37 [INFO] Sent chunk #219 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:38 [INFO] Sent chunk #220 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:39 [INFO] Sent chunk #221 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:39 [INFO] Sent chunk #222 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:40 [INFO] Sent chunk #223 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:41 [INFO] Sent chunk #224 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:42 [INFO] Sent chunk #225 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:43 [INFO] Sent chunk #226 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:43 [INFO] Sent chunk #227 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:44 [INFO] Sent chunk #228 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:45 [INFO] Sent chunk #229 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:46 [INFO] Sent chunk #230 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:47 [INFO] Sent chunk #231 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:47 [INFO] Sent chunk #232 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:48 [INFO] Sent chunk #233 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:49 [INFO] Sent chunk #234 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:50 [INFO] Sent chunk #235 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:51 [INFO] Sent chunk #236 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:52 [INFO] Sent chunk #237 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:52 [INFO] Sent chunk #238 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:53 [INFO] Sent chunk #239 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:54 [INFO] Sent chunk #240 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:55 [INFO] Sent chunk #241 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:56 [INFO] Sent chunk #242 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:56 [INFO] Sent chunk #243 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:57 [INFO] Sent chunk #244 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:58 [INFO] Sent chunk #245 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:19:59 [INFO] Sent chunk #246 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:00 [INFO] Sent chunk #247 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:00 [INFO] Sent chunk #248 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:01 [INFO] Sent chunk #249 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:02 [INFO] Sent chunk #250 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:03 [INFO] Sent chunk #251 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:04 [INFO] Sent chunk #252 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:04 [INFO] Sent chunk #253 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:05 [INFO] Sent chunk #254 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:06 [INFO] Sent chunk #255 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:07 [INFO] Sent chunk #256 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:08 [INFO] Sent chunk #257 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:09 [INFO] Sent chunk #258 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:09 [INFO] Sent chunk #259 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:10 [INFO] Sent chunk #260 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:11 [INFO] Sent chunk #261 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:12 [INFO] Sent chunk #262 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:13 [INFO] Sent chunk #263 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:13 [INFO] Sent chunk #264 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:14 [INFO] Sent chunk #265 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:15 [INFO] Sent chunk #266 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:16 [INFO] Sent chunk #267 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:17 [INFO] Sent chunk #268 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:17 [INFO] Sent chunk #269 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:18 [INFO] Sent chunk #270 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:19 [INFO] Sent chunk #271 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:20 [INFO] Sent chunk #272 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:21 [INFO] Sent chunk #273 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:22 [INFO] Sent chunk #274 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:22 [INFO] Sent chunk #275 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:23 [INFO] Sent chunk #276 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:24 [INFO] Sent chunk #277 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:25 [INFO] Sent chunk #278 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:26 [INFO] Sent chunk #279 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:26 [INFO] Sent chunk #280 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:27 [INFO] Sent chunk #281 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:28 [INFO] Sent chunk #282 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:29 [INFO] Sent chunk #283 size=1024 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:30 [INFO] Sent chunk #284 size=335 for transfer 34c2eb2b-fcf1-4079-98d4-d0b5504f7236
-2025-04-30 17:20:30 [INFO] Completed file transfer: ChatterBox-20250428T022418Z-001.zip transferId=34c2eb2b-fcf1-4079-98d4-d0b5504f7236
+2025-04-30 02:06:53 [INFO] Sending message to 192.168.1.10:9 – content=kaka
+
+2025-04-30 16:21:20 [INFO] ChatController initializing for user=null
+2025-04-30 16:21:27 [INFO] ChatController initializing for user=null
+2025-04-30 16:21:43 [INFO] ChatController initializing for user=null
+2025-04-30 16:22:02 [INFO] Starting UDPPeer on port 5
+2025-04-30 16:22:02 [INFO] UDP client started on port 5
+2025-04-30 16:22:06 [INFO] Starting UDPPeer on port 6
+2025-04-30 16:22:06 [INFO] UDP client started on port 6
+2025-04-30 16:32:02 [INFO] ChatController initializing for user=null
+2025-04-30 16:32:06 [INFO] ChatController initializing for user=null
+2025-04-30 16:32:20 [INFO] Starting UDPPeer on port 8
+2025-04-30 16:32:20 [INFO] UDP client started on port 8
+2025-04-30 16:32:27 [INFO] Starting UDPPeer on port 9
+2025-04-30 16:32:27 [INFO] UDP client started on port 9
+2025-04-30 16:39:57 [INFO] ChatController initializing for user=null
+2025-04-30 16:40:02 [INFO] ChatController initializing for user=null
+2025-04-30 16:40:20 [INFO] Starting UDPPeer on port 9
+2025-04-30 16:40:20 [INFO] UDP client started on port 9
+2025-04-30 16:40:31 [INFO] Starting UDPPeer on port 8
+2025-04-30 16:40:31 [INFO] UDP client started on port 8
+2025-04-30 16:48:21 [INFO] ChatController initializing for user=null
+2025-04-30 16:48:26 [INFO] ChatController initializing for user=null
+2025-04-30 16:48:45 [INFO] Starting UDPPeer on port 8
+2025-04-30 16:48:45 [INFO] UDP client started on port 8
+2025-04-30 16:48:50 [INFO] Starting UDPPeer on port 9
+2025-04-30 16:48:50 [INFO] UDP client started on port 9
+2025-04-30 16:51:13 [INFO] ChatController initializing for user=null
+2025-04-30 16:51:29 [INFO] Starting UDPPeer on port 4
+2025-04-30 16:51:29 [INFO] UDP client started on port 4
+2025-04-30 16:51:39 [INFO] ChatController initializing for user=null
+2025-04-30 16:51:53 [INFO] Starting UDPPeer on port 10
+2025-04-30 16:51:53 [INFO] UDP client started on port 10
+2025-04-30 16:54:39 [INFO] ChatController initializing for user=null
+2025-04-30 16:54:52 [INFO] Starting UDPPeer on port 7
+2025-04-30 16:54:52 [INFO] UDP client started on port 7
+2025-04-30 16:55:41 [INFO] ChatController initializing for user=null
+2025-04-30 16:55:49 [INFO] Starting UDPPeer on port 4
+2025-04-30 16:55:49 [INFO] UDP client started on port 4
+2025-04-30 17:04:16 [INFO] ChatController initializing for user=null
+2025-04-30 17:04:32 [INFO] Starting UDPPeer on port 88
+2025-04-30 17:04:32 [INFO] UDP client started on port 88
+2025-04-30 17:04:42 [INFO] ChatController initializing for user=null
+2025-04-30 17:04:56 [INFO] Starting UDPPeer on port 7
+2025-04-30 17:04:56 [INFO] UDP client started on port 7
+2025-04-30 17:52:37 [INFO] ChatController initializing for user=null
+2025-04-30 17:52:49 [INFO] ChatController initializing for user=null
+2025-04-30 17:53:10 [INFO] Starting UDPPeer on port 8
+2025-04-30 17:53:10 [INFO] UDP client started on port 8
+2025-04-30 17:53:15 [INFO] Starting UDPPeer on port 7
+2025-04-30 17:53:15 [INFO] UDP client started on port 7
