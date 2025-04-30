@@ -617,24 +617,20 @@ public class ChatController implements Initializable {
             }
         }, 0, 1000);
     }
-
-
-
     private String formatForUserList(String connectionString) {
         String[] parts = connectionString.split("\\|");
 
-        if (parts.length >= 6) {
+        if (parts.length >= 5) {
             String ip = parts[1];
             String udpPort = parts[2];
             String username = parts[3];
-            String status = statusComboBox.getValue();
+            String status = parts[4];
 
-
-            return username + "|" + status + "|" + ip + "|"+udpPort;
-
+            return username + "|" + status + "|" + ip + "|" + udpPort;
         }
         return connectionString;
     }
+
     public void directMessaging()
     {
         userListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
@@ -861,7 +857,6 @@ public class ChatController implements Initializable {
         }
     }
 
-
     @FXML
     private void handleStatusComboBox() {
         String status = statusComboBox.getValue();
@@ -915,6 +910,7 @@ public class ChatController implements Initializable {
         if (chatClient != null  ){
             chatClient.sendStatusUpdate("Away");
             statusComboBox.setValue("Away");
+            chatClient.setAsAway();
         }
     }
 
@@ -922,6 +918,7 @@ public class ChatController implements Initializable {
         if (chatClient != null) {
             chatClient.sendStatusUpdate("Active");
             statusComboBox.setValue("Active");
+            chatClient.setAsBusy();
 
         }
     }

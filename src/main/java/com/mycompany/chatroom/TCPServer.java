@@ -82,7 +82,7 @@ public class TCPServer
 
                 String receivedMessage;
                 while ((receivedMessage = clientReader.readLine()) != null) {
-                   // System.out.println("Client: " + receivedMessage);
+                    System.out.println("Client: " + receivedMessage);
 
                     if (receivedMessage.startsWith("CONNECT")) {
                         clientSocketMap.put(clientSocket, receivedMessage);
@@ -95,6 +95,9 @@ public class TCPServer
                         }
 
                         forwardMessageToClients(receivedMessage, senderUsername);
+                    } else if (receivedMessage.startsWith("STATUS_UPDATE|")) {
+                        updateClientStatus(clientSocket, receivedMessage);
+                        backToClient();
                     }
 
                     clientsInfo.add(i, receivedMessage);
@@ -112,6 +115,35 @@ public class TCPServer
             }
         });
     }
+    private void updateClientStatus(Socket clientSocket, String statusUpdate) {
+        String oldClientInfo = clientSocketMap.get(clientSocket);
+        if (oldClientInfo != null && oldClientInfo.startsWith("CONNECT")) {
+            clientsInfo.remove(oldClientInfo);
+
+            String[] updateParts = statusUpdate.split("\\|");
+            if (updateParts.length >= 5) {
+                String ip = updateParts[2];
+                String port = updateParts[3];
+                String username = updateParts[4];
+                String newStatus = updateParts[5];
+
+                String[] oldParts = oldClientInfo.split("\\|");
+                String newClientInfo = "CONNECT|" + ip + "|" + port + "|" + username + "|" + newStatus;
+
+                if (oldParts.length > 5) {
+                    for (int i = 5; i < oldParts.length; i++) {
+                        newClientInfo += "|" + oldParts[i];
+                    }
+                }
+
+                clientSocketMap.put(clientSocket, newClientInfo);
+                clientsInfo.add(newClientInfo);
+
+                System.out.println("Updated client status: " + username + " -> " + newStatus);
+            }
+        }
+    }
+
 
     private void forwardMessageToClients(String message, String senderUsername) {
         String[] parts = message.split("\\|");
