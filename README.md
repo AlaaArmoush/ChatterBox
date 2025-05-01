@@ -11,7 +11,7 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 
 - **Registered Users**: Authenticate using credentials stored in `mock_login.txt`.
 - **Guests**: Instant anonymous access without login.
-- **P2P & Group Chat**: Direct UDP streams for peer messaging; TCP server enables group topics and user lists.  
+- **Hybrid Architecture**: Direct UDP communication between peers with optional TCP server for discovery and group coordination.
 
 ## Features
 
@@ -25,14 +25,17 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 
 - **📂 File Transfer**  
   - Chunked UDP file transfer with progress bar.
-  - Metrics: packet count, latency, jitter, and error handling.  
+  - Metrics: packet count, latency, jitter, and error handling.
+  - Configurable save location for received files.
 
-- **🗑️ Message Management**  
+- **🗑️ Message Management**
+  - Archive tab for recently deleted messages.
   - Soft-delete with timed cleanup (2 min) and recovery options.
   - Export full chat history to `.txt`.  
 
 - **⏱️ Session Tracking**  
   - Live session timer, last-login timestamp display.
+  - Persistent login history between sessions.
 
 - **🔌 Extensible MVC Architecture**  
   - Clear separation of UI (`*.fxml`), controllers, and network models.
@@ -42,15 +45,19 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
 - **Controllers**:  
   - `LoginController`: Handles authentication and scene switching.  
   - `ChatController`: Manages message I/O, UI updates, and user actions.
+  - `TcpServerController`: Manages the server-side user registry and message routing.
 
 - **Models**:  
   - `UDPPeer`: Encapsulates UDP socket logic for messaging.
   - `TCPServer`: Discovery and group messaging transport.
   - `FileTransferManager`: Implements chunked file send/receive with reliability metrics.
+  - `AudioMessagesManager`: Handles recording, transmission, and playback of voice messages.
+
 
 - **Views**:  
-  - Defined in FXML (`Login.fxml`, `Chat.fxml`) for clean UI layout.  
-  - CSS styling for consistent look-and-feel.  
+  - Defined in FXML (`Login.fxml`, `Chat.fxml`, `Server.fxml`) for clean UI layout.  
+  - CSS styling for consistent look-and-feel.
+  - `ChatBubbleFactory` for stylized message presentation.
 
 ## Tech Stack
 
