@@ -45,8 +45,8 @@ public class UDPPeer {
             socket = new DatagramSocket(sourcePort);
             running = true;
 
-            socket.setSendBufferSize(2097152);
-            socket.setReceiveBufferSize(2097152);
+            socket.setSendBufferSize(1024*1024*4);
+            socket.setReceiveBufferSize(1024*1024*4);
 
             this.fileTransferManager = new FileTransferManager(this.socket, this.messageReceiver);
 
