@@ -156,7 +156,7 @@ public class FileTransferManager {
                 System.out.println("Sent chunk " + chunkNum + " of size " + bytesRead);
 
                 updateProgress(transferInfo, false);
-                Thread.sleep(10);
+                Thread.sleep(30);
             }
 
             String endMessage = "CMD:FILE_END|" + transferInfo.transferId;
