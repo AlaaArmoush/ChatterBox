@@ -45,6 +45,9 @@ public class UDPPeer {
             socket = new DatagramSocket(sourcePort);
             running = true;
 
+            socket.setSendBufferSize(2097152);
+            socket.setReceiveBufferSize(2097152);
+
             this.fileTransferManager = new FileTransferManager(this.socket, this.messageReceiver);
 
 
@@ -368,7 +371,7 @@ public class UDPPeer {
             try {
                 String line;
                 while ((line = fromServer.readLine()) != null) {
-                    System.out.println("Received raw TCP line: " + line);
+                   System.out.println("Received raw TCP line: " + line);
 
                     if (line.startsWith("USER_LIST|")) {
                         String userListData = line.substring("USER_LIST|".length());
