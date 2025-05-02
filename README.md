@@ -2,7 +2,7 @@
 
 An extensible JavaFX-based desktop chatroom application supporting peer-to-peer UDP messaging, optional TCP server discovery, and a rich set of chat features, built with a modular MVC architecture for maintainability and future growth.
 
-![Screenshot_2025_05_01-4](https://github.com/user-attachments/assets/85a23dbf-2059-4b6d-851d-69eead79f33f)
+![ReadMeScreen](https://github.com/user-attachments/assets/cc4dda62-16b5-44ce-8cdf-2026fec2f7b4)
 
 
 ## Overview
@@ -51,8 +51,6 @@ ChatterBox enables both registered users and guests to connect and chat in one-o
   - `UDPPeer`: Encapsulates UDP socket logic for messaging.
   - `TCPServer`: Discovery and group messaging transport.
   - `FileTransferManager`: Implements chunked file send/receive with reliability metrics.
-  - `AudioMessagesManager`: Handles recording, transmission, and playback of voice messages.
-
 
 - **Views**:  
   - Defined in FXML (`Login.fxml`, `Chat.fxml`, `Server.fxml`) for clean UI layout.  
