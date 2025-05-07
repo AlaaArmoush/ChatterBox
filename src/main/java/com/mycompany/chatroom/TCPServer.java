@@ -88,14 +88,9 @@ public class TCPServer
                         clientSocketMap.put(clientSocket, receivedMessage);
                         backToClient();
                     } else if (receivedMessage.startsWith("MESSAGE|")) {
-                        String[] messageParts = receivedMessage.split("\\|");
-                        String senderUsername = "";
-                        if (messageParts.length >= 3) {
-                            senderUsername = messageParts[2]; // Extract sender username
-                        }
-
-                        forwardMessageToClients(receivedMessage, senderUsername);
-                    } else if (receivedMessage.startsWith("STATUS_UPDATE|")) {
+                        forwardMessageToClients(receivedMessage, clientSocket);
+                    }
+                    else if (receivedMessage.startsWith("STATUS_UPDATE|")) {
                         updateClientStatus(clientSocket, receivedMessage);
                         backToClient();
                     }
@@ -138,38 +133,42 @@ public class TCPServer
 
                 clientSocketMap.put(clientSocket, newClientInfo);
                 clientsInfo.add(newClientInfo);
-
-                System.out.println("Updated client status: " + username + " -> " + newStatus);
             }
         }
     }
 
-
-    private void forwardMessageToClients(String message, String senderUsername) {
+    private void forwardMessageToClients(String message, Socket senderSocket) {
         String[] parts = message.split("\\|");
-        String actualMessage = parts.length >= 5 ? parts[4] : message;
+        String messageId = parts.length >= 2 ? parts[1] : "";
+        String senderUsername = parts.length >= 3 ? parts[2] : "";
+        String timestamp = parts.length >= 4 ? parts[3] : "";
+        String content = parts.length >= 5 ? parts[4] : "";
+
+        String senderIp = senderSocket.getInetAddress().getHostAddress();
+        String senderDeclaredUdpPort = "";
+
+        String senderClientInfo = clientSocketMap.get(senderSocket);
+        if (senderClientInfo != null && senderClientInfo.startsWith("CONNECT")) {
+            String[] senderParts = senderClientInfo.split("\\|");
+            if (senderParts.length >= 6) {
+                senderDeclaredUdpPort = senderParts[2];
+            }
+        }
 
         for (String clientInfo : clientsInfo) {
             if (clientInfo.startsWith("CONNECT")) {
                 String[] clientParts = clientInfo.split("\\|");
-                /*
-                for(int i = 0; i < clientParts.length; i++){
-                    System.out.println("Index " + i + ": " + clientParts[i]);
-                }*/
-
                 if (clientParts.length >= 6) {
                     String clientIp = clientParts[1];
+                    String clientUdpPort = clientParts[2];
+
+                    if (clientIp.equals(senderIp) && clientUdpPort.equals(senderDeclaredUdpPort)) {
+                        continue;
+                    }
+
                     try {
-                        int udpPort = Integer.parseInt(clientParts[2]);
-                        String clientUsername = clientParts[3].split(" ")[0];
-
-                        if (clientUsername.equals(senderUsername) ||
-                                clientUsername.startsWith(senderUsername)) {
-                            continue;
-                        }
-
-                        String messageWithSender = senderUsername + "\u001F" + actualMessage;
-
+                        int udpPort = Integer.parseInt(clientUdpPort);
+                        String messageWithSender = messageId + "\u001F" + senderUsername + "\u001F" + content;
                         byte[] messageData = messageWithSender.getBytes();
                         InetAddress destAddress = InetAddress.getByName(clientIp);
                         DatagramPacket packet = new DatagramPacket(
@@ -186,6 +185,9 @@ public class TCPServer
             }
         }
     }
+
+
+
     private void handleClientDisconnect(Socket socket) {
         String clientInfo = clientSocketMap.get(socket);
         if (clientInfo != null) {

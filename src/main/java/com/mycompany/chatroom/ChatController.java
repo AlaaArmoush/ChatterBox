@@ -882,14 +882,14 @@ public class ChatController implements Initializable {
     }
     //******************AFK
     private PauseTransition inactivityTimer;
-    private static final int INACTIVITY_TIMEOUT = 10;
+    private static final int INACTIVITY_TIMEOUT = 1;
 
     @FXML
     private BorderPane chatRoot;
 
 
     private void setupInactivityCheck() {
-        inactivityTimer = new PauseTransition(Duration.seconds(INACTIVITY_TIMEOUT));
+        inactivityTimer = new PauseTransition(Duration.minutes(INACTIVITY_TIMEOUT));
         inactivityTimer.setOnFinished(event -> setStatusAway());
         if (!"Away".equals(statusComboBox.getValue())) {
             chatRoot.addEventFilter(MouseEvent.ANY, this::resetInactivityTimer);
