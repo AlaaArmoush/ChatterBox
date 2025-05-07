@@ -33,5 +33,5 @@ public class Logger {
     public void info(String msg)  { log("INFO",  msg); }
     public void warn(String msg)  { log("WARN",  msg); }
     public void error(String msg) { log("ERROR", msg); }
-
+    
 }

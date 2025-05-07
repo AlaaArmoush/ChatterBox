@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.function.Consumer;
-
 public class FileTransferManager {
     static final int MAX_CHUNK_SIZE = 1024;
     private Map<String, FileTransferInfo> outgoingTransfers = new HashMap<>();
