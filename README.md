@@ -96,7 +96,7 @@ $ mvn exec:java -Dexec.mainClass="com.mycompany.chatroom.App"
 
 1. **Login**: Enter username/password or click **Guest**.  
 2. **Connect**:
-   - For P2P: Input peer IP and port; press **Enter** or click **Connect**.  
+   - For P2P: Input peer IP and port; press **Enter**.  
    - For Group: Start or join TCP server in **Server** mode.  
 3. **Chat**: Send messages, files, change status, delete/recover messages.  
 4. **Export**: Save conversation history via **Export Chat** button.
